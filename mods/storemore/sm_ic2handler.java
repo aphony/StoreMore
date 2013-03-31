@@ -1,12 +1,12 @@
 package mods.storemore;
   
-import ic2.api.Ic2Recipes;
   
 import java.util.ArrayList;
   
 import cpw.mods.fml.common.Loader;
 import cpw.mods.fml.common.registry.GameRegistry;
   
+import mods.ic2.api.Ic2Recipes;
 import mods.storemore.common.storemoreMain;
 import net.minecraft.block.Block;
 import net.minecraft.item.ItemStack;
