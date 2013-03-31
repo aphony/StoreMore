@@ -35,6 +35,8 @@ public class sm_config
 		public static int packedblocksVIIIID = 2108;
 		public static int packedblocksIXID = 2109;
 		
+	    public static boolean IC2Enabled; 
+		
 		public static void initialize(File file)
 	    {
 	        config = new Configuration(file); 

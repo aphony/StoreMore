@@ -4,8 +4,10 @@ import java.util.logging.Level;
 
 import mods.storemore.StoreMoreTab;
 import mods.storemore.sm_config;
+import mods.storemore.sm_ic2handler;
 import mods.storemore.sm_naming;
 import mods.storemore.sm_recipes;
+import mods.storemore.sm_tehandler;
 import mods.storemore.storemoreFuels;
 import mods.storemore.blocks.blockitems.packedblocksIIIItem;
 import mods.storemore.blocks.blockitems.packedblocksIIItem;
@@ -94,6 +96,8 @@ public class storemoreMain
 	proxy.registerRenderers();
     sm_naming.init();
     sm_recipes.initRecipes();
+    sm_ic2handler.initIC2();
+    sm_tehandler.initTE();
     
 	}
 
