@@ -5,14 +5,17 @@ import java.util.logging.Level;
 import mods.storemore.StoreMoreTab;
 import mods.storemore.sm_config;
 import mods.storemore.sm_ic2handler;
+import mods.storemore.sm_modhandler;
 import mods.storemore.sm_naming;
 import mods.storemore.sm_recipes;
 import mods.storemore.sm_tehandler;
 import mods.storemore.storemoreFuels;
+import mods.storemore.blocks.blockitems.ic2blocksIItem;
 import mods.storemore.blocks.blockitems.packedblocksIIIItem;
 import mods.storemore.blocks.blockitems.packedblocksIIItem;
 import mods.storemore.blocks.blockitems.packedblocksIItem;
 import mods.storemore.blocks.blockitems.packedblocksIVItem;
+import mods.storemore.blocks.blockitems.packedblocksIXItem;
 import mods.storemore.blocks.blockitems.packedblocksVIIIItem;
 import mods.storemore.blocks.blockitems.packedblocksVIIItem;
 import mods.storemore.blocks.blockitems.packedblocksVIItem;
@@ -50,7 +53,7 @@ import cpw.mods.fml.common.registry.LanguageRegistry;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
-@Mod(modid = "StoreMore", name = "Store More Mod", version = "v1.3_MC1.5.1")
+@Mod(modid = "StoreMore", name = "Store More Mod", version = "v1.3.1_MC1.5.1")
 @NetworkMod(clientSideRequired = true, serverSideRequired = false)
 public class storemoreMain
 {
@@ -77,6 +80,7 @@ public class storemoreMain
 		public static Block packedblocksVII;
 		public static Block packedblocksVIII;
 		public static Block packedblocksIX;
+		public static Block ic2blocksI;
 		
 		
 	
@@ -96,6 +100,7 @@ public class storemoreMain
 	proxy.registerRenderers();
     sm_naming.init();
     sm_recipes.initRecipes();
+    sm_modhandler.initIC2Recipes();
     sm_ic2handler.initIC2();
     sm_tehandler.initTE();
     
@@ -126,6 +131,7 @@ public class storemoreMain
 		packedblocksVII = new mods.storemore.blocks.packedblocksVII(sm_config.packedblocksVIIID).setHardness(1.0f).setResistance(50.0f).setCreativeTab(StoreMoreTab).setUnlocalizedName("packedblocksVII");
 		packedblocksVIII = new mods.storemore.blocks.packedblocksVIII(sm_config.packedblocksVIIIID).setHardness(1.0f).setResistance(50.0f).setCreativeTab(StoreMoreTab).setUnlocalizedName("packedblocksVIII");
 		packedblocksIX = new mods.storemore.blocks.packedblocksIX(sm_config.packedblocksIXID).setHardness(1.0f).setResistance(50.0f).setCreativeTab(StoreMoreTab).setUnlocalizedName("packedblocksIX");
+		ic2blocksI = new mods.storemore.blocks.ic2blocksI(sm_config.ic2blocksIID).setHardness(1.0f).setResistance(50.0f).setCreativeTab(StoreMoreTab).setUnlocalizedName("ic2blocksI");
 		
 
 //Multiblock ItemBlocks	
@@ -147,7 +153,8 @@ Item.itemsList[sm_config.packedcharcoalIVID] = new packedcharcoalIVItem(sm_confi
 Item.itemsList[sm_config.packedblocksVIID] = new packedblocksVIItem(sm_config.packedblocksVIID-256).setUnlocalizedName("packedblocksVI");
 Item.itemsList[sm_config.packedblocksVIIID] = new packedblocksVIIItem(sm_config.packedblocksVIIID-256).setUnlocalizedName("packedblocksVII");
 Item.itemsList[sm_config.packedblocksVIIIID] = new packedblocksVIIIItem(sm_config.packedblocksVIIIID-256).setUnlocalizedName("packedblocksVIII");
-Item.itemsList[sm_config.packedblocksIXID] = new packedblocksVIIIItem(sm_config.packedblocksIXID-256).setUnlocalizedName("packedblocksIX");
+Item.itemsList[sm_config.packedblocksIXID] = new packedblocksIXItem(sm_config.packedblocksIXID-256).setUnlocalizedName("packedblocksIX");
+Item.itemsList[sm_config.ic2blocksIID] = new ic2blocksIItem(sm_config.ic2blocksIID-256).setUnlocalizedName("packedblocksIX");
 	}
 	
 {
@@ -156,7 +163,9 @@ GameRegistry.registerFuelHandler(new storemoreFuels());
 	}
 @PostInit
 public void postInit(FMLPostInitializationEvent event) {
-       
+	 
+	        sm_modhandler.init();
+	        
 }
 
 }

@@ -160,6 +160,22 @@ public class sm_naming {
         LanguageRegistry.instance().addName(new ItemStack(storemoreMain.packedblocksIX, 1, 13), "Packed Clay II");
         LanguageRegistry.instance().addName(new ItemStack(storemoreMain.packedblocksIX, 1, 14), "Packed Clay III");
         LanguageRegistry.instance().addName(new ItemStack(storemoreMain.packedblocksIX, 1, 15), "Packed Clay IV");
+        LanguageRegistry.instance().addName(new ItemStack(storemoreMain.ic2blocksI, 1, 0), "Packed Copper I");
+        LanguageRegistry.instance().addName(new ItemStack(storemoreMain.ic2blocksI, 1, 1), "Packed Copper II");
+        LanguageRegistry.instance().addName(new ItemStack(storemoreMain.ic2blocksI, 1, 2), "Packed Copper III");
+        LanguageRegistry.instance().addName(new ItemStack(storemoreMain.ic2blocksI, 1, 3), "Packed Copper IV");
+        LanguageRegistry.instance().addName(new ItemStack(storemoreMain.ic2blocksI, 1, 4), "Packed Tin I");
+        LanguageRegistry.instance().addName(new ItemStack(storemoreMain.ic2blocksI, 1, 5), "Packed Tin II");
+        LanguageRegistry.instance().addName(new ItemStack(storemoreMain.ic2blocksI, 1, 6), "Packed Tin III");
+        LanguageRegistry.instance().addName(new ItemStack(storemoreMain.ic2blocksI, 1, 7), "Packed Tin IV");
+        LanguageRegistry.instance().addName(new ItemStack(storemoreMain.ic2blocksI, 1, 8), "Packed Uranium I");
+        LanguageRegistry.instance().addName(new ItemStack(storemoreMain.ic2blocksI, 1, 9), "Packed Uranium II");
+        LanguageRegistry.instance().addName(new ItemStack(storemoreMain.ic2blocksI, 1, 10), "Packed Uranium III");
+        LanguageRegistry.instance().addName(new ItemStack(storemoreMain.ic2blocksI, 1, 11), "Packed Uranium IV");
+        LanguageRegistry.instance().addName(new ItemStack(storemoreMain.ic2blocksI, 1, 12), "Packed Bronze I");
+        LanguageRegistry.instance().addName(new ItemStack(storemoreMain.ic2blocksI, 1, 13), "Packed Bronze II");
+        LanguageRegistry.instance().addName(new ItemStack(storemoreMain.ic2blocksI, 1, 14), "Packed Bronze III");
+        LanguageRegistry.instance().addName(new ItemStack(storemoreMain.ic2blocksI, 1, 15), "Packed Bronze IV");
 }
 		
 	}

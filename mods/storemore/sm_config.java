@@ -34,6 +34,7 @@ public class sm_config
 		public static int packedblocksVIIID = 2107;
 		public static int packedblocksVIIIID = 2108;
 		public static int packedblocksIXID = 2109;
+		public static int ic2blocksIID = 2110;
 		
 	    public static boolean IC2Enabled; 
 		
@@ -59,6 +60,9 @@ public class sm_config
 		    packedblocksVIIID = config.get(Configuration.CATEGORY_BLOCK, "Wood Blocks I", 2107).getInt();
 		    packedblocksVIIIID = config.get(Configuration.CATEGORY_BLOCK, "Wood Planks I", 2108).getInt();
 		    packedblocksIXID = config.get(Configuration.CATEGORY_BLOCK, "Redstone, Quartz, Soulsand & Clay", 2109).getInt();
+		    ic2blocksIID = config.get(Configuration.CATEGORY_BLOCK, "Redstone, Quartz, Soulsand & Clay", 2110).getInt();
+		    
+		    IC2Enabled = config.get("Mod Add-ons", "Enable Recipes for IC2/Thermal Expansion?", true).getBoolean(IC2Enabled);
 		    
 		    
 		    config.save();
