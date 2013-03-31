@@ -48,7 +48,7 @@ import cpw.mods.fml.common.registry.LanguageRegistry;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
-@Mod(modid = "StoreMore", name = "Store More Mod", version = "v1.2.1_MC1.5.1")
+@Mod(modid = "StoreMore", name = "Store More Mod", version = "v1.3_MC1.5.1")
 @NetworkMod(clientSideRequired = true, serverSideRequired = false)
 public class storemoreMain
 {
@@ -74,6 +74,7 @@ public class storemoreMain
 		public static Block packedblocksVI;
 		public static Block packedblocksVII;
 		public static Block packedblocksVIII;
+		public static Block packedblocksIX;
 		
 		
 	
@@ -120,6 +121,7 @@ public class storemoreMain
 		packedblocksVI = new mods.storemore.blocks.packedblocksVI(sm_config.packedblocksVIID).setHardness(1.0f).setResistance(50.0f).setCreativeTab(StoreMoreTab).setUnlocalizedName("packedblocksVI");
 		packedblocksVII = new mods.storemore.blocks.packedblocksVII(sm_config.packedblocksVIIID).setHardness(1.0f).setResistance(50.0f).setCreativeTab(StoreMoreTab).setUnlocalizedName("packedblocksVII");
 		packedblocksVIII = new mods.storemore.blocks.packedblocksVIII(sm_config.packedblocksVIIIID).setHardness(1.0f).setResistance(50.0f).setCreativeTab(StoreMoreTab).setUnlocalizedName("packedblocksVIII");
+		packedblocksIX = new mods.storemore.blocks.packedblocksIX(sm_config.packedblocksIXID).setHardness(1.0f).setResistance(50.0f).setCreativeTab(StoreMoreTab).setUnlocalizedName("packedblocksIX");
 		
 
 //Multiblock ItemBlocks	
@@ -141,6 +143,7 @@ Item.itemsList[sm_config.packedcharcoalIVID] = new packedcharcoalIVItem(sm_confi
 Item.itemsList[sm_config.packedblocksVIID] = new packedblocksVIItem(sm_config.packedblocksVIID-256).setUnlocalizedName("packedblocksVI");
 Item.itemsList[sm_config.packedblocksVIIID] = new packedblocksVIIItem(sm_config.packedblocksVIIID-256).setUnlocalizedName("packedblocksVII");
 Item.itemsList[sm_config.packedblocksVIIIID] = new packedblocksVIIIItem(sm_config.packedblocksVIIIID-256).setUnlocalizedName("packedblocksVIII");
+Item.itemsList[sm_config.packedblocksIXID] = new packedblocksVIIIItem(sm_config.packedblocksIXID-256).setUnlocalizedName("packedblocksIX");
 	}
 	
 {

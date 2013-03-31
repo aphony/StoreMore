@@ -144,6 +144,22 @@ public class sm_naming {
         LanguageRegistry.instance().addName(new ItemStack(storemoreMain.packedcharcoalII, 1, 0), "Packed Charcoal II");
         LanguageRegistry.instance().addName(new ItemStack(storemoreMain.packedcharcoalIII, 1, 0), "Packed Charcoal III");
         LanguageRegistry.instance().addName(new ItemStack(storemoreMain.packedcharcoalIV, 1, 0), "Packed Charcoal IV");
+        LanguageRegistry.instance().addName(new ItemStack(storemoreMain.packedblocksIX, 1, 0), "Packed Redstone I");
+        LanguageRegistry.instance().addName(new ItemStack(storemoreMain.packedblocksIX, 1, 1), "Packed Redstone II");
+        LanguageRegistry.instance().addName(new ItemStack(storemoreMain.packedblocksIX, 1, 2), "Packed Redstone III");
+        LanguageRegistry.instance().addName(new ItemStack(storemoreMain.packedblocksIX, 1, 3), "Packed Redstone IV");
+        LanguageRegistry.instance().addName(new ItemStack(storemoreMain.packedblocksIX, 1, 4), "Packed Quartz I");
+        LanguageRegistry.instance().addName(new ItemStack(storemoreMain.packedblocksIX, 1, 5), "Packed Quartz II");
+        LanguageRegistry.instance().addName(new ItemStack(storemoreMain.packedblocksIX, 1, 6), "Packed Quartz III");
+        LanguageRegistry.instance().addName(new ItemStack(storemoreMain.packedblocksIX, 1, 7), "Packed Quartz IV");
+        LanguageRegistry.instance().addName(new ItemStack(storemoreMain.packedblocksIX, 1, 8), "Packed Soulsand I");
+        LanguageRegistry.instance().addName(new ItemStack(storemoreMain.packedblocksIX, 1, 9), "Packed Soulsand II");
+        LanguageRegistry.instance().addName(new ItemStack(storemoreMain.packedblocksIX, 1, 10), "Packed Soulsand III");
+        LanguageRegistry.instance().addName(new ItemStack(storemoreMain.packedblocksIX, 1, 11), "Packed Soulsand IV");
+        LanguageRegistry.instance().addName(new ItemStack(storemoreMain.packedblocksIX, 1, 12), "Packed Clay I");
+        LanguageRegistry.instance().addName(new ItemStack(storemoreMain.packedblocksIX, 1, 13), "Packed Clay II");
+        LanguageRegistry.instance().addName(new ItemStack(storemoreMain.packedblocksIX, 1, 14), "Packed Clay III");
+        LanguageRegistry.instance().addName(new ItemStack(storemoreMain.packedblocksIX, 1, 15), "Packed Clay IV");
 }
 		
 	}

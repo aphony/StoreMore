@@ -148,6 +148,22 @@ public class sm_recipes extends storemoreMain{
 		GameRegistry.addRecipe(new ItemStack(storemoreMain.packedblocksVIII,1,13), "XXX", "XXX", "XXX", Character.valueOf('X'), new ItemStack(packedblocksVIII,1,12));
 		GameRegistry.addRecipe(new ItemStack(storemoreMain.packedblocksVIII,1,14), "XXX", "XXX", "XXX", Character.valueOf('X'), new ItemStack(packedblocksVIII,1,13));
 		GameRegistry.addRecipe(new ItemStack(storemoreMain.packedblocksVIII,1,15), "XXX", "XXX", "XXX", Character.valueOf('X'), new ItemStack(packedblocksVIII,1,14));
+		GameRegistry.addRecipe(new ItemStack(storemoreMain.packedblocksIX,1,0), "XXX", "XXX", "XXX", Character.valueOf('X'), new ItemStack(Block.blockRedstone));
+		GameRegistry.addRecipe(new ItemStack(storemoreMain.packedblocksIX,1,1), "XXX", "XXX", "XXX", Character.valueOf('X'), new ItemStack(packedblocksIX,1,0));
+		GameRegistry.addRecipe(new ItemStack(storemoreMain.packedblocksIX,1,2), "XXX", "XXX", "XXX", Character.valueOf('X'), new ItemStack(packedblocksIX,1,1));
+		GameRegistry.addRecipe(new ItemStack(storemoreMain.packedblocksIX,1,3), "XXX", "XXX", "XXX", Character.valueOf('X'), new ItemStack(packedblocksIX,1,2));
+		GameRegistry.addRecipe(new ItemStack(storemoreMain.packedblocksIX,1,4), "XXX", "XXX", "XXX", Character.valueOf('X'), new ItemStack(Block.blockNetherQuartz));
+		GameRegistry.addRecipe(new ItemStack(storemoreMain.packedblocksIX,1,5), "XXX", "XXX", "XXX", Character.valueOf('X'), new ItemStack(packedblocksIX,1,4));
+		GameRegistry.addRecipe(new ItemStack(storemoreMain.packedblocksIX,1,6), "XXX", "XXX", "XXX", Character.valueOf('X'), new ItemStack(packedblocksIX,1,5));
+		GameRegistry.addRecipe(new ItemStack(storemoreMain.packedblocksIX,1,7), "XXX", "XXX", "XXX", Character.valueOf('X'), new ItemStack(packedblocksIX,1,6));
+		GameRegistry.addRecipe(new ItemStack(storemoreMain.packedblocksIX,1,8), "XXX", "XXX", "XXX", Character.valueOf('X'), new ItemStack(Block.slowSand));
+		GameRegistry.addRecipe(new ItemStack(storemoreMain.packedblocksIX,1,9), "XXX", "XXX", "XXX", Character.valueOf('X'), new ItemStack(packedblocksIX,1,8));
+		GameRegistry.addRecipe(new ItemStack(storemoreMain.packedblocksIX,1,10), "XXX", "XXX", "XXX", Character.valueOf('X'), new ItemStack(packedblocksIX,1,9));
+		GameRegistry.addRecipe(new ItemStack(storemoreMain.packedblocksIX,1,11), "XXX", "XXX", "XXX", Character.valueOf('X'), new ItemStack(packedblocksIX,1,10));
+		GameRegistry.addRecipe(new ItemStack(storemoreMain.packedblocksIX,1,12), "XXX", "XXX", "XXX", Character.valueOf('X'), new ItemStack(Item.clay));
+		GameRegistry.addRecipe(new ItemStack(storemoreMain.packedblocksIX,1,13), "XXX", "XXX", "XXX", Character.valueOf('X'), new ItemStack(packedblocksIX,1,12));
+		GameRegistry.addRecipe(new ItemStack(storemoreMain.packedblocksIX,1,14), "XXX", "XXX", "XXX", Character.valueOf('X'), new ItemStack(packedblocksIX,1,13));
+		GameRegistry.addRecipe(new ItemStack(storemoreMain.packedblocksIX,1,15), "XXX", "XXX", "XXX", Character.valueOf('X'), new ItemStack(packedblocksIX,1,14));
 
 			//Unpacking
 		GameRegistry.addShapelessRecipe(new ItemStack(Block.cobblestone,9), new ItemStack(storemoreMain.packedblocksI,1,0));
@@ -286,6 +302,22 @@ public class sm_recipes extends storemoreMain{
 		GameRegistry.addShapelessRecipe(new ItemStack(storemoreMain.packedblocksVIII,9,12), new ItemStack(storemoreMain.packedblocksVIII,1,13));
 		GameRegistry.addShapelessRecipe(new ItemStack(storemoreMain.packedblocksVIII,9,13), new ItemStack(storemoreMain.packedblocksVIII,1,14));
 		GameRegistry.addShapelessRecipe(new ItemStack(storemoreMain.packedblocksVIII,9,14), new ItemStack(storemoreMain.packedblocksVIII,1,15));
+		GameRegistry.addShapelessRecipe(new ItemStack(Block.blockRedstone,9,0), new ItemStack(storemoreMain.packedblocksIX,1,0));
+		GameRegistry.addShapelessRecipe(new ItemStack(storemoreMain.packedblocksIX,9,0), new ItemStack(storemoreMain.packedblocksIX,1,1));
+		GameRegistry.addShapelessRecipe(new ItemStack(storemoreMain.packedblocksIX,9,1), new ItemStack(storemoreMain.packedblocksIX,1,2));
+		GameRegistry.addShapelessRecipe(new ItemStack(storemoreMain.packedblocksIX,9,2), new ItemStack(storemoreMain.packedblocksIX,1,3));
+		GameRegistry.addShapelessRecipe(new ItemStack(Block.blockNetherQuartz,9,0), new ItemStack(storemoreMain.packedblocksIX,1,4));
+		GameRegistry.addShapelessRecipe(new ItemStack(storemoreMain.packedblocksIX,9,4), new ItemStack(storemoreMain.packedblocksIX,1,5));
+		GameRegistry.addShapelessRecipe(new ItemStack(storemoreMain.packedblocksIX,9,5), new ItemStack(storemoreMain.packedblocksIX,1,6));
+		GameRegistry.addShapelessRecipe(new ItemStack(storemoreMain.packedblocksIX,9,6), new ItemStack(storemoreMain.packedblocksIX,1,7));
+		GameRegistry.addShapelessRecipe(new ItemStack(Block.slowSand,9,0), new ItemStack(storemoreMain.packedblocksIX,1,8));
+		GameRegistry.addShapelessRecipe(new ItemStack(storemoreMain.packedblocksIX,9,8), new ItemStack(storemoreMain.packedblocksIX,1,9));
+		GameRegistry.addShapelessRecipe(new ItemStack(storemoreMain.packedblocksIX,9,9), new ItemStack(storemoreMain.packedblocksIX,1,10));
+		GameRegistry.addShapelessRecipe(new ItemStack(storemoreMain.packedblocksIX,9,10), new ItemStack(storemoreMain.packedblocksIX,1,11));
+		GameRegistry.addShapelessRecipe(new ItemStack(Item.clay,9,0), new ItemStack(storemoreMain.packedblocksIX,1,12));
+		GameRegistry.addShapelessRecipe(new ItemStack(storemoreMain.packedblocksIX,9,12), new ItemStack(storemoreMain.packedblocksIX,1,13));
+		GameRegistry.addShapelessRecipe(new ItemStack(storemoreMain.packedblocksIX,9,13), new ItemStack(storemoreMain.packedblocksIX,1,14));
+		GameRegistry.addShapelessRecipe(new ItemStack(storemoreMain.packedblocksIX,9,14), new ItemStack(storemoreMain.packedblocksIX,1,15));
 
 	  }
 	

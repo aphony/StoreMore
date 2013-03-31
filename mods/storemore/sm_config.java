@@ -33,6 +33,7 @@ public class sm_config
 		public static int packedblocksVIID = 2106;
 		public static int packedblocksVIIID = 2107;
 		public static int packedblocksVIIIID = 2108;
+		public static int packedblocksIXID = 2109;
 		
 		public static void initialize(File file)
 	    {
@@ -55,6 +56,7 @@ public class sm_config
 		    packedblocksVIID = config.get(Configuration.CATEGORY_BLOCK, "Sticks, Torches, Gunpowder, Flint", 2106).getInt();
 		    packedblocksVIIID = config.get(Configuration.CATEGORY_BLOCK, "Wood Blocks I", 2107).getInt();
 		    packedblocksVIIIID = config.get(Configuration.CATEGORY_BLOCK, "Wood Planks I", 2108).getInt();
+		    packedblocksIXID = config.get(Configuration.CATEGORY_BLOCK, "Redstone, Quartz, Soulsand & Clay", 2109).getInt();
 		    
 		    
 		    config.save();
