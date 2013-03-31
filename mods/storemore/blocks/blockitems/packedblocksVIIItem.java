@@ -1,61 +1,51 @@
 package mods.storemore.blocks.blockitems;
 
-import net.minecraft.block.Block;
-import net.minecraft.item.Item;
+import mods.storemore.common.storemoreMain;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
+import net.minecraft.util.Icon;
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 
 public class packedblocksVIIItem extends ItemBlock {
 
-	public packedblocksVIIItem(int id, Block block) {
-		super(id);
-		setHasSubtypes(true);		
+	public packedblocksVIIItem(int par1) {
+		super(par1);
+		setHasSubtypes(true);
 	}
-	public String getItemNameIS(ItemStack is){
-		String name = "packedblocksVII";
-		switch(is.getItemDamage()){
-		case 0: {name = "oakwoodI";
-		break;}
-		case 1: {name = "oakwoodII";
-		break;}
-		case 2: {name = "oakwoodIII";
-		break;}
-		case 3: {name = "oakwoodIV";
-		break;}
-		case 4: {name = "sprucewoodI";
-		break;}
-		case 5: {name = "sprucewoodII";
-		break;}
-		case 6: {name = "sprucewoodIII";
-		break;}
-		case 7: {name = "sprucewoodIV";
-		break;}
-		case 8: {name = "birchwoodI";
-		break;}
-		case 9: {name = "birchwoodII";
-		break;}
-		case 10: {name = "birchwoodIII";
-		break;}
-		case 11: {name = "birchwoodIV";
-		break;}
-		case 12: {name = "junglewoodI";
-		break;}
-		case 13: {name = "junglewoodII";
-		break;}
-		case 14: {name = "junglewoodIII";
-		break;}
-		case 15: {name = "junglewoodIV";
-		break;}
-		default: name = "oakwoodI";
-		}
-		return getUnlocalizedName()+"."+name;
-		}
-	public int getMetadata(int meta){
-		return meta;
-	
+
+	public String getUnlocalizedName(ItemStack i){
+        switch(i.getItemDamage()){
+        case 0:return "p_oakwoodI";
+        case 1:return "p_oakwoodII";
+        case 2:return "p_oakwoodIII";
+        case 3:return "p_oakwoodIV";
+        case 4:return "p_birchwoodI";
+        case 5:return "p_birchwoodII";
+        case 6:return "p_birchwoodIII";
+        case 7:return "p_birchwoodIV";
+        case 8:return "p_sprucewoodI";
+        case 9:return "p_sprucewoodII";
+        case 10:return "p_sprucewoodIII";
+        case 11:return "p_sprucewoodIV";
+        case 12:return "p_junglewoodI";
+        case 13:return "p_junglewoodII";
+        case 14:return "p_junglewoodIII";
+        case 15:return "p_junglewoodIV";
+        default:return "";
+        }
+
 	}
-	
-	
-	
-	
-}
+        
+    	public int getMetadata(int meta){
+    		return meta;
+    	
+    	}
+    	
+    	@SideOnly(Side.CLIENT)
+        public Icon getIconFromDamage(int par1)
+        {
+            return storemoreMain.packedblocksVII.getBlockTextureFromSide(par1);
+        }
+      
+    }

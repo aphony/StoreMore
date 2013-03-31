@@ -1,31 +1,33 @@
 package mods.storemore.fuels;
 
-import net.minecraft.block.Block;
-import net.minecraft.item.Item;
+import mods.storemore.common.storemoreMain;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
+import net.minecraft.util.Icon;
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 
 public class packedcharcoalIIIItem extends ItemBlock {
 
-	public packedcharcoalIIIItem(int id, Block block) {
-		super(id);
-		setHasSubtypes(true);		
+	public packedcharcoalIIIItem(int par1) {
+		super(par1);
+		setHasSubtypes(true);
 	}
-	public String getItemNameIS(ItemStack is){
-		String name = "packedcharcoalIII";
-		switch(is.getItemDamage()){
-		case 0: {name = "charcoalIII";
-		break;}
-		default: name = "charcoalIII";
-		}
-		return getUnlocalizedName()+"."+name;
-		}
+	public String getUnlocalizedName(ItemStack i){
+        switch(i.getItemDamage()){
+        case 0:return "p_charcoalIII";
+        default:return "";
+        }
+	}
 	public int getMetadata(int meta){
 		return meta;
 	
 	}
 	
-	
-	
-	
+	@SideOnly(Side.CLIENT)
+    public Icon getIconFromDamage(int par1)
+    {
+        return storemoreMain.packedcharcoalIII.getBlockTextureFromSide(par1);
+    }
+  
 }

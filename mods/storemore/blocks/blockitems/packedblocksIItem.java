@@ -1,65 +1,48 @@
 package mods.storemore.blocks.blockitems;
 
-import net.minecraft.block.Block;
-import net.minecraft.client.renderer.texture.IconRegister;
-import net.minecraft.item.Item;
+import mods.storemore.common.storemoreMain;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Icon;
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 
 public class packedblocksIItem extends ItemBlock {
-	
-	public static Block theBlock;
 
-	public packedblocksIItem(int id, Block block) {
-		super(id);
+	public packedblocksIItem(int par1) {
+		super(par1);
 		setHasSubtypes(true);
-		theBlock = block;
 	}
-	
-	public String getItemDisplayName(ItemStack p_blocksI){
-		String name = "";
-		switch(p_blocksI.getItemDamage()){
-		case 0: name = "Packed Cobble I";
-		break;
-		case 1: {name = "Packed Cobble II";
-		break;}
-		case 2: {name = "Packed Cobble III";
-		break;}
-		case 3: {name = "Packed Cobble IV";
-		break;}
-		case 4: {name = "Packed Cobble V";
-		break;}
-		case 5: {name = "Packed Cobble VI";
-		break;}
-		case 6: {name = "Packed Cobble VII";
-		break;}
-		case 7: {name = "Packed Cobble VIII";
-		break;}
-		case 8: {name = "p_stoneI";
-		break;}
-		case 9: {name = "p_stoneII";
-		break;}
-		case 10: {name = "p_stoneIII";
-		break;}
-		case 11: {name = "p_stoneIV";
-		break;}
-		case 12: {name = "p_stoneV";
-		break;}
-		case 13: {name = "p_stoneVI";
-		break;}
-		case 14: {name = "p_stoneVII";
-		break;}
-		case 15: {name = "p_stoneVIII";
-		break;}
-		default: name = "p_cobbleI";
-		}
-		return getUnlocalizedName() + "." +name;
-		}
+	public String getUnlocalizedName(ItemStack i){
+        switch(i.getItemDamage()){
+        case 0:return "p_cobbleI";
+        case 1:return "p_cobbleII";
+        case 2:return "p_cobbleIII";
+        case 3:return "p_cobbleIV";
+        case 4:return "p_cobbleV";
+        case 5:return "p_cobbleVI";
+        case 6:return "p_cobbleVII";
+        case 7:return "p_cobbleVIII";
+        case 8:return "p_stoneI";
+        case 9:return "p_stoneII";
+        case 10:return "p_stoneIII";
+        case 11:return "p_stoneIV";
+        case 12:return "p_stoneV";
+        case 13:return "p_stoneVI";
+        case 14:return "p_stoneVII";
+        case 15:return "p_stoneVIII";
+        default:return "";
+        }
+	}
 	public int getMetadata(int meta){
 		return meta;
 	
 	}
 	
-	
+	@SideOnly(Side.CLIENT)
+    public Icon getIconFromDamage(int par1)
+    {
+        return storemoreMain.packedblocksI.getBlockTextureFromSide(par1);
+    }
+  
 }

@@ -1,61 +1,48 @@
 package mods.storemore.blocks.blockitems;
 
-import net.minecraft.block.Block;
-import net.minecraft.item.Item;
+import mods.storemore.common.storemoreMain;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
+import net.minecraft.util.Icon;
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 
 public class packedblocksIIItem extends ItemBlock {
 
-	public packedblocksIIItem(int id, Block block) {
-		super(id);
-		setHasSubtypes(true);		
+	public packedblocksIIItem(int par1) {
+		super(par1);
+		setHasSubtypes(true);
 	}
-	public String getItemNameIS(ItemStack is){
-		String name = "packedblocksII";
-		switch(is.getItemDamage()){
-		case 0: {name = "dirtI";
-		break;}
-		case 1: {name = "dirtII";
-		break;}
-		case 2: {name = "dirtIII";
-		break;}
-		case 3: {name = "dirtIV";
-		break;}
-		case 4: {name = "dirtV";
-		break;}
-		case 5: {name = "dirtVI";
-		break;}
-		case 6: {name = "dirtVII";
-		break;}
-		case 7: {name = "dirtVIII";
-		break;}
-		case 8: {name = "gravelI";
-		break;}
-		case 9: {name = "gravelII";
-		break;}
-		case 10: {name = "gravelIII";
-		break;}
-		case 11: {name = "gravelIV";
-		break;}
-		case 12: {name = "gravelV";
-		break;}
-		case 13: {name = "gravelVI";
-		break;}
-		case 14: {name = "gravelVII";
-		break;}
-		case 15: {name = "gravelVIII";
-		break;}
-		default: name = "dirtI";
-		}
-		return getUnlocalizedName()+"."+name;
-		}
+	public String getUnlocalizedName(ItemStack i){
+        switch(i.getItemDamage()){
+        case 0:return "p_dirtI";
+        case 1:return "p_dirtII";
+        case 2:return "p_dirtIII";
+        case 3:return "p_dirtIV";
+        case 4:return "p_dirtV";
+        case 5:return "p_dirtVI";
+        case 6:return "p_dirtVII";
+        case 7:return "p_dirtVIII";
+        case 8:return "p_gravelI";
+        case 9:return "p_gravelII";
+        case 10:return "p_gravelIII";
+        case 11:return "p_gravelIV";
+        case 12:return "p_gravelV";
+        case 13:return "p_gravelVI";
+        case 14:return "p_gravelVII";
+        case 15:return "p_gravelVIII";
+        default:return "";
+        }
+	}
 	public int getMetadata(int meta){
 		return meta;
 	
 	}
 	
-	
-	
-	
+	@SideOnly(Side.CLIENT)
+    public Icon getIconFromDamage(int par1)
+    {
+        return storemoreMain.packedblocksII.getBlockTextureFromSide(par1);
+    }
+  
 }

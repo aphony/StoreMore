@@ -1,61 +1,51 @@
 package mods.storemore.blocks.blockitems;
 
-import net.minecraft.block.Block;
-import net.minecraft.item.Item;
+import mods.storemore.common.storemoreMain;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
+import net.minecraft.util.Icon;
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 
 public class packedblocksVIIIItem extends ItemBlock {
 
-	public packedblocksVIIIItem(int id, Block block) {
-		super(id);
-		setHasSubtypes(true);		
+	public packedblocksVIIIItem(int par1) {
+		super(par1);
+		setHasSubtypes(true);
 	}
-	public String getItemNameIS(ItemStack is){
-		String name = "packedblocksVIII";
-		switch(is.getItemDamage()){
-		case 0: {name = "oakplanksI";
-		break;}
-		case 1: {name = "oakplanksII";
-		break;}
-		case 2: {name = "oakplanksIII";
-		break;}
-		case 3: {name = "oakplanksIV";
-		break;}
-		case 4: {name = "spruceplanksI";
-		break;}
-		case 5: {name = "spruceplanksII";
-		break;}
-		case 6: {name = "spruceplanksIII";
-		break;}
-		case 7: {name = "spruceplanksIV";
-		break;}
-		case 8: {name = "birchplanksI";
-		break;}
-		case 9: {name = "birchplanksII";
-		break;}
-		case 10: {name = "birchplanksIII";
-		break;}
-		case 11: {name = "birchplanksIV";
-		break;}
-		case 12: {name = "jungleplanksI";
-		break;}
-		case 13: {name = "jungleplanksII";
-		break;}
-		case 14: {name = "jungleplanksIII";
-		break;}
-		case 15: {name = "jungleplanksIV";
-		break;}
-		default: name = "oakplanksI";
-		}
-		return getUnlocalizedName()+"."+name;
-		}
-	public int getMetadata(int meta){
-		return meta;
-	
+
+	public String getUnlocalizedName(ItemStack i){
+        switch(i.getItemDamage()){
+        case 0:return "p_oakplanksI";
+        case 1:return "p_oakplanksII";
+        case 2:return "p_oakplanksIII";
+        case 3:return "p_oakplanksIV";
+        case 4:return "p_birchplanksI";
+        case 5:return "p_birchplanksII";
+        case 6:return "p_birchplanksIII";
+        case 7:return "p_birchplanksIV";
+        case 8:return "p_spruceplanksI";
+        case 9:return "p_spruceplanksII";
+        case 10:return "p_spruceplanksIII";
+        case 11:return "p_spruceplanksIV";
+        case 12:return "p_jungleplanksI";
+        case 13:return "p_jungleplanksII";
+        case 14:return "p_jungleplanksIII";
+        case 15:return "p_jungleplanksIV";
+        default:return "";
+        }
+
 	}
-	
-	
-	
-	
-}
+        
+    	public int getMetadata(int meta){
+    		return meta;
+    	
+    	}
+    	
+    	@SideOnly(Side.CLIENT)
+        public Icon getIconFromDamage(int par1)
+        {
+            return storemoreMain.packedblocksVIII.getBlockTextureFromSide(par1);
+        }
+      
+    }

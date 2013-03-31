@@ -1,5 +1,6 @@
 package mods.storemore;
 
+import mods.storemore.common.storemoreMain;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;

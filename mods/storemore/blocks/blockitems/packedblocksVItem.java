@@ -1,61 +1,48 @@
 package mods.storemore.blocks.blockitems;
 
-import net.minecraft.block.Block;
-import net.minecraft.item.Item;
+import mods.storemore.common.storemoreMain;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
+import net.minecraft.util.Icon;
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 
 public class packedblocksVItem extends ItemBlock {
 
-	public packedblocksVItem(int id, Block block) {
-		super(id);
-		setHasSubtypes(true);		
+	public packedblocksVItem(int par1) {
+		super(par1);
+		setHasSubtypes(true);
 	}
-	public String getItemNameIS(ItemStack is){
-		String name = "packedblocksV";
-		switch(is.getItemDamage()){
-		case 0: {name = "ironI";
-		break;}
-		case 1: {name = "ironII";
-		break;}
-		case 2: {name = "ironIII";
-		break;}
-		case 3: {name = "ironIV";
-		break;}
-		case 4: {name = "goldI";
-		break;}
-		case 5: {name = "goldII";
-		break;}
-		case 6: {name = "goldIII";
-		break;}
-		case 7: {name = "goldIV";
-		break;}
-		case 8: {name = "diamondI";
-		break;}
-		case 9: {name = "diamondII";
-		break;}
-		case 10: {name = "diamondIII";
-		break;}
-		case 11: {name = "diamondIV";
-		break;}
-		case 12: {name = "emeraldI";
-		break;}
-		case 13: {name = "emeraldII";
-		break;}
-		case 14: {name = "emeraldIII";
-		break;}
-		case 15: {name = "emeraldIV";
-		break;}
-		default: name = "ironI";
-		}
-		return getUnlocalizedName()+"."+name;
-		}
+	public String getUnlocalizedName(ItemStack i){
+        switch(i.getItemDamage()){
+        case 0:return "p_ironI";
+        case 1:return "p_ironII";
+        case 2:return "p_ironIII";
+        case 3:return "p_ironIV";
+        case 4:return "p_goldI";
+        case 5:return "p_goldII";
+        case 6:return "p_goldIII";
+        case 7:return "p_goldIV";
+        case 8:return "p_diamondI";
+        case 9:return "p_diamondII";
+        case 10:return "p_diamondIII";
+        case 11:return "p_diamondIV";
+        case 12:return "p_emeraldI";
+        case 13:return "p_emeraldII";
+        case 14:return "p_emeraldIII";
+        case 15:return "p_emeraldIV";
+        default:return "";
+        }
+	}
 	public int getMetadata(int meta){
 		return meta;
 	
 	}
 	
-	
-	
-	
+	@SideOnly(Side.CLIENT)
+    public Icon getIconFromDamage(int par1)
+    {
+        return storemoreMain.packedblocksV.getBlockTextureFromSide(par1);
+    }
+  
 }

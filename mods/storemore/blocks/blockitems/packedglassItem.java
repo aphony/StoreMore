@@ -1,37 +1,36 @@
 package mods.storemore.blocks.blockitems;
 
-import net.minecraft.block.Block;
-import net.minecraft.item.Item;
+import mods.storemore.common.storemoreMain;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
+import net.minecraft.util.Icon;
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 
 public class packedglassItem extends ItemBlock {
 
-	public packedglassItem(int id, Block block) {
-		super(id);
-		setHasSubtypes(true);		
+	public packedglassItem(int par1) {
+		super(par1);
+		setHasSubtypes(true);
 	}
-	public String getItemNameIS(ItemStack is){
-		String name = "packedglass";
-		switch(is.getItemDamage()){
-		case 0: {name = "glassI";
-		break;}
-		case 1: {name = "glassII";
-		break;}
-		case 2: {name = "glassIII";
-		break;}
-		case 3: {name = "glassIV";
-		break;}
-		default: name = "glassI";
-		}
-		return getUnlocalizedName()+"."+name;
-		}
+	public String getUnlocalizedName(ItemStack i){
+        switch(i.getItemDamage()){
+        case 0:return "p_glassI";
+        case 1:return "p_glassII";
+        case 2:return "p_glassIII";
+        case 3:return "p_glassIV";
+        default:return "";
+        }
+	}
 	public int getMetadata(int meta){
 		return meta;
 	
 	}
 	
-	
-	
-	
+	@SideOnly(Side.CLIENT)
+    public Icon getIconFromDamage(int par1)
+    {
+        return storemoreMain.packedglass.getBlockTextureFromSide(par1);
+    }
+  
 }

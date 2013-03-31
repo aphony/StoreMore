@@ -1,61 +1,48 @@
 package mods.storemore.blocks.blockitems;
 
-import net.minecraft.block.Block;
-import net.minecraft.item.Item;
+import mods.storemore.common.storemoreMain;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
+import net.minecraft.util.Icon;
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 
 public class packedblocksVIItem extends ItemBlock {
 
-	public packedblocksVIItem(int id, Block block) {
-		super(id);
-		setHasSubtypes(true);		
+	public packedblocksVIItem(int par1) {
+		super(par1);
+		setHasSubtypes(true);
 	}
-	public String getItemNameIS(ItemStack is){
-		String name = "packedblocksVI";
-		switch(is.getItemDamage()){
-		case 0: {name = "sticksI";
-		break;}
-		case 1: {name = "sticksII";
-		break;}
-		case 2: {name = "sticksIII";
-		break;}
-		case 3: {name = "sticksIV";
-		break;}
-		case 4: {name = "torchesI";
-		break;}
-		case 5: {name = "torchesII";
-		break;}
-		case 6: {name = "torchesIII";
-		break;}
-		case 7: {name = "torchesIV";
-		break;}
-		case 8: {name = "gunpowderI";
-		break;}
-		case 9: {name = "gunpowderII";
-		break;}
-		case 10: {name = "gunpowderIII";
-		break;}
-		case 11: {name = "gunpowderIV";
-		break;}
-		case 12: {name = "flintI";
-		break;}
-		case 13: {name = "flintII";
-		break;}
-		case 14: {name = "flintIII";
-		break;}
-		case 15: {name = "flintIV";
-		break;}
-		default: name = "sticksI";
-		}
-		return getUnlocalizedName()+"."+name;
-		}
+	public String getUnlocalizedName(ItemStack i){
+        switch(i.getItemDamage()){
+        case 0:return "p_sticksI";
+        case 1:return "p_sticksII";
+        case 2:return "p_sticksIII";
+        case 3:return "p_sticksIV";
+        case 4:return "p_torchesI";
+        case 5:return "p_torchesII";
+        case 6:return "p_torchesIII";
+        case 7:return "p_torchesIV";
+        case 8:return "p_gunpowderI";
+        case 9:return "p_gunpowderII";
+        case 10:return "p_gunpowderIII";
+        case 11:return "p_gunpowderIV";
+        case 12:return "p_flintI";
+        case 13:return "p_flintII";
+        case 14:return "p_flintIII";
+        case 15:return "p_flintIV";
+        default:return "";
+        }
+	}
 	public int getMetadata(int meta){
 		return meta;
 	
 	}
 	
-	
-	
-	
+	@SideOnly(Side.CLIENT)
+    public Icon getIconFromDamage(int par1)
+    {
+        return storemoreMain.packedblocksVI.getBlockTextureFromSide(par1);
+    }
+  
 }
