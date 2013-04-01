@@ -1,3 +1,5 @@
+/*
+
 package mods.storemore.blocks.blockitems;
 
 import mods.storemore.common.storemoreMain;
@@ -46,3 +48,5 @@ public class ic2blocksIItem extends ItemBlock {
     }
   
 }
+
+*/

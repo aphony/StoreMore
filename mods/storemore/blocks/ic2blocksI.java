@@ -1,3 +1,5 @@
+/*
+
 package mods.storemore.blocks;
 
 import java.util.List;
@@ -117,3 +119,5 @@ public void getSubBlocks(int i,CreativeTabs tab, List list)
 
 
 }
+
+*/

@@ -16,7 +16,7 @@ import net.minecraftforge.oredict.OreDictionary;
 public class sm_ic2handler
 {
 
-    public static void initIC2() {
+   /* public static void initIC2() {
 	}
  
     public static void compressedcoalIIRecipe()
@@ -44,6 +44,8 @@ public class sm_ic2handler
         
  
     }
+    
+    */
 }
 
 	

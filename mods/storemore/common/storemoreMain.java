@@ -10,7 +10,6 @@ import mods.storemore.sm_naming;
 import mods.storemore.sm_recipes;
 import mods.storemore.sm_tehandler;
 import mods.storemore.storemoreFuels;
-import mods.storemore.blocks.blockitems.ic2blocksIItem;
 import mods.storemore.blocks.blockitems.packedblocksIIIItem;
 import mods.storemore.blocks.blockitems.packedblocksIIItem;
 import mods.storemore.blocks.blockitems.packedblocksIItem;
@@ -80,7 +79,7 @@ public class storemoreMain
 		public static Block packedblocksVII;
 		public static Block packedblocksVIII;
 		public static Block packedblocksIX;
-		public static Block ic2blocksI;
+		//public static Block ic2blocksI;
 		
 		
 	
@@ -100,8 +99,8 @@ public class storemoreMain
 	proxy.registerRenderers();
     sm_naming.init();
     sm_recipes.initRecipes();
-    sm_modhandler.initIC2Recipes();
-    sm_ic2handler.initIC2();
+    //sm_modhandler.initIC2Recipes();
+    //sm_ic2handler.initIC2();
     sm_tehandler.initTE();
     
 	}
@@ -131,7 +130,7 @@ public class storemoreMain
 		packedblocksVII = new mods.storemore.blocks.packedblocksVII(sm_config.packedblocksVIIID).setHardness(1.0f).setResistance(50.0f).setCreativeTab(StoreMoreTab).setUnlocalizedName("packedblocksVII");
 		packedblocksVIII = new mods.storemore.blocks.packedblocksVIII(sm_config.packedblocksVIIIID).setHardness(1.0f).setResistance(50.0f).setCreativeTab(StoreMoreTab).setUnlocalizedName("packedblocksVIII");
 		packedblocksIX = new mods.storemore.blocks.packedblocksIX(sm_config.packedblocksIXID).setHardness(1.0f).setResistance(50.0f).setCreativeTab(StoreMoreTab).setUnlocalizedName("packedblocksIX");
-		ic2blocksI = new mods.storemore.blocks.ic2blocksI(sm_config.ic2blocksIID).setHardness(1.0f).setResistance(50.0f).setCreativeTab(StoreMoreTab).setUnlocalizedName("ic2blocksI");
+		//ic2blocksI = new mods.storemore.blocks.ic2blocksI(sm_config.ic2blocksIID).setHardness(1.0f).setResistance(50.0f).setCreativeTab(StoreMoreTab).setUnlocalizedName("ic2blocksI");
 		
 
 //Multiblock ItemBlocks	
@@ -154,7 +153,7 @@ Item.itemsList[sm_config.packedcharcoalIID] = new packedcharcoalIItem(sm_config.
 Item.itemsList[sm_config.packedcharcoalIIID] = new packedcharcoalIIItem(sm_config.packedcharcoalIIID-256).setUnlocalizedName("packedcharcoalII");
 Item.itemsList[sm_config.packedcharcoalIIIID] = new packedcharcoalIIIItem(sm_config.packedcharcoalIIIID-256).setUnlocalizedName("packedcharcoalIII");
 Item.itemsList[sm_config.packedcharcoalIVID] = new packedcharcoalIVItem(sm_config.packedcharcoalIVID-256).setUnlocalizedName("packedcharcoalIV");
-Item.itemsList[sm_config.ic2blocksIID] = new ic2blocksIItem(sm_config.ic2blocksIID-256).setUnlocalizedName("ic2blocksI");
+//Item.itemsList[sm_config.ic2blocksIID] = new ic2blocksIItem(sm_config.ic2blocksIID-256).setUnlocalizedName("ic2blocksI");
 	}
 	
 {
