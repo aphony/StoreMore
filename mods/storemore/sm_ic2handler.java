@@ -22,7 +22,7 @@ public class sm_ic2handler
     
     public static void compressedcoalIIRecipe()
     {
-        ItemStack tOutput = new ItemStack(Item.diamond, 1, 0);
+        ItemStack tOutput = new ItemStack(Item.diamond);
         ArrayList<ItemStack> tList = OreDictionary.getOres("packedcoalII");
         for (int i = 0; i < tList.size(); i++) {
             ItemStack tStack = tList.get(i);
@@ -34,8 +34,8 @@ public class sm_ic2handler
         
     public static void compressedcoalIIIRecipe()
         {
-        ItemStack tOutput = new ItemStack(Item.diamond, 1, 0);
-        ArrayList<ItemStack> tList = OreDictionary.getOres("packedcoalII");
+        ItemStack tOutput = new ItemStack(Item.diamond);
+        ArrayList<ItemStack> tList = OreDictionary.getOres("packedcoalIII");
         for (int i = 0; i < tList.size(); i++) {
             ItemStack tStack = tList.get(i);
             tStack = tStack.copy();
