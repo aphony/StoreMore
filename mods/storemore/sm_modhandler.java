@@ -41,13 +41,13 @@ public class sm_modhandler
          
         }
     }
- 
+
     	public static void initIC2Recipes()
     	{
     		if(Loader.isModLoaded("IC2") == true && sm_config.IC2Enabled == true)
     		{
 
-    		GameRegistry.addRecipe(new ItemStack(storemoreMain.ic2blocksI,1,0), "XXX", "XXX", "XXX", Character.valueOf('X'), (Items.getItem2("copperBlock",1,0)));
+    		GameRegistry.addRecipe(new ItemStack(storemoreMain.ic2blocksI,1,0), "XXX", "XXX", "XXX", Character.valueOf('X'), (Items.getItem2("copperOreBlock",1,0)));
     		GameRegistry.addRecipe(new ItemStack(storemoreMain.ic2blocksI,1,1), "XXX", "XXX", "XXX", Character.valueOf('X'), new ItemStack(storemoreMain.ic2blocksI,1,0));
     		GameRegistry.addRecipe(new ItemStack(storemoreMain.ic2blocksI,1,2), "XXX", "XXX", "XXX", Character.valueOf('X'), new ItemStack(storemoreMain.ic2blocksI,1,1));
     		GameRegistry.addRecipe(new ItemStack(storemoreMain.ic2blocksI,1,3), "XXX", "XXX", "XXX", Character.valueOf('X'), new ItemStack(storemoreMain.ic2blocksI,1,2));
@@ -80,8 +80,10 @@ public class sm_modhandler
     		GameRegistry.addShapelessRecipe(new ItemStack(storemoreMain.ic2blocksI,9,12), new ItemStack(storemoreMain.ic2blocksI,1,13));
     		GameRegistry.addShapelessRecipe(new ItemStack(storemoreMain.ic2blocksI,9,13), new ItemStack(storemoreMain.ic2blocksI,1,14));
     		GameRegistry.addShapelessRecipe(new ItemStack(storemoreMain.ic2blocksI,9,14), new ItemStack(storemoreMain.ic2blocksI,1,15));
-    		}
     		
+    		
+    		}
+   		
     	
   
         /*
@@ -96,4 +98,5 @@ public class sm_modhandler
         }
         */
     }
-} 
+}
+ 

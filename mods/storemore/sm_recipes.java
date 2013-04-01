@@ -319,23 +319,6 @@ public class sm_recipes extends storemoreMain{
 		GameRegistry.addShapelessRecipe(new ItemStack(storemoreMain.packedblocksIX,9,12), new ItemStack(storemoreMain.packedblocksIX,1,13));
 		GameRegistry.addShapelessRecipe(new ItemStack(storemoreMain.packedblocksIX,9,13), new ItemStack(storemoreMain.packedblocksIX,1,14));
 		GameRegistry.addShapelessRecipe(new ItemStack(storemoreMain.packedblocksIX,9,14), new ItemStack(storemoreMain.packedblocksIX,1,15));
-		GameRegistry.addShapelessRecipe((Items.getItem("copperBlock,9,0")), new ItemStack(storemoreMain.ic2blocksI,1,0));
-		GameRegistry.addShapelessRecipe(new ItemStack(storemoreMain.ic2blocksI,9,0), new ItemStack(storemoreMain.ic2blocksI,1,1));
-		GameRegistry.addShapelessRecipe(new ItemStack(storemoreMain.ic2blocksI,9,1), new ItemStack(storemoreMain.ic2blocksI,1,2));
-		GameRegistry.addShapelessRecipe(new ItemStack(storemoreMain.ic2blocksI,9,2), new ItemStack(storemoreMain.ic2blocksI,1,3));
-		GameRegistry.addShapelessRecipe((Items.getItem("tinBlock")), new ItemStack(storemoreMain.ic2blocksI,1,4));
-		GameRegistry.addShapelessRecipe(new ItemStack(storemoreMain.ic2blocksI,9,4), new ItemStack(storemoreMain.ic2blocksI,1,5));
-		GameRegistry.addShapelessRecipe(new ItemStack(storemoreMain.ic2blocksI,9,5), new ItemStack(storemoreMain.ic2blocksI,1,6));
-		GameRegistry.addShapelessRecipe(new ItemStack(storemoreMain.ic2blocksI,9,6), new ItemStack(storemoreMain.ic2blocksI,1,7));
-		GameRegistry.addShapelessRecipe((Items.getItem("uraniumBlock,9,0")), new ItemStack(storemoreMain.ic2blocksI,1,8));
-		GameRegistry.addShapelessRecipe(new ItemStack(storemoreMain.ic2blocksI,9,8), new ItemStack(storemoreMain.ic2blocksI,1,9));
-		GameRegistry.addShapelessRecipe(new ItemStack(storemoreMain.ic2blocksI,9,9), new ItemStack(storemoreMain.ic2blocksI,1,10));
-		GameRegistry.addShapelessRecipe(new ItemStack(storemoreMain.ic2blocksI,9,10), new ItemStack(storemoreMain.ic2blocksI,1,11));
-		GameRegistry.addShapelessRecipe((Items.getItem("bronzeBlock,9,0")), new ItemStack(storemoreMain.ic2blocksI,1,12));
-		GameRegistry.addShapelessRecipe(new ItemStack(storemoreMain.ic2blocksI,9,12), new ItemStack(storemoreMain.ic2blocksI,1,13));
-		GameRegistry.addShapelessRecipe(new ItemStack(storemoreMain.ic2blocksI,9,13), new ItemStack(storemoreMain.ic2blocksI,1,14));
-		GameRegistry.addShapelessRecipe(new ItemStack(storemoreMain.ic2blocksI,9,14), new ItemStack(storemoreMain.ic2blocksI,1,15));
-
 	  }
 
 }
