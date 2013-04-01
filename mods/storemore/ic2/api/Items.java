@@ -40,6 +40,24 @@ public final class Items {
 		}
 	}
 	
+	public static ItemStack getItem2(String name, int i, int j) {
+		try {
+			if (Ic2Items == null) Ic2Items = Class.forName(getPackage() + ".core.Ic2Items");
+			
+			Object ret = Ic2Items.getField(name).get(null);
+			
+			if (ret instanceof ItemStack) {
+				return (ItemStack) ret;
+			} else {
+				return null;
+			}
+		} catch (Exception e) {
+			System.out.println("IC2 API: Call getItem failed for "+name);
+			
+			return null;
+		}
+	}
+	
 	/* Possible values:
 	
 	----- blocks -----
