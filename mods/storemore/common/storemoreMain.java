@@ -100,7 +100,7 @@ public class storemoreMain
     sm_naming.init();
     sm_recipes.initRecipes();
     //sm_modhandler.initIC2Recipes();
-    //sm_ic2handler.initIC2();
+    sm_ic2handler.initIC2();
     sm_tehandler.initTE();
     
 	}

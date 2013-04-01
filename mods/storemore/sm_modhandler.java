@@ -19,7 +19,7 @@ public class sm_modhandler
         }
         */
         
-    	/*
+    	
         //IC2 API
         if(Loader.isModLoaded("IC2") == true && sm_config.IC2Enabled == true)
         {
@@ -28,7 +28,7 @@ public class sm_modhandler
             sm_ic2handler.compressedcoalIIIRecipe();
          
         }
-    */
+    
     
     }
     

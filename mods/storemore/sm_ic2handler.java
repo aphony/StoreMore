@@ -1,6 +1,7 @@
 package mods.storemore;
   
   
+import java.util.AbstractMap;
 import java.util.ArrayList;
   
 import cpw.mods.fml.common.Loader;
@@ -16,9 +17,9 @@ import net.minecraftforge.oredict.OreDictionary;
 public class sm_ic2handler
 {
 
-   /* public static void initIC2() {
+    public static void initIC2() {
 	}
- 
+    
     public static void compressedcoalIIRecipe()
     {
         ItemStack tOutput = new ItemStack(Item.diamond, 1, 0);
@@ -27,7 +28,7 @@ public class sm_ic2handler
             ItemStack tStack = tList.get(i);
             tStack = tStack.copy();
             tStack.stackSize = 1;
-            Ic2Recipes.addCompressorRecipe(tStack, tOutput);
+            Ic2Recipes.addMaceratorRecipe(tStack, tOutput);
         }
     }
         
@@ -39,13 +40,14 @@ public class sm_ic2handler
             ItemStack tStack = tList.get(i);
             tStack = tStack.copy();
             tStack.stackSize = 9;
-            Ic2Recipes.addCompressorRecipe(tStack, tOutput);
+            Ic2Recipes.addMaceratorRecipe(tStack, tOutput);
         }
         
  
     }
     
-    */
+
+    
 }
 
 	
