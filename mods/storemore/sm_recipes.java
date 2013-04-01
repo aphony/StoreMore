@@ -1,7 +1,7 @@
 package mods.storemore;
 
-import mods.ic2.api.Items;
 import mods.storemore.common.storemoreMain;
+import mods.storemore.ic2.api.Items;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
