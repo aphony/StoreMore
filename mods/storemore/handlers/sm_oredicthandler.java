@@ -1,4 +1,4 @@
-package mods.storemore;
+package mods.storemore.handlers;
   
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.oredict.OreDictionary;

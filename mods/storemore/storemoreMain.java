@@ -1,15 +1,7 @@
-package mods.storemore.common;
+package mods.storemore;
 
 import java.util.logging.Level;
 
-import mods.storemore.StoreMoreTab;
-import mods.storemore.sm_config;
-import mods.storemore.sm_ic2handler;
-import mods.storemore.sm_modhandler;
-import mods.storemore.sm_naming;
-import mods.storemore.sm_recipes;
-import mods.storemore.sm_tehandler;
-import mods.storemore.storemoreFuels;
 import mods.storemore.blocks.blockitems.packedblocksIIIItem;
 import mods.storemore.blocks.blockitems.packedblocksIIItem;
 import mods.storemore.blocks.blockitems.packedblocksIItem;
@@ -29,6 +21,11 @@ import mods.storemore.fuels.packedcoalIIIItem;
 import mods.storemore.fuels.packedcoalIIItem;
 import mods.storemore.fuels.packedcoalIItem;
 import mods.storemore.fuels.packedcoalIVItem;
+import mods.storemore.handlers.SProxy;
+import mods.storemore.handlers.StoreMoreTab;
+import mods.storemore.handlers.sm_config;
+import mods.storemore.handlers.sm_naming;
+import mods.storemore.handlers.sm_recipes;
 import net.minecraft.block.Block;
 import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.creativetab.CreativeTabs;
@@ -52,10 +49,17 @@ import cpw.mods.fml.common.registry.LanguageRegistry;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
-@Mod(modid = "StoreMore", name = "Store More Mod", version = "v1.3.2_MC1.5.1")
+@Mod(modid = storemoreMain.modId, name = storemoreMain.modName, version = storemoreMain.version)
+
 @NetworkMod(clientSideRequired = true, serverSideRequired = false)
 public class storemoreMain
+
+
 {
+	
+	public static final String modId = "StoreMore";
+	public static final String modName = "StoreMore";
+	public static final String version = "1.3.1";
 
 	@SidedProxy(clientSide = "mods.storemore.client.CProxy", serverSide = "mods.storemore.common.SProxy")
 		public static SProxy proxy;
@@ -79,7 +83,10 @@ public class storemoreMain
 		public static Block packedblocksVII;
 		public static Block packedblocksVIII;
 		public static Block packedblocksIX;
-		//public static Block ic2blocksI;
+		
+		
+		
+		public static Block ic2blocksI;
 		
 		
 	
@@ -99,7 +106,7 @@ public class storemoreMain
 	proxy.registerRenderers();
     sm_naming.init();
     sm_recipes.initRecipes();
-    //sm_modhandler.initIC2Recipes();
+    sm_modhandler.initIC2Recipes();
     sm_ic2handler.initIC2();
     sm_tehandler.initTE();
     

@@ -1,4 +1,4 @@
-package mods.storemore.common;
+package mods.storemore.handlers;
 
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.world.World;

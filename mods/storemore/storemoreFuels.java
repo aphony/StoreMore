@@ -1,6 +1,5 @@
 package mods.storemore;
 
-import mods.storemore.common.storemoreMain;
 import net.minecraft.item.ItemStack;
 import cpw.mods.fml.common.IFuelHandler;
 

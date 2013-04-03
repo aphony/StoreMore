@@ -15,7 +15,7 @@ public class sm_tehandler
                 new ItemStack(exampleMod.exampleItem, 2, 0), true);
           
         //Example Ingot Recipe
-        CraftingManagers.smelterManager.addRecipe(800, new ItemStack(exampleMod.AdamantineIngot, 1, 0),
+        CraftingManagers.smelterManager.addRecipe(800, new ItemStack(exampleMod.ExampleIngot, 1, 0),
                 new ItemStack(exampleMod.exampleItem, 8, 0), new ItemStack(exampleMod.exampleItem, 2, 0),
                 true);
                 */

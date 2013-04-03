@@ -1,7 +1,8 @@
-package mods.storemore;
+package mods.storemore.handlers;
 
-import mods.storemore.common.storemoreMain;
+import mods.storemore.storemoreMain;
 import net.minecraft.item.ItemStack;
+import cpw.mods.fml.common.Loader;
 import cpw.mods.fml.common.registry.LanguageRegistry;
 
 public class sm_naming {
@@ -160,7 +161,11 @@ public class sm_naming {
         LanguageRegistry.instance().addName(new ItemStack(storemoreMain.packedblocksIX, 1, 13), "Packed Clay II");
         LanguageRegistry.instance().addName(new ItemStack(storemoreMain.packedblocksIX, 1, 14), "Packed Clay III");
         LanguageRegistry.instance().addName(new ItemStack(storemoreMain.packedblocksIX, 1, 15), "Packed Clay IV");
-       /* LanguageRegistry.instance().addName(new ItemStack(storemoreMain.ic2blocksI, 1, 0), "Packed Copper I");
+        
+        
+        
+        if(Loader.isModLoaded("IC2") == true && sm_config.IC2Enabled == true)
+        LanguageRegistry.instance().addName(new ItemStack(storemoreMain.ic2blocksI, 1, 0), "Packed Copper I");
         LanguageRegistry.instance().addName(new ItemStack(storemoreMain.ic2blocksI, 1, 1), "Packed Copper II");
         LanguageRegistry.instance().addName(new ItemStack(storemoreMain.ic2blocksI, 1, 2), "Packed Copper III");
         LanguageRegistry.instance().addName(new ItemStack(storemoreMain.ic2blocksI, 1, 3), "Packed Copper IV");
@@ -175,7 +180,7 @@ public class sm_naming {
         LanguageRegistry.instance().addName(new ItemStack(storemoreMain.ic2blocksI, 1, 12), "Packed Bronze I");
         LanguageRegistry.instance().addName(new ItemStack(storemoreMain.ic2blocksI, 1, 13), "Packed Bronze II");
         LanguageRegistry.instance().addName(new ItemStack(storemoreMain.ic2blocksI, 1, 14), "Packed Bronze III");
-        LanguageRegistry.instance().addName(new ItemStack(storemoreMain.ic2blocksI, 1, 15), "Packed Bronze IV");*/
+        LanguageRegistry.instance().addName(new ItemStack(storemoreMain.ic2blocksI, 1, 15), "Packed Bronze IV");
 }
 		
 	}

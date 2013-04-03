@@ -1,4 +1,4 @@
-package mods.storemore;
+package mods.storemore.handlers;
 
 import java.io.File;
 

@@ -1,8 +1,6 @@
-/*
-
 package mods.storemore.blocks.blockitems;
 
-import mods.storemore.common.storemoreMain;
+import mods.storemore.storemoreMain;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Icon;
@@ -48,5 +46,3 @@ public class ic2blocksIItem extends ItemBlock {
     }
   
 }
-
-*/

@@ -1,6 +1,6 @@
-package mods.storemore;
+package mods.storemore.handlers;
 
-import mods.storemore.common.storemoreMain;
+import mods.storemore.storemoreMain;
 import mods.storemore.ic2.api.Items;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
@@ -318,9 +318,10 @@ public class sm_recipes extends storemoreMain{
 		GameRegistry.addShapelessRecipe(new ItemStack(Item.clay,9,0), new ItemStack(storemoreMain.packedblocksIX,1,12));
 		GameRegistry.addShapelessRecipe(new ItemStack(storemoreMain.packedblocksIX,9,12), new ItemStack(storemoreMain.packedblocksIX,1,13));
 		GameRegistry.addShapelessRecipe(new ItemStack(storemoreMain.packedblocksIX,9,13), new ItemStack(storemoreMain.packedblocksIX,1,14));
-		GameRegistry.addShapelessRecipe(new ItemStack(storemoreMain.packedblocksIX,9,14), new ItemStack(storemoreMain.packedblocksIX,1,15));
-	  }
-
+		GameRegistry.addShapelessRecipe(new ItemStack(storemoreMain.packedblocksIX,9,14), new ItemStack(storemoreMain.packedblocksIX,1,15));    	
+ 
+		}
+	
 }
 	
 	

@@ -7,7 +7,6 @@ import java.util.ArrayList;
 import cpw.mods.fml.common.Loader;
 import cpw.mods.fml.common.registry.GameRegistry;
   
-import mods.storemore.common.storemoreMain;
 import mods.storemore.ic2.api.Ic2Recipes;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;

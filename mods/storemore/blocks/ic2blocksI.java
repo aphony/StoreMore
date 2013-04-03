@@ -1,11 +1,11 @@
-/*
+
 
 package mods.storemore.blocks;
 
 import java.util.List;
 import java.util.Random;
 
-import mods.storemore.common.storemoreMain;
+import mods.storemore.storemoreMain;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IconRegister;
@@ -119,5 +119,3 @@ public void getSubBlocks(int i,CreativeTabs tab, List list)
 
 
 }
-
-*/
