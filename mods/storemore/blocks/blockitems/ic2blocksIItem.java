@@ -1,6 +1,6 @@
 package mods.storemore.blocks.blockitems;
 
-import mods.storemore.storemoreMain;
+import mods.storemore.sm_ic2plugin;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Icon;
@@ -42,7 +42,7 @@ public class ic2blocksIItem extends ItemBlock {
 	@SideOnly(Side.CLIENT)
     public Icon getIconFromDamage(int par1)
     {
-        return storemoreMain.ic2blocksI.getBlockTextureFromSide(par1);
+        return sm_ic2plugin.ic2blocksI.getBlockTextureFromSide(par1);
     }
   
 }

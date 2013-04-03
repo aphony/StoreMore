@@ -5,7 +5,7 @@ package mods.storemore.blocks;
 import java.util.List;
 import java.util.Random;
 
-import mods.storemore.storemoreMain;
+import mods.storemore.sm_ic2plugin;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IconRegister;
@@ -26,7 +26,7 @@ public class ic2blocksI extends Block {
 		super(id, Material.rock);
 		setHardness(3.0F);
 		setResistance(120.0F);
-		setCreativeTab(storemoreMain.StoreMoreTab);
+		setCreativeTab(sm_ic2plugin.StoreMoreTab);
 	    
 	}
 	
@@ -63,21 +63,21 @@ public Icon getBlockTextureFromSideAndMetadata(int side, int meta)
 public int idDropped(int par1, Random par2Random, int par3)
 {
     switch(par1){
-    case 1:return storemoreMain.ic2blocksI.blockID;
-    case 2:return storemoreMain.ic2blocksI.blockID;
-    case 3:return storemoreMain.ic2blocksI.blockID;
-    case 4:return storemoreMain.ic2blocksI.blockID;
-    case 5:return storemoreMain.ic2blocksI.blockID;
-    case 6:return storemoreMain.ic2blocksI.blockID;
-    case 7:return storemoreMain.ic2blocksI.blockID;
-    case 8:return storemoreMain.ic2blocksI.blockID;
-    case 9:return storemoreMain.ic2blocksI.blockID;
-    case 10:return storemoreMain.ic2blocksI.blockID;
-    case 11:return storemoreMain.ic2blocksI.blockID;
-    case 12:return storemoreMain.ic2blocksI.blockID;
-    case 13:return storemoreMain.ic2blocksI.blockID;
-    case 14:return storemoreMain.ic2blocksI.blockID;
-    case 15:return storemoreMain.ic2blocksI.blockID;
+    case 1:return sm_ic2plugin.ic2blocksI.blockID;
+    case 2:return sm_ic2plugin.ic2blocksI.blockID;
+    case 3:return sm_ic2plugin.ic2blocksI.blockID;
+    case 4:return sm_ic2plugin.ic2blocksI.blockID;
+    case 5:return sm_ic2plugin.ic2blocksI.blockID;
+    case 6:return sm_ic2plugin.ic2blocksI.blockID;
+    case 7:return sm_ic2plugin.ic2blocksI.blockID;
+    case 8:return sm_ic2plugin.ic2blocksI.blockID;
+    case 9:return sm_ic2plugin.ic2blocksI.blockID;
+    case 10:return sm_ic2plugin.ic2blocksI.blockID;
+    case 11:return sm_ic2plugin.ic2blocksI.blockID;
+    case 12:return sm_ic2plugin.ic2blocksI.blockID;
+    case 13:return sm_ic2plugin.ic2blocksI.blockID;
+    case 14:return sm_ic2plugin.ic2blocksI.blockID;
+    case 15:return sm_ic2plugin.ic2blocksI.blockID;
     default:return blockID;
     }
 }

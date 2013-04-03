@@ -15,10 +15,6 @@ public class sm_modCompatability {
 		return Loader.isModLoaded("IC2");
 	}
 
-	public static boolean isThermalExpansionLoaded() {
-		return Loader.isModLoaded("ThermalExpansion");
-	}
-
 	public static boolean IC2RecipesEnabled() {
 		boolean defaultval = isIndustrialCraftLoaded();
 		return sm_config.config.get(Configuration.CATEGORY_GENERAL, "IndustrialCraft Recipes", defaultval).getBoolean(defaultval);

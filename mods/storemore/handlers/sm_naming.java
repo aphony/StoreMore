@@ -1,5 +1,6 @@
 package mods.storemore.handlers;
 
+import mods.storemore.sm_ic2plugin;
 import mods.storemore.storemoreMain;
 import net.minecraft.item.ItemStack;
 import cpw.mods.fml.common.Loader;
@@ -166,22 +167,22 @@ public class sm_naming {
 	public static void initIC2Naming()
     {   
         if(Loader.isModLoaded("IC2") == true)
-        LanguageRegistry.instance().addName(new ItemStack(storemoreMain.ic2blocksI, 1, 0), "Packed Copper I");
-        LanguageRegistry.instance().addName(new ItemStack(storemoreMain.ic2blocksI, 1, 1), "Packed Copper II");
-        LanguageRegistry.instance().addName(new ItemStack(storemoreMain.ic2blocksI, 1, 2), "Packed Copper III");
-        LanguageRegistry.instance().addName(new ItemStack(storemoreMain.ic2blocksI, 1, 3), "Packed Copper IV");
-        LanguageRegistry.instance().addName(new ItemStack(storemoreMain.ic2blocksI, 1, 4), "Packed Tin I");
-        LanguageRegistry.instance().addName(new ItemStack(storemoreMain.ic2blocksI, 1, 5), "Packed Tin II");
-        LanguageRegistry.instance().addName(new ItemStack(storemoreMain.ic2blocksI, 1, 6), "Packed Tin III");
-        LanguageRegistry.instance().addName(new ItemStack(storemoreMain.ic2blocksI, 1, 7), "Packed Tin IV");
-        LanguageRegistry.instance().addName(new ItemStack(storemoreMain.ic2blocksI, 1, 8), "Packed Uranium I");
-        LanguageRegistry.instance().addName(new ItemStack(storemoreMain.ic2blocksI, 1, 9), "Packed Uranium II");
-        LanguageRegistry.instance().addName(new ItemStack(storemoreMain.ic2blocksI, 1, 10), "Packed Uranium III");
-        LanguageRegistry.instance().addName(new ItemStack(storemoreMain.ic2blocksI, 1, 11), "Packed Uranium IV");
-        LanguageRegistry.instance().addName(new ItemStack(storemoreMain.ic2blocksI, 1, 12), "Packed Bronze I");
-        LanguageRegistry.instance().addName(new ItemStack(storemoreMain.ic2blocksI, 1, 13), "Packed Bronze II");
-        LanguageRegistry.instance().addName(new ItemStack(storemoreMain.ic2blocksI, 1, 14), "Packed Bronze III");
-        LanguageRegistry.instance().addName(new ItemStack(storemoreMain.ic2blocksI, 1, 15), "Packed Bronze IV");
+        LanguageRegistry.instance().addName(new ItemStack(sm_ic2plugin.ic2blocksI, 1, 0), "Packed Copper I");
+        LanguageRegistry.instance().addName(new ItemStack(sm_ic2plugin.ic2blocksI, 1, 1), "Packed Copper II");
+        LanguageRegistry.instance().addName(new ItemStack(sm_ic2plugin.ic2blocksI, 1, 2), "Packed Copper III");
+        LanguageRegistry.instance().addName(new ItemStack(sm_ic2plugin.ic2blocksI, 1, 3), "Packed Copper IV");
+        LanguageRegistry.instance().addName(new ItemStack(sm_ic2plugin.ic2blocksI, 1, 4), "Packed Tin I");
+        LanguageRegistry.instance().addName(new ItemStack(sm_ic2plugin.ic2blocksI, 1, 5), "Packed Tin II");
+        LanguageRegistry.instance().addName(new ItemStack(sm_ic2plugin.ic2blocksI, 1, 6), "Packed Tin III");
+        LanguageRegistry.instance().addName(new ItemStack(sm_ic2plugin.ic2blocksI, 1, 7), "Packed Tin IV");
+        LanguageRegistry.instance().addName(new ItemStack(sm_ic2plugin.ic2blocksI, 1, 8), "Packed Uranium I");
+        LanguageRegistry.instance().addName(new ItemStack(sm_ic2plugin.ic2blocksI, 1, 9), "Packed Uranium II");
+        LanguageRegistry.instance().addName(new ItemStack(sm_ic2plugin.ic2blocksI, 1, 10), "Packed Uranium III");
+        LanguageRegistry.instance().addName(new ItemStack(sm_ic2plugin.ic2blocksI, 1, 11), "Packed Uranium IV");
+        LanguageRegistry.instance().addName(new ItemStack(sm_ic2plugin.ic2blocksI, 1, 12), "Packed Bronze I");
+        LanguageRegistry.instance().addName(new ItemStack(sm_ic2plugin.ic2blocksI, 1, 13), "Packed Bronze II");
+        LanguageRegistry.instance().addName(new ItemStack(sm_ic2plugin.ic2blocksI, 1, 14), "Packed Bronze III");
+        LanguageRegistry.instance().addName(new ItemStack(sm_ic2plugin.ic2blocksI, 1, 15), "Packed Bronze IV");
     }
 		
 }
