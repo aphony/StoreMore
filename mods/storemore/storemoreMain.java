@@ -2,31 +2,26 @@ package mods.storemore;
 
 import java.util.logging.Level;
 
-import mods.storemore.blocks.blockitems.ic2blocksIItem;
-import mods.storemore.blocks.blockitems.packedblocksIIIItem;
-import mods.storemore.blocks.blockitems.packedblocksIIItem;
-import mods.storemore.blocks.blockitems.packedblocksIItem;
-import mods.storemore.blocks.blockitems.packedblocksIVItem;
-import mods.storemore.blocks.blockitems.packedblocksIXItem;
-import mods.storemore.blocks.blockitems.packedblocksVIIIItem;
-import mods.storemore.blocks.blockitems.packedblocksVIIItem;
-import mods.storemore.blocks.blockitems.packedblocksVIItem;
-import mods.storemore.blocks.blockitems.packedblocksVItem;
-import mods.storemore.blocks.blockitems.packedglassItem;
+import mods.storemore.blockitems.packedblocksIIIItem;
+import mods.storemore.blockitems.packedblocksIIItem;
+import mods.storemore.blockitems.packedblocksIItem;
+import mods.storemore.blockitems.packedblocksIVItem;
+import mods.storemore.blockitems.packedblocksIXItem;
+import mods.storemore.blockitems.packedblocksVIIIItem;
+import mods.storemore.blockitems.packedblocksVIIItem;
+import mods.storemore.blockitems.packedblocksVIItem;
+import mods.storemore.blockitems.packedblocksVItem;
+import mods.storemore.blockitems.packedglassItem;
+import mods.storemore.blockitems.fuels.packedcharcoalIIIItem;
+import mods.storemore.blockitems.fuels.packedcharcoalIIItem;
+import mods.storemore.blockitems.fuels.packedcharcoalIItem;
+import mods.storemore.blockitems.fuels.packedcharcoalIVItem;
+import mods.storemore.blockitems.fuels.packedcoalIIIItem;
+import mods.storemore.blockitems.fuels.packedcoalIIItem;
+import mods.storemore.blockitems.fuels.packedcoalIItem;
+import mods.storemore.blockitems.fuels.packedcoalIVItem;
 import mods.storemore.client.CProxy;
-import mods.storemore.fuels.packedcharcoalIIIItem;
-import mods.storemore.fuels.packedcharcoalIIItem;
-import mods.storemore.fuels.packedcharcoalIItem;
-import mods.storemore.fuels.packedcharcoalIVItem;
-import mods.storemore.fuels.packedcoalIIIItem;
-import mods.storemore.fuels.packedcoalIIItem;
-import mods.storemore.fuels.packedcoalIItem;
-import mods.storemore.fuels.packedcoalIVItem;
-import mods.storemore.handlers.SProxy;
-import mods.storemore.handlers.StoreMoreTab;
-import mods.storemore.handlers.sm_config;
-import mods.storemore.handlers.sm_naming;
-import mods.storemore.handlers.sm_recipes;
+import mods.storemore.ic2.blockitems.ic2blocksIItem;
 import net.minecraft.block.Block;
 import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.creativetab.CreativeTabs;
@@ -62,7 +57,7 @@ public class storemoreMain
 	public static final String modName = "Store More";
 	public static final String version = "1.3.1";
 
-	@SidedProxy(clientSide = "mods.storemore.client.CProxy", serverSide = "mods.storemore.common.SProxy")
+	@SidedProxy(clientSide = "mods.storemore.client.CProxy", serverSide = "mods.storemore.SProxy")
 		public static SProxy proxy;
 	
 	//Block Registering
@@ -121,14 +116,14 @@ public class storemoreMain
 		packedblocksIV = new mods.storemore.blocks.packedblocksIV(sm_config.packedblocksIVID).setHardness(2.0f).setResistance(120.0F).setCreativeTab(StoreMoreTab).setUnlocalizedName("packedblocksIV");
 		packedblocksV = new mods.storemore.blocks.packedblocksV(sm_config.packedblocksVID).setHardness(1.0f).setResistance(50.0f).setCreativeTab(StoreMoreTab).setUnlocalizedName("packedblocksV");
 		packedglass = new mods.storemore.blocks.packedglass(sm_config.packedglassID).setHardness(1.0f).setResistance(50.0f).setCreativeTab(StoreMoreTab).setUnlocalizedName("packedglass");
-		packedcoalI = new mods.storemore.fuels.packedcoalI(sm_config.packedcoalIID).setHardness(1.0f).setResistance(50.0f).setCreativeTab(StoreMoreTab).setUnlocalizedName("packedcoalI");
-		packedcoalII = new mods.storemore.fuels.packedcoalII(sm_config.packedcoalIIID).setHardness(1.0f).setResistance(50.0f).setCreativeTab(StoreMoreTab).setUnlocalizedName("packedcoalII");
-		packedcoalIII = new mods.storemore.fuels.packedcoalIII(sm_config.packedcoalIIIID).setHardness(1.0f).setResistance(50.0f).setCreativeTab(StoreMoreTab).setUnlocalizedName("packedcoalIII");
-		packedcoalIV = new mods.storemore.fuels.packedcoalIV(sm_config.packedcoalIVID).setHardness(1.0f).setResistance(50.0f).setCreativeTab(StoreMoreTab).setUnlocalizedName("packedcoalIV");
-		packedcharcoalI = new mods.storemore.fuels.packedcharcoalI(sm_config.packedcharcoalIID).setHardness(1.0f).setResistance(50.0f).setCreativeTab(StoreMoreTab).setUnlocalizedName("packedcharcoalI");
-		packedcharcoalII = new mods.storemore.fuels.packedcharcoalII(sm_config.packedcharcoalIIID).setHardness(1.0f).setResistance(50.0f).setCreativeTab(StoreMoreTab).setUnlocalizedName("packedcharcoalII");
-		packedcharcoalIII = new mods.storemore.fuels.packedcharcoalIII(sm_config.packedcharcoalIIIID).setHardness(1.0f).setResistance(50.0f).setCreativeTab(StoreMoreTab).setUnlocalizedName("packedcharcoalIII");
-		packedcharcoalIV = new mods.storemore.fuels.packedcharcoalIV(sm_config.packedcharcoalIVID).setHardness(1.0f).setResistance(50.0f).setCreativeTab(StoreMoreTab).setUnlocalizedName("packedcharcoalIV");
+		packedcoalI = new mods.storemore.blocks.fuels.packedcoalI(sm_config.packedcoalIID).setHardness(1.0f).setResistance(50.0f).setCreativeTab(StoreMoreTab).setUnlocalizedName("packedcoalI");
+		packedcoalII = new mods.storemore.blocks.fuels.packedcoalII(sm_config.packedcoalIIID).setHardness(1.0f).setResistance(50.0f).setCreativeTab(StoreMoreTab).setUnlocalizedName("packedcoalII");
+		packedcoalIII = new mods.storemore.blocks.fuels.packedcoalIII(sm_config.packedcoalIIIID).setHardness(1.0f).setResistance(50.0f).setCreativeTab(StoreMoreTab).setUnlocalizedName("packedcoalIII");
+		packedcoalIV = new mods.storemore.blocks.fuels.packedcoalIV(sm_config.packedcoalIVID).setHardness(1.0f).setResistance(50.0f).setCreativeTab(StoreMoreTab).setUnlocalizedName("packedcoalIV");
+		packedcharcoalI = new mods.storemore.blocks.fuels.packedcharcoalI(sm_config.packedcharcoalIID).setHardness(1.0f).setResistance(50.0f).setCreativeTab(StoreMoreTab).setUnlocalizedName("packedcharcoalI");
+		packedcharcoalII = new mods.storemore.blocks.fuels.packedcharcoalII(sm_config.packedcharcoalIIID).setHardness(1.0f).setResistance(50.0f).setCreativeTab(StoreMoreTab).setUnlocalizedName("packedcharcoalII");
+		packedcharcoalIII = new mods.storemore.blocks.fuels.packedcharcoalIII(sm_config.packedcharcoalIIIID).setHardness(1.0f).setResistance(50.0f).setCreativeTab(StoreMoreTab).setUnlocalizedName("packedcharcoalIII");
+		packedcharcoalIV = new mods.storemore.blocks.fuels.packedcharcoalIV(sm_config.packedcharcoalIVID).setHardness(1.0f).setResistance(50.0f).setCreativeTab(StoreMoreTab).setUnlocalizedName("packedcharcoalIV");
 		packedblocksVI = new mods.storemore.blocks.packedblocksVI(sm_config.packedblocksVIID).setHardness(1.0f).setResistance(50.0f).setCreativeTab(StoreMoreTab).setUnlocalizedName("packedblocksVI");
 		packedblocksVII = new mods.storemore.blocks.packedblocksVII(sm_config.packedblocksVIIID).setHardness(1.0f).setResistance(50.0f).setCreativeTab(StoreMoreTab).setUnlocalizedName("packedblocksVII");
 		packedblocksVIII = new mods.storemore.blocks.packedblocksVIII(sm_config.packedblocksVIIIID).setHardness(1.0f).setResistance(50.0f).setCreativeTab(StoreMoreTab).setUnlocalizedName("packedblocksVIII");
