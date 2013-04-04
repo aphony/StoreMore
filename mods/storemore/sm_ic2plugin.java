@@ -40,13 +40,9 @@ public class sm_ic2plugin
 		public static SProxy proxy;
 
 	private static ItemStack copperBlock;
-    private static ItemStack copperBlock2;
     private static ItemStack tinBlock;
-    private static ItemStack tinBlock2;
     private static ItemStack uraniumBlock;
-    private static ItemStack uraniumBlock2;
     private static ItemStack bronzeBlock;
-    private static ItemStack bronzeBlock2;
     
 	public static Block ic2blocksI;
    
@@ -92,10 +88,10 @@ public class sm_ic2plugin
     		if(Loader.isModLoaded("IC2"))
     		{
     			
-    			copperBlock = sm_modCompatability.getIC2Item("copperBlock");
-    			tinBlock = sm_modCompatability.getIC2Item("tinBlock");
-    			uraniumBlock = sm_modCompatability.getIC2Item("uraniumBlock");
-    			bronzeBlock = sm_modCompatability.getIC2Item("bronzeBlock");
+    			copperBlock = Items.getItem("copperBlock");
+    			tinBlock = Items.getItem("tinBlock");
+    			uraniumBlock = Items.getItem("uraniumBlock");
+    			bronzeBlock = Items.getItem("bronzeBlock");
     	
 
     		GameRegistry.addRecipe(new ItemStack(sm_ic2plugin.ic2blocksI,1,0), "XXX", "XXX", "XXX", Character.valueOf('X'), copperBlock);
@@ -115,11 +111,11 @@ public class sm_ic2plugin
     		GameRegistry.addRecipe(new ItemStack(sm_ic2plugin.ic2blocksI,1,14), "XXX", "XXX", "XXX", Character.valueOf('X'), new ItemStack(sm_ic2plugin.ic2blocksI,1,13));
     		GameRegistry.addRecipe(new ItemStack(sm_ic2plugin.ic2blocksI,1,15), "XXX", "XXX", "XXX", Character.valueOf('X'), new ItemStack(sm_ic2plugin.ic2blocksI,1,14));
     		
-    		GameRegistry.addShapelessRecipe(copperBlock,9,0, new ItemStack(sm_ic2plugin.ic2blocksI,1,0));
+    		GameRegistry.addShapelessRecipe(sm_ic2plugin.copperBlock,9,0, new ItemStack(sm_ic2plugin.ic2blocksI,1,0));
     		GameRegistry.addShapelessRecipe(new ItemStack(sm_ic2plugin.ic2blocksI,9,0), new ItemStack(sm_ic2plugin.ic2blocksI,1,1));
     		GameRegistry.addShapelessRecipe(new ItemStack(sm_ic2plugin.ic2blocksI,9,1), new ItemStack(sm_ic2plugin.ic2blocksI,1,2));
     		GameRegistry.addShapelessRecipe(new ItemStack(sm_ic2plugin.ic2blocksI,9,2), new ItemStack(sm_ic2plugin.ic2blocksI,1,3));
-    		GameRegistry.addShapelessRecipe(tinBlock,9,0, new ItemStack(sm_ic2plugin.ic2blocksI,1,4));
+    		GameRegistry.addShapelessRecipe(sm_ic2plugin.tinBlock,9,0, new ItemStack(sm_ic2plugin.ic2blocksI,1,4));
     		GameRegistry.addShapelessRecipe(new ItemStack(sm_ic2plugin.ic2blocksI,9,4), new ItemStack(sm_ic2plugin.ic2blocksI,1,5));
     		GameRegistry.addShapelessRecipe(new ItemStack(sm_ic2plugin.ic2blocksI,9,5), new ItemStack(sm_ic2plugin.ic2blocksI,1,6));
     		GameRegistry.addShapelessRecipe(new ItemStack(sm_ic2plugin.ic2blocksI,9,6), new ItemStack(sm_ic2plugin.ic2blocksI,1,7));
