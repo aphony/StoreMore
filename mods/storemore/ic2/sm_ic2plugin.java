@@ -1,5 +1,6 @@
 package mods.storemore.ic2;
   
+import buildcraft.core.Version;
 import mods.storemore.SProxy;
 import mods.storemore.StoreMoreTab;
 import mods.storemore.sm_config;
@@ -23,15 +24,18 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.network.NetworkMod;
 import cpw.mods.fml.common.registry.GameRegistry;
-  
-@Mod(modid = sm_ic2plugin.modId, name = sm_ic2plugin.modName, version = sm_ic2plugin.version, dependencies = "required-after:StoreMore;after:IC2")
+
+
+
+@Mod(name = "StoreMoreIC2", version = storemoreMain.version, useMetadata = false, modid = "StoreMore|IC2", dependencies = sm_ic2plugin.dependency)
 
 @NetworkMod(clientSideRequired = true, serverSideRequired = false)
 public class sm_ic2plugin
 
 
 {
-	
+
+	public static final String dependency = "required-after:StoreMore;after:IC2";
 	public static final String modId = "StoreMoreIC2";
 	public static final String modName = "Store More IC2 Plugin";
 	public static final String version = "0.1";
