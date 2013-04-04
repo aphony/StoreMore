@@ -3,7 +3,6 @@ package mods.storemore.ic2;
 import mods.storemore.SProxy;
 import mods.storemore.StoreMoreTab;
 import mods.storemore.sm_config;
-import mods.storemore.sm_modCompatability;
 import mods.storemore.sm_naming;
 import mods.storemore.sm_recipes;
 import mods.storemore.ic2.api.Items;
