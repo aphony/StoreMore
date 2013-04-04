@@ -5,8 +5,6 @@ import java.io.InputStream;
 import java.util.LinkedList;
 import java.util.Properties;
 
-import buildcraft.core.proxy.CoreProxy;
-
 /**
  * Simple mod localization class.
  * 
@@ -115,6 +113,6 @@ public class sm_localization {
 	}
 
 	private static String getCurrentLanguage() {
-		return CoreProxy.proxy.getCurrentLanguage();
+		return SProxy.proxy.getCurrentLanguage();
 	}
 }

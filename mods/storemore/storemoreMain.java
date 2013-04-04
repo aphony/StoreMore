@@ -1,5 +1,6 @@
 package mods.storemore;
 
+import buildcraft.builders.network.PacketHandlerBuilders;
 import mods.storemore.blockitems.packedblocksIIIItem;
 import mods.storemore.blockitems.packedblocksIIItem;
 import mods.storemore.blockitems.packedblocksIItem;
@@ -47,7 +48,7 @@ import cpw.mods.fml.relauncher.SideOnly;
 
 @Mod(modid = "StoreMore", name = "StoreMore", version = "1.3.1_MC1.5.1", useMetadata = false)
 
-@NetworkMod(channels = "StoreMore", clientSideRequired = true, serverSideRequired = false)
+@NetworkMod(channels = "StoreMore", packetHandler = sm_packetHandler.class, clientSideRequired = true, serverSideRequired = false)
 public class storemoreMain {
 
 public static final String MOD = "StoreMore";

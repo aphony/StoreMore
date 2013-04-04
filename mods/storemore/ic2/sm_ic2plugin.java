@@ -2,6 +2,7 @@ package mods.storemore.ic2;
 
 import mods.storemore.SProxy;
 import mods.storemore.sm_config;
+import mods.storemore.sm_packetHandler;
 import mods.storemore.storemoreMain;
 import mods.storemore.ic2.blockitems.ic2blocksIItem;
 import net.minecraft.block.Block;
@@ -21,7 +22,7 @@ import cpw.mods.fml.common.network.NetworkMod;
 
 @Mod(modid = "StoreMore|IC2", name = "StoreMore IC2", version = "0.1", useMetadata = true)
 
-@NetworkMod(channels = "StoreMore", clientSideRequired = true, serverSideRequired = false)
+@NetworkMod(channels = "StoreMore", packetHandler = sm_packetHandler.class, clientSideRequired = true, serverSideRequired = false)
 public class sm_ic2plugin
 
 
@@ -42,18 +43,6 @@ public class sm_ic2plugin
 }
 	
 	public static Block ic2blocksI;
-   
-
-	@PreInit()
-    public void preInit(FMLPreInitializationEvent event) {
-
-	      sm_config.init();
-          
-	        sm_config.initialize(event.getSuggestedConfigurationFile());
-	          
-	        sm_config.save(); 
-		
-	}
 	
 	@Instance("StoreMoreIC2")
 	public static sm_ic2plugin instance;
