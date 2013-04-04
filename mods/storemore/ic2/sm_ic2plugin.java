@@ -1,6 +1,5 @@
 package mods.storemore.ic2;
 
-import buildcraft.core.DefaultProps;
 import mods.storemore.SProxy;
 import mods.storemore.StoreMoreTab;
 import mods.storemore.sm_config;
