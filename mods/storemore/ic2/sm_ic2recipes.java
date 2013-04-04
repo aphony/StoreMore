@@ -21,10 +21,10 @@ public class sm_ic2recipes {
 		if(Loader.isModLoaded("IC2") && sm_ic2plugin.IC2RecipesEnabled())
 		{
 			
-			copperBlock = Items.getItem("copperBlock");
-			tinBlock = Items.getItem("tinBlock");
-			uraniumBlock = Items.getItem("uraniumBlock");
-			bronzeBlock = Items.getItem("bronzeBlock");
+			copperBlock = Items.getItem("bronzeBlock").copy();
+			tinBlock = Items.getItem("tinBlock").copy();
+			uraniumBlock = Items.getItem("uraniumBlock").copy();
+			bronzeBlock = Items.getItem("bronzeBlock").copy();
 	
 
 		GameRegistry.addRecipe(new ItemStack(sm_ic2plugin.ic2blocksI,1,0), "XXX", "XXX", "XXX", Character.valueOf('X'), copperBlock);
