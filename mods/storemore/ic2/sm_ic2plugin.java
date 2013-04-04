@@ -1,35 +1,27 @@
 package mods.storemore.ic2;
 
 import mods.storemore.SProxy;
-import mods.storemore.StoreMoreTab;
 import mods.storemore.sm_config;
-import mods.storemore.sm_naming;
-import mods.storemore.sm_recipes;
 import mods.storemore.storemoreMain;
-import mods.storemore.ic2.api.Items;
 import mods.storemore.ic2.blockitems.ic2blocksIItem;
 import net.minecraft.block.Block;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.Configuration;
-import net.minecraftforge.oredict.OreDictionary;
 import cpw.mods.fml.common.Loader;
 import cpw.mods.fml.common.Mod;
-import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.Mod.Init;
 import cpw.mods.fml.common.Mod.Instance;
 import cpw.mods.fml.common.Mod.PreInit;
+import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.network.NetworkMod;
-import cpw.mods.fml.common.registry.GameRegistry;
 
 
 
-@Mod(modid = "StoreMore|IC2", name = "StoreMore IC2", version = "0.1", useMetadata = false,  dependencies = storemoreMain.sm_dependency)
+@Mod(modid = "StoreMore|IC2", name = "StoreMore IC2", version = "0.1", useMetadata = true)
 
-@NetworkMod(channels = storemoreMain.sm_netchannelname, clientSideRequired = true, serverSideRequired = false)
+@NetworkMod(channels = "StoreMore", clientSideRequired = true, serverSideRequired = false)
 public class sm_ic2plugin
 
 
