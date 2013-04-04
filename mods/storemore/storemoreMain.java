@@ -45,7 +45,7 @@ import cpw.mods.fml.common.registry.LanguageRegistry;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
-@Mod(modid = "StoreMore", name = "StoreMore", version = "1.3.1_MC1.5.1", useMetadata = false)
+@Mod(modid = "StoreMore", name = "StoreMore", version = "1.3.1_MC1.5.1", useMetadata = false, dependencies = "before:StoreMore|IC2")
 
 @NetworkMod(channels = "StoreMore", packetHandler = sm_packetHandler.class, clientSideRequired = true, serverSideRequired = false)
 public class storemoreMain {

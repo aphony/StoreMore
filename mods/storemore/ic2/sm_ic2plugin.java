@@ -20,7 +20,7 @@ import cpw.mods.fml.common.network.NetworkMod;
 
 
 
-@Mod(modid = "StoreMore|IC2", name = "StoreMore IC2", version = "0.1", useMetadata = true)
+@Mod(modid = "StoreMore|IC2", name = "StoreMore IC2", version = "0.1", useMetadata = true, dependencies = "after:StoreMore")
 
 @NetworkMod(channels = "StoreMore", packetHandler = sm_packetHandler.class, clientSideRequired = true, serverSideRequired = false)
 public class sm_ic2plugin
