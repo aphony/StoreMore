@@ -44,7 +44,7 @@ public class sm_ic2recipes {
 		GameRegistry.addRecipe(new ItemStack(sm_ic2plugin.ic2blocksI,1,14), "XXX", "XXX", "XXX", Character.valueOf('X'), new ItemStack(sm_ic2plugin.ic2blocksI,1,13));
 		GameRegistry.addRecipe(new ItemStack(sm_ic2plugin.ic2blocksI,1,15), "XXX", "XXX", "XXX", Character.valueOf('X'), new ItemStack(sm_ic2plugin.ic2blocksI,1,14));
 		
-		GameRegistry.addShapelessRecipe(copperBlock, new ItemStack(sm_ic2plugin.ic2blocksI,1,0));
+		GameRegistry.addShapelessRecipe(copperBlock,9, new ItemStack(sm_ic2plugin.ic2blocksI,1,0));
 		GameRegistry.addShapelessRecipe(new ItemStack(sm_ic2plugin.ic2blocksI,9,0), new ItemStack(sm_ic2plugin.ic2blocksI,1,1));
 		GameRegistry.addShapelessRecipe(new ItemStack(sm_ic2plugin.ic2blocksI,9,1), new ItemStack(sm_ic2plugin.ic2blocksI,1,2));
 		GameRegistry.addShapelessRecipe(new ItemStack(sm_ic2plugin.ic2blocksI,9,2), new ItemStack(sm_ic2plugin.ic2blocksI,1,3));
