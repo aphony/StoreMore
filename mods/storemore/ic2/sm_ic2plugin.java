@@ -1,5 +1,6 @@
 package mods.storemore.ic2;
 
+import buildcraft.core.DefaultProps;
 import mods.storemore.SProxy;
 import mods.storemore.StoreMoreTab;
 import mods.storemore.sm_config;
@@ -27,9 +28,9 @@ import cpw.mods.fml.common.registry.GameRegistry;
 
 
 
-@Mod(modid = "StoreMore|IC2", name = "StoreMore IC2", version = "0.1", useMetadata = true,  dependencies = "required-after:StoreMore;after:IC2")
+@Mod(modid = "StoreMore|IC2", name = "StoreMore IC2", version = "0.1", useMetadata = false,  dependencies = storemoreMain.sm_dependency)
 
-@NetworkMod(clientSideRequired = true, serverSideRequired = false)
+@NetworkMod(channels = storemoreMain.sm_netchannelname, clientSideRequired = true, serverSideRequired = false)
 public class sm_ic2plugin
 
 

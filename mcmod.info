@@ -30,7 +30,7 @@
   "parent": "StoreMore",
   "screenshots": [],
   "dependencies": [
-     "mod_MinecraftForge"
+     "StoreMore"
   ]
 }
 ]

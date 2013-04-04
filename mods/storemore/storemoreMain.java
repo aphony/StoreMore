@@ -33,6 +33,7 @@ import net.minecraftforge.common.MinecraftForge;
 import cpw.mods.fml.common.FMLLog;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.Init;
+import cpw.mods.fml.common.Mod.Instance;
 import cpw.mods.fml.common.Mod.PostInit;
 import cpw.mods.fml.common.Mod.PreInit;
 import cpw.mods.fml.common.SidedProxy;
@@ -45,14 +46,19 @@ import cpw.mods.fml.common.registry.LanguageRegistry;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
-@Mod(modid = "StoreMore", name = "StoreMore", version = "1.3.1_MC1.5.1", useMetadata = true)
+@Mod(modid = "StoreMore", name = "StoreMore", version = "1.3.1_MC1.5.1", useMetadata = false)
 
-@NetworkMod(clientSideRequired = true, serverSideRequired = false)
+@NetworkMod(channels = storemoreMain.sm_netchannelname, clientSideRequired = true, serverSideRequired = false)
 public class storemoreMain
+
 
 
 {
 
+	public static final String sm_dependency = "required-after:StoreMore";
+	public static final String sm_dependencyic2 = "required-after:IC2";
+	public static final String sm_netchannelname = "StoreMore";
+	
 	@SidedProxy(clientSide = "mods.storemore.client.CProxy", serverSide = "mods.storemore.SProxy")
 		public static SProxy proxy;
 	
@@ -80,7 +86,8 @@ public class storemoreMain
 		
 		
 		
-	
+		@Instance("StoreMore")
+		public static storemoreMain instance;
 	
 	@PreInit()
     public void preInit(FMLPreInitializationEvent event) {
