@@ -5,6 +5,7 @@ import mods.storemore.StoreMoreTab;
 import mods.storemore.sm_config;
 import mods.storemore.sm_naming;
 import mods.storemore.sm_recipes;
+import mods.storemore.storemoreMain;
 import mods.storemore.ic2.api.Items;
 import mods.storemore.ic2.blockitems.ic2blocksIItem;
 import net.minecraft.block.Block;
@@ -68,11 +69,10 @@ public class sm_ic2plugin
     sm_ic2naming.initIC2Naming();
 	}
     
-	public static CreativeTabs StoreMoreTab = new StoreMoreTab(CreativeTabs.getNextID(), "Store More");
 	
 	{
 
-	ic2blocksI = new mods.storemore.ic2.blocks.ic2blocksI(sm_config.ic2blocksIID).setHardness(1.0f).setResistance(50.0f).setCreativeTab(StoreMoreTab).setUnlocalizedName("ic2blocksI");
+	ic2blocksI = new mods.storemore.ic2.blocks.ic2blocksI(sm_config.ic2blocksIID).setHardness(1.0f).setResistance(50.0f).setCreativeTab(storemoreMain.StoreMoreTab).setUnlocalizedName("ic2blocksI");
 	
 	}
 	

@@ -10,7 +10,7 @@ public class sm_ic2naming {
 
 	public static void initIC2Naming()
     {   
-        if(Loader.isModLoaded("IC2") == true)
+    
         LanguageRegistry.instance().addName(new ItemStack(sm_ic2plugin.ic2blocksI, 1, 0), "Packed Copper I");
         LanguageRegistry.instance().addName(new ItemStack(sm_ic2plugin.ic2blocksI, 1, 1), "Packed Copper II");
         LanguageRegistry.instance().addName(new ItemStack(sm_ic2plugin.ic2blocksI, 1, 2), "Packed Copper III");
