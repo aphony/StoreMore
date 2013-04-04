@@ -1,5 +1,6 @@
 package mods.storemore.ic2;
 
+import buildcraft.BuildCraftBuilders;
 import mods.storemore.SProxy;
 import mods.storemore.StoreMoreTab;
 import mods.storemore.sm_config;
@@ -18,6 +19,7 @@ import cpw.mods.fml.common.Loader;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.Mod.Init;
+import cpw.mods.fml.common.Mod.Instance;
 import cpw.mods.fml.common.Mod.PreInit;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
@@ -65,6 +67,10 @@ public class sm_ic2plugin
 	        sm_config.save(); 
 		
 	}
+	
+	@Instance("StoreMoreIC2")
+	public static sm_ic2plugin instance;
+	
 	@Init
 	public void load(FMLInitializationEvent event){
 	proxy.registerRenderers();

@@ -12,5 +12,5 @@
     "screenshots": [ ],
     "parent": "",
     "requiredMods": [ "Forge" ],
-    "dependencies": [ "IC2"]
+    "dependencies": [ ""]
 }]
