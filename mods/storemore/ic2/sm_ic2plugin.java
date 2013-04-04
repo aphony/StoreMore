@@ -27,19 +27,13 @@ import cpw.mods.fml.common.registry.GameRegistry;
 
 
 
-@Mod(name = "StoreMoreIC2", version = storemoreMain.version, useMetadata = false, modid = "StoreMore|IC2", dependencies = sm_ic2plugin.dependency)
+@Mod(modid = "StoreMore|IC2", name = "StoreMore IC2", version = "0.1", useMetadata = true,  dependencies = "required-after:StoreMore;after:IC2")
 
 @NetworkMod(clientSideRequired = true, serverSideRequired = false)
 public class sm_ic2plugin
 
 
 {
-
-	public static final String dependency = "required-after:StoreMore;after:IC2";
-	public static final String modId = "StoreMoreIC2";
-	public static final String modName = "Store More IC2 Plugin";
-	public static final String version = "0.1";
-	public static final String parent = "StoreMore";
 
 	@SidedProxy(clientSide = "mods.storemore.client.CProxy", serverSide = "mods.storemore.common.SProxy")
 		public static SProxy proxy;

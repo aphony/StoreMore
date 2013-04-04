@@ -45,17 +45,13 @@ import cpw.mods.fml.common.registry.LanguageRegistry;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
-@Mod(modid = storemoreMain.modId, name = storemoreMain.modName, version = storemoreMain.version)
+@Mod(modid = "StoreMore", name = "StoreMore", version = "1.3.1_MC1.5.1", useMetadata = true)
 
 @NetworkMod(clientSideRequired = true, serverSideRequired = false)
 public class storemoreMain
 
 
 {
-	
-	public static final String modId = "StoreMore";
-	public static final String modName = "Store More";
-	public static final String version = "1.3.1";
 
 	@SidedProxy(clientSide = "mods.storemore.client.CProxy", serverSide = "mods.storemore.SProxy")
 		public static SProxy proxy;
