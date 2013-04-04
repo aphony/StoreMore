@@ -26,6 +26,8 @@ public class sm_ic2plugin
 
 
 {
+	
+	
 
 	@SidedProxy(clientSide = "mods.storemore.client.CProxy", serverSide = "mods.storemore.common.SProxy")
 		public static SProxy proxy;
