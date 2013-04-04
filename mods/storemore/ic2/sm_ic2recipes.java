@@ -2,6 +2,7 @@ package mods.storemore.ic2;
 
 import mods.storemore.ic2.api.Items;
 import net.minecraft.item.ItemStack;
+import net.minecraftforge.oredict.ShapelessOreRecipe;
 import cpw.mods.fml.common.Loader;
 import cpw.mods.fml.common.registry.GameRegistry;
 
@@ -12,6 +13,11 @@ public class sm_ic2recipes {
 	public static ItemStack uraniumBlock;
 	public static ItemStack bronzeBlock;
 
+	public static ItemStack copyAndResize(ItemStack stack, int number) {
+		ItemStack copy = stack.copy();
+		copy.stackSize = number;
+		return copy;
+	}
 	
     public static void initIC2Recipes()
 	{
@@ -21,7 +27,7 @@ public class sm_ic2recipes {
 		if(Loader.isModLoaded("IC2") && sm_ic2plugin.IC2RecipesEnabled())
 		{
 			
-			copperBlock = Items.getItem("bronzeBlock").copy();
+			copperBlock = Items.getItem("copperBlock").copy();
 			tinBlock = Items.getItem("tinBlock").copy();
 			uraniumBlock = Items.getItem("uraniumBlock").copy();
 			bronzeBlock = Items.getItem("bronzeBlock").copy();
@@ -44,19 +50,19 @@ public class sm_ic2recipes {
 		GameRegistry.addRecipe(new ItemStack(sm_ic2plugin.ic2blocksI,1,14), "XXX", "XXX", "XXX", Character.valueOf('X'), new ItemStack(sm_ic2plugin.ic2blocksI,1,13));
 		GameRegistry.addRecipe(new ItemStack(sm_ic2plugin.ic2blocksI,1,15), "XXX", "XXX", "XXX", Character.valueOf('X'), new ItemStack(sm_ic2plugin.ic2blocksI,1,14));
 		
-		GameRegistry.addShapelessRecipe(copperBlock,9, new ItemStack(sm_ic2plugin.ic2blocksI,1,0));
+		GameRegistry.addRecipe(new ShapelessOreRecipe(copyAndResize(copperBlock,9), new ItemStack(sm_ic2plugin.ic2blocksI,1,0)));
 		GameRegistry.addShapelessRecipe(new ItemStack(sm_ic2plugin.ic2blocksI,9,0), new ItemStack(sm_ic2plugin.ic2blocksI,1,1));
 		GameRegistry.addShapelessRecipe(new ItemStack(sm_ic2plugin.ic2blocksI,9,1), new ItemStack(sm_ic2plugin.ic2blocksI,1,2));
 		GameRegistry.addShapelessRecipe(new ItemStack(sm_ic2plugin.ic2blocksI,9,2), new ItemStack(sm_ic2plugin.ic2blocksI,1,3));
-		GameRegistry.addShapelessRecipe(tinBlock, new ItemStack(sm_ic2plugin.ic2blocksI,1,4));
+		GameRegistry.addRecipe(new ShapelessOreRecipe(copyAndResize(tinBlock,9), new ItemStack(sm_ic2plugin.ic2blocksI,1,4)));
 		GameRegistry.addShapelessRecipe(new ItemStack(sm_ic2plugin.ic2blocksI,9,4), new ItemStack(sm_ic2plugin.ic2blocksI,1,5));
 		GameRegistry.addShapelessRecipe(new ItemStack(sm_ic2plugin.ic2blocksI,9,5), new ItemStack(sm_ic2plugin.ic2blocksI,1,6));
 		GameRegistry.addShapelessRecipe(new ItemStack(sm_ic2plugin.ic2blocksI,9,6), new ItemStack(sm_ic2plugin.ic2blocksI,1,7));
-		GameRegistry.addShapelessRecipe(uraniumBlock, new ItemStack(sm_ic2plugin.ic2blocksI,1,8));
+		GameRegistry.addRecipe(new ShapelessOreRecipe(copyAndResize(uraniumBlock,9), new ItemStack(sm_ic2plugin.ic2blocksI,1,8)));
 		GameRegistry.addShapelessRecipe(new ItemStack(sm_ic2plugin.ic2blocksI,9,8), new ItemStack(sm_ic2plugin.ic2blocksI,1,9));
 		GameRegistry.addShapelessRecipe(new ItemStack(sm_ic2plugin.ic2blocksI,9,9), new ItemStack(sm_ic2plugin.ic2blocksI,1,10));
 		GameRegistry.addShapelessRecipe(new ItemStack(sm_ic2plugin.ic2blocksI,9,10), new ItemStack(sm_ic2plugin.ic2blocksI,1,11));
-		GameRegistry.addShapelessRecipe(bronzeBlock, new ItemStack(sm_ic2plugin.ic2blocksI,1,12));
+		GameRegistry.addRecipe(new ShapelessOreRecipe(copyAndResize(bronzeBlock,9), new ItemStack(sm_ic2plugin.ic2blocksI,1,12)));
 		GameRegistry.addShapelessRecipe(new ItemStack(sm_ic2plugin.ic2blocksI,9,12), new ItemStack(sm_ic2plugin.ic2blocksI,1,13));
 		GameRegistry.addShapelessRecipe(new ItemStack(sm_ic2plugin.ic2blocksI,9,13), new ItemStack(sm_ic2plugin.ic2blocksI,1,14));
 		GameRegistry.addShapelessRecipe(new ItemStack(sm_ic2plugin.ic2blocksI,9,14), new ItemStack(sm_ic2plugin.ic2blocksI,1,15));
