@@ -13,6 +13,7 @@ import mods.storemore.blockitems.packedfoodIII_Item;
 import mods.storemore.blockitems.packedfoodII_Item;
 import mods.storemore.blockitems.packedfoodIV_Item;
 import mods.storemore.blockitems.packedfoodI_Item;
+import mods.storemore.blockitems.packedfoodV_Item;
 import mods.storemore.blockitems.packedglassItem;
 import mods.storemore.blockitems.fuels.packedcharcoalIIIItem;
 import mods.storemore.blockitems.fuels.packedcharcoalIIItem;
@@ -49,7 +50,7 @@ import cpw.mods.fml.common.registry.LanguageRegistry;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
-@Mod(modid = "StoreMore", name = "StoreMore", version = "1.3.1_MC1.5.1", useMetadata = false, dependencies = "before:StoreMore|IC2")
+@Mod(modid = "StoreMore", name = "StoreMore", version = "1.3.2_MC1.5.1", useMetadata = false, dependencies = "before:StoreMore|IC2")
 
 @NetworkMod(channels = "StoreMore", packetHandler = sm_packetHandler.class, clientSideRequired = true, serverSideRequired = false)
 public class storemoreMain {
@@ -169,7 +170,7 @@ Item.itemsList[sm_config.packedfoodIID] = new packedfoodI_Item(sm_config.packedf
 Item.itemsList[sm_config.packedfoodIIID] = new packedfoodII_Item(sm_config.packedfoodIIID-256).setUnlocalizedName("packedfoodII");
 Item.itemsList[sm_config.packedfoodIIIID] = new packedfoodIII_Item(sm_config.packedfoodIIIID-256).setUnlocalizedName("packedfoodIII");
 Item.itemsList[sm_config.packedfoodIVID] = new packedfoodIV_Item(sm_config.packedfoodIVID-256).setUnlocalizedName("packedfoodIV");
-Item.itemsList[sm_config.packedfoodVID] = new packedfoodIV_Item(sm_config.packedfoodVID-256).setUnlocalizedName("packedfoodV");
+Item.itemsList[sm_config.packedfoodVID] = new packedfoodV_Item(sm_config.packedfoodVID-256).setUnlocalizedName("packedfoodV");
 	}
 	
 {
