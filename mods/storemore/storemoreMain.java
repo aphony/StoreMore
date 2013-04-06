@@ -9,6 +9,10 @@ import mods.storemore.blockitems.packedblocksVIIIItem;
 import mods.storemore.blockitems.packedblocksVIIItem;
 import mods.storemore.blockitems.packedblocksVIItem;
 import mods.storemore.blockitems.packedblocksVItem;
+import mods.storemore.blockitems.packedfoodIII_Item;
+import mods.storemore.blockitems.packedfoodII_Item;
+import mods.storemore.blockitems.packedfoodIV_Item;
+import mods.storemore.blockitems.packedfoodI_Item;
 import mods.storemore.blockitems.packedglassItem;
 import mods.storemore.blockitems.fuels.packedcharcoalIIIItem;
 import mods.storemore.blockitems.fuels.packedcharcoalIIItem;
@@ -79,6 +83,11 @@ public static final String MOD = "StoreMore";
 		public static Block packedblocksVII;
 		public static Block packedblocksVIII;
 		public static Block packedblocksIX;
+		public static Block packedfoodI;
+		public static Block packedfoodII;
+		public static Block packedfoodIII;
+		public static Block packedfoodIV;
+		public static Block packedfoodV;
 		
 		
 		
@@ -129,6 +138,11 @@ public static final String MOD = "StoreMore";
 		packedblocksVII = new mods.storemore.blocks.packedblocksVII(sm_config.packedblocksVIIID).setHardness(1.0f).setResistance(50.0f).setCreativeTab(StoreMoreTab).setUnlocalizedName("packedblocksVII");
 		packedblocksVIII = new mods.storemore.blocks.packedblocksVIII(sm_config.packedblocksVIIIID).setHardness(1.0f).setResistance(50.0f).setCreativeTab(StoreMoreTab).setUnlocalizedName("packedblocksVIII");
 		packedblocksIX = new mods.storemore.blocks.packedblocksIX(sm_config.packedblocksIXID).setHardness(1.0f).setResistance(50.0f).setCreativeTab(StoreMoreTab).setUnlocalizedName("packedblocksIX");
+		packedfoodI = new mods.storemore.blocks.packedfoodI(sm_config.packedfoodIID).setHardness(1.0f).setResistance(50.0f).setCreativeTab(StoreMoreTab).setUnlocalizedName("packedfoodI");
+		packedfoodII = new mods.storemore.blocks.packedfoodII(sm_config.packedfoodIIID).setHardness(1.0f).setResistance(50.0f).setCreativeTab(StoreMoreTab).setUnlocalizedName("packedfoodII");
+		packedfoodIII = new mods.storemore.blocks.packedfoodIII(sm_config.packedfoodIIIID).setHardness(1.0f).setResistance(50.0f).setCreativeTab(StoreMoreTab).setUnlocalizedName("packedfoodIII");
+		packedfoodIV = new mods.storemore.blocks.packedfoodIV(sm_config.packedfoodIVID).setHardness(1.0f).setResistance(50.0f).setCreativeTab(StoreMoreTab).setUnlocalizedName("packedfoodIV");
+		packedfoodV = new mods.storemore.blocks.packedfoodV(sm_config.packedfoodVID).setHardness(1.0f).setResistance(50.0f).setCreativeTab(StoreMoreTab).setUnlocalizedName("packedfoodV");
 		
 
 //Multiblock ItemBlocks	
@@ -151,6 +165,11 @@ Item.itemsList[sm_config.packedcharcoalIID] = new packedcharcoalIItem(sm_config.
 Item.itemsList[sm_config.packedcharcoalIIID] = new packedcharcoalIIItem(sm_config.packedcharcoalIIID-256).setUnlocalizedName("packedcharcoalII");
 Item.itemsList[sm_config.packedcharcoalIIIID] = new packedcharcoalIIIItem(sm_config.packedcharcoalIIIID-256).setUnlocalizedName("packedcharcoalIII");
 Item.itemsList[sm_config.packedcharcoalIVID] = new packedcharcoalIVItem(sm_config.packedcharcoalIVID-256).setUnlocalizedName("packedcharcoalIV");
+Item.itemsList[sm_config.packedfoodIID] = new packedfoodI_Item(sm_config.packedfoodIID-256).setUnlocalizedName("packedfoodI");
+Item.itemsList[sm_config.packedfoodIIID] = new packedfoodII_Item(sm_config.packedfoodIIID-256).setUnlocalizedName("packedfoodII");
+Item.itemsList[sm_config.packedfoodIIIID] = new packedfoodIII_Item(sm_config.packedfoodIIIID-256).setUnlocalizedName("packedfoodIII");
+Item.itemsList[sm_config.packedfoodIVID] = new packedfoodIV_Item(sm_config.packedfoodIVID-256).setUnlocalizedName("packedfoodIV");
+Item.itemsList[sm_config.packedfoodVID] = new packedfoodIV_Item(sm_config.packedfoodVID-256).setUnlocalizedName("packedfoodV");
 	}
 	
 {
