@@ -225,22 +225,22 @@ public class sm_naming {
         LanguageRegistry.instance().addName(new ItemStack(storemoreMain.packedfoodIV, 1, 13), "Packed Poisoned Potato II");
         LanguageRegistry.instance().addName(new ItemStack(storemoreMain.packedfoodIV, 1, 14), "Packed Poisoned Potato III");
         LanguageRegistry.instance().addName(new ItemStack(storemoreMain.packedfoodIV, 1, 15), "Packed Poisoned Potato IV");
-        LanguageRegistry.instance().addName(new ItemStack(storemoreMain.packedfoodIV, 1, 0), "Packed Raw Fish I");
-        LanguageRegistry.instance().addName(new ItemStack(storemoreMain.packedfoodIV, 1, 1), "Packed Raw Fish II");
-        LanguageRegistry.instance().addName(new ItemStack(storemoreMain.packedfoodIV, 1, 2), "Packed Raw Fish III");
-        LanguageRegistry.instance().addName(new ItemStack(storemoreMain.packedfoodIV, 1, 3), "Packed Raw Fish IV");
-        LanguageRegistry.instance().addName(new ItemStack(storemoreMain.packedfoodIV, 1, 4), "Packed Cooked Fish I");
-        LanguageRegistry.instance().addName(new ItemStack(storemoreMain.packedfoodIV, 1, 5), "Packed Cooked Fish II");
-        LanguageRegistry.instance().addName(new ItemStack(storemoreMain.packedfoodIV, 1, 6), "Packed Cooked Fish III");
-        LanguageRegistry.instance().addName(new ItemStack(storemoreMain.packedfoodIV, 1, 7), "Packed Cooked Fish IV");
-        LanguageRegistry.instance().addName(new ItemStack(storemoreMain.packedfoodIV, 1, 8), "Packed Raw Pork I");
-        LanguageRegistry.instance().addName(new ItemStack(storemoreMain.packedfoodIV, 1, 9), "Packed Raw Pork II");
-        LanguageRegistry.instance().addName(new ItemStack(storemoreMain.packedfoodIV, 1, 10), "Packed Raw Pork III");
-        LanguageRegistry.instance().addName(new ItemStack(storemoreMain.packedfoodIV, 1, 11), "Packed Raw Pork IV");
-        LanguageRegistry.instance().addName(new ItemStack(storemoreMain.packedfoodIV, 1, 12), "Packed Cooked Pork I");
-        LanguageRegistry.instance().addName(new ItemStack(storemoreMain.packedfoodIV, 1, 13), "Packed Cooked Pork II");
-        LanguageRegistry.instance().addName(new ItemStack(storemoreMain.packedfoodIV, 1, 14), "Packed Cooked Pork III");
-        LanguageRegistry.instance().addName(new ItemStack(storemoreMain.packedfoodIV, 1, 15), "Packed Cooked Pork IV");
+        LanguageRegistry.instance().addName(new ItemStack(storemoreMain.packedfoodV, 1, 0), "Packed Raw Fish I");
+        LanguageRegistry.instance().addName(new ItemStack(storemoreMain.packedfoodV, 1, 1), "Packed Raw Fish II");
+        LanguageRegistry.instance().addName(new ItemStack(storemoreMain.packedfoodV, 1, 2), "Packed Raw Fish III");
+        LanguageRegistry.instance().addName(new ItemStack(storemoreMain.packedfoodV, 1, 3), "Packed Raw Fish IV");
+        LanguageRegistry.instance().addName(new ItemStack(storemoreMain.packedfoodV, 1, 4), "Packed Cooked Fish I");
+        LanguageRegistry.instance().addName(new ItemStack(storemoreMain.packedfoodV, 1, 5), "Packed Cooked Fish II");
+        LanguageRegistry.instance().addName(new ItemStack(storemoreMain.packedfoodV, 1, 6), "Packed Cooked Fish III");
+        LanguageRegistry.instance().addName(new ItemStack(storemoreMain.packedfoodV, 1, 7), "Packed Cooked Fish IV");
+        LanguageRegistry.instance().addName(new ItemStack(storemoreMain.packedfoodV, 1, 8), "Packed Raw Pork I");
+        LanguageRegistry.instance().addName(new ItemStack(storemoreMain.packedfoodV, 1, 9), "Packed Raw Pork II");
+        LanguageRegistry.instance().addName(new ItemStack(storemoreMain.packedfoodV, 1, 10), "Packed Raw Pork III");
+        LanguageRegistry.instance().addName(new ItemStack(storemoreMain.packedfoodV, 1, 11), "Packed Raw Pork IV");
+        LanguageRegistry.instance().addName(new ItemStack(storemoreMain.packedfoodV, 1, 12), "Packed Cooked Pork I");
+        LanguageRegistry.instance().addName(new ItemStack(storemoreMain.packedfoodV, 1, 13), "Packed Cooked Pork II");
+        LanguageRegistry.instance().addName(new ItemStack(storemoreMain.packedfoodV, 1, 14), "Packed Cooked Pork III");
+        LanguageRegistry.instance().addName(new ItemStack(storemoreMain.packedfoodV, 1, 15), "Packed Cooked Pork IV");
     }
 		
 }
