@@ -5,6 +5,8 @@ import java.io.InputStream;
 import java.util.LinkedList;
 import java.util.Properties;
 
+import mods.storemore.proxys.SProxy;
+
 /**
  * Simple mod localization class.
  * 

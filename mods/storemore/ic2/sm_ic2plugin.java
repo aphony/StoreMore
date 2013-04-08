@@ -1,10 +1,10 @@
 package mods.storemore.ic2;
 
-import mods.storemore.SProxy;
 import mods.storemore.sm_config;
 import mods.storemore.sm_packetHandler;
-import mods.storemore.storemoreMain;
+import mods.storemore.StoreMore;
 import mods.storemore.ic2.blockitems.ic2blocksIItem;
+import mods.storemore.proxys.SProxy;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraftforge.common.Configuration;
@@ -30,7 +30,7 @@ public class sm_ic2plugin
 	
 	
 
-	@SidedProxy(clientSide = "mods.storemore.client.CProxy", serverSide = "mods.storemore.common.SProxy")
+	@SidedProxy(clientSide = "mods.storemore.proxys.CProxy", serverSide = "mods.storemore.proxys.SProxy")
 		public static SProxy proxy;
     
 	public static boolean isIndustrialCraftLoaded() {
@@ -57,7 +57,7 @@ public class sm_ic2plugin
 	
 	{
 
-	ic2blocksI = new mods.storemore.ic2.blocks.ic2blocksI(sm_config.ic2blocksIID).setHardness(1.0f).setResistance(50.0f).setCreativeTab(storemoreMain.StoreMoreTab).setUnlocalizedName("ic2blocksI");
+	ic2blocksI = new mods.storemore.ic2.blocks.ic2blocksI(sm_config.ic2blocksIID).setHardness(1.0f).setResistance(50.0f).setCreativeTab(StoreMore.StoreMoreTab).setUnlocalizedName("ic2blocksI");
 	
 	}
 	

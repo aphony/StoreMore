@@ -3,7 +3,7 @@ package mods.storemore.blocks;
 import java.util.List;
 import java.util.Random;
 
-import mods.storemore.storemoreMain;
+import mods.storemore.StoreMore;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IconRegister;
@@ -24,7 +24,7 @@ public class packedfoodIII extends Block {
 		super(id, Material.rock);
 		setHardness(3.0F);
 		setResistance(120.0F);
-		setCreativeTab(storemoreMain.StoreMoreTab);
+		setCreativeTab(StoreMore.StoreMoreTab);
 	    
 	}
 	
@@ -61,21 +61,21 @@ public Icon getBlockTextureFromSideAndMetadata(int side, int meta)
 public int idDropped(int par1, Random par2Random, int par3)
 {
     switch(par1){
-    case 1:return storemoreMain.packedfoodIII.blockID;
-    case 2:return storemoreMain.packedfoodIII.blockID;
-    case 3:return storemoreMain.packedfoodIII.blockID;
-    case 4:return storemoreMain.packedfoodIII.blockID;
-    case 5:return storemoreMain.packedfoodIII.blockID;
-    case 6:return storemoreMain.packedfoodIII.blockID;
-    case 7:return storemoreMain.packedfoodIII.blockID;
-    case 8:return storemoreMain.packedfoodIII.blockID;
-    case 9:return storemoreMain.packedfoodIII.blockID;
-    case 10:return storemoreMain.packedfoodIII.blockID;
-    case 11:return storemoreMain.packedfoodIII.blockID;
-    case 12:return storemoreMain.packedfoodIII.blockID;
-    case 13:return storemoreMain.packedfoodIII.blockID;
-    case 14:return storemoreMain.packedfoodIII.blockID;
-    case 15:return storemoreMain.packedfoodIII.blockID;
+    case 1:return StoreMore.packedfoodIII.blockID;
+    case 2:return StoreMore.packedfoodIII.blockID;
+    case 3:return StoreMore.packedfoodIII.blockID;
+    case 4:return StoreMore.packedfoodIII.blockID;
+    case 5:return StoreMore.packedfoodIII.blockID;
+    case 6:return StoreMore.packedfoodIII.blockID;
+    case 7:return StoreMore.packedfoodIII.blockID;
+    case 8:return StoreMore.packedfoodIII.blockID;
+    case 9:return StoreMore.packedfoodIII.blockID;
+    case 10:return StoreMore.packedfoodIII.blockID;
+    case 11:return StoreMore.packedfoodIII.blockID;
+    case 12:return StoreMore.packedfoodIII.blockID;
+    case 13:return StoreMore.packedfoodIII.blockID;
+    case 14:return StoreMore.packedfoodIII.blockID;
+    case 15:return StoreMore.packedfoodIII.blockID;
     default:return blockID;
     }
 }

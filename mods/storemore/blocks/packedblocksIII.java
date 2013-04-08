@@ -3,7 +3,7 @@ package mods.storemore.blocks;
 import java.util.List;
 import java.util.Random;
 
-import mods.storemore.storemoreMain;
+import mods.storemore.StoreMore;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IconRegister;
@@ -24,7 +24,7 @@ public class packedblocksIII extends Block {
 		super(id, Material.rock);
 		setHardness(3.0F);
 		setResistance(120.0F);
-		setCreativeTab(storemoreMain.StoreMoreTab);
+		setCreativeTab(StoreMore.StoreMoreTab);
 	    
 	}
 	
@@ -62,21 +62,21 @@ public Icon getBlockTextureFromSideAndMetadata(int side, int meta)
 public int idDropped(int par1, Random par2Random, int par3)
 {
     switch(par1){
-    case 1:return storemoreMain.packedblocksIII.blockID;
-    case 2:return storemoreMain.packedblocksIII.blockID;
-    case 3:return storemoreMain.packedblocksIII.blockID;
-    case 4:return storemoreMain.packedblocksIII.blockID;
-    case 5:return storemoreMain.packedblocksIII.blockID;
-    case 6:return storemoreMain.packedblocksIII.blockID;
-    case 7:return storemoreMain.packedblocksIII.blockID;
-    case 8:return storemoreMain.packedblocksIII.blockID;
-    case 9:return storemoreMain.packedblocksIII.blockID;
-    case 10:return storemoreMain.packedblocksIII.blockID;
-    case 11:return storemoreMain.packedblocksIII.blockID;
-    case 12:return storemoreMain.packedblocksIII.blockID;
-    case 13:return storemoreMain.packedblocksIII.blockID;
-    case 14:return storemoreMain.packedblocksIII.blockID;
-    case 15:return storemoreMain.packedblocksIII.blockID;
+    case 1:return StoreMore.packedblocksIII.blockID;
+    case 2:return StoreMore.packedblocksIII.blockID;
+    case 3:return StoreMore.packedblocksIII.blockID;
+    case 4:return StoreMore.packedblocksIII.blockID;
+    case 5:return StoreMore.packedblocksIII.blockID;
+    case 6:return StoreMore.packedblocksIII.blockID;
+    case 7:return StoreMore.packedblocksIII.blockID;
+    case 8:return StoreMore.packedblocksIII.blockID;
+    case 9:return StoreMore.packedblocksIII.blockID;
+    case 10:return StoreMore.packedblocksIII.blockID;
+    case 11:return StoreMore.packedblocksIII.blockID;
+    case 12:return StoreMore.packedblocksIII.blockID;
+    case 13:return StoreMore.packedblocksIII.blockID;
+    case 14:return StoreMore.packedblocksIII.blockID;
+    case 15:return StoreMore.packedblocksIII.blockID;
     default:return blockID;
     }
 }

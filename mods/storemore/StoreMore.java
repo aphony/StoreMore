@@ -23,19 +23,15 @@ import mods.storemore.blockitems.fuels.packedcoalIIIItem;
 import mods.storemore.blockitems.fuels.packedcoalIIItem;
 import mods.storemore.blockitems.fuels.packedcoalIItem;
 import mods.storemore.blockitems.fuels.packedcoalIVItem;
-import mods.storemore.client.CProxy;
-import mods.storemore.ic2.blockitems.ic2blocksIItem;
+import mods.storemore.gui.GuiHandler;
+import mods.storemore.machine.BlockSuperCompressor;
+import mods.storemore.machine.tileentities.TileSuperCompressor;
+import mods.storemore.proxys.SProxy;
 import net.minecraft.block.Block;
-import net.minecraft.client.renderer.texture.IconRegister;
+import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
-import net.minecraft.util.Icon;
-import net.minecraftforge.common.Configuration;
-import net.minecraftforge.common.MinecraftForge;
-import cpw.mods.fml.common.FMLLog;
 import cpw.mods.fml.common.Mod;
-import cpw.mods.fml.common.ModContainer;
 import cpw.mods.fml.common.Mod.Init;
 import cpw.mods.fml.common.Mod.Instance;
 import cpw.mods.fml.common.Mod.PostInit;
@@ -45,25 +41,31 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.network.NetworkMod;
+import cpw.mods.fml.common.network.NetworkRegistry;
 import cpw.mods.fml.common.registry.GameRegistry;
-import cpw.mods.fml.common.registry.LanguageRegistry;
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
 
-@Mod(modid = "StoreMore", name = "StoreMore", version = "1.3.2_MC1.5.1", useMetadata = false, dependencies = "before:StoreMore|IC2")
-
+@Mod(modid = "StoreMore", name = "StoreMore", version = "1.3.5 Alpha", useMetadata = false, dependencies = "before:StoreMore|IC2")
 @NetworkMod(channels = "StoreMore", packetHandler = sm_packetHandler.class, clientSideRequired = true, serverSideRequired = false)
-public class storemoreMain {
+public class StoreMore 
+{
+	@Instance("StoreMore")
+	public static StoreMore instance;
 
-public static final String MOD = "StoreMore";
-
-
-
-	public static final String sm_dependency = "required-after:StoreMore";
-	public static final String sm_dependencyic2 = "required-after:IC2";
+	public static final String MOD = "StoreMore";
 	
-	@SidedProxy(clientSide = "mods.storemore.client.CProxy", serverSide = "mods.storemore.SProxy")
+	public static GuiHandler guiHandler = new GuiHandler();
+	
+	@SidedProxy(clientSide = "mods.storemore.proxys.CProxy", serverSide = "mods.storemore.proxys.SProxy")
 		public static SProxy proxy;
+	
+	
+		public static final int sideBottom = 0;
+		public static final int sideTop = 1;
+		public static final int sideNorth = 2;
+		public static final int sideSouth = 3;
+		public static final int sideWest = 4;
+		public static final int sideEast = 5;
+
 	
 	//Block Registering
 		public static Block packedblocksI;
@@ -88,14 +90,11 @@ public static final String MOD = "StoreMore";
 		public static Block packedfoodII;
 		public static Block packedfoodIII;
 		public static Block packedfoodIV;
-		public static Block packedfoodV;
-		
-		
-		
-		
-		
-		@Instance("StoreMore")
-		public static storemoreMain instance;
+		public static Block packedfoodV;		
+
+		public static Block BlockSuperCompressor;
+		public static Block superCompressorIdle;
+		public static Block superCompressorActive;
 	
 	@PreInit()
     public void preInit(FMLPreInitializationEvent event) {
@@ -106,13 +105,16 @@ public static final String MOD = "StoreMore";
 	          
 	        sm_config.save(); 
 		
-	}
+		}
+
 	@Init
 	public void load(FMLInitializationEvent event){
-	proxy.registerRenderers();
-    sm_naming.init();
-    sm_recipes.initRecipes();
-	}
+		proxy.registerRenderers();
+	    sm_naming.init();
+	    sm_recipes.initRecipes();
+	    NetworkRegistry.instance().registerGuiHandler(this, guiHandler);
+	    GameRegistry.registerTileEntity(TileSuperCompressor.class, "superCompressor");
+		}
 
 	public static CreativeTabs StoreMoreTab = new StoreMoreTab(CreativeTabs.getNextID(), "Store More");
 
@@ -144,43 +146,46 @@ public static final String MOD = "StoreMore";
 		packedfoodIII = new mods.storemore.blocks.packedfoodIII(sm_config.packedfoodIIIID).setHardness(1.0f).setResistance(50.0f).setCreativeTab(StoreMoreTab).setUnlocalizedName("packedfoodIII");
 		packedfoodIV = new mods.storemore.blocks.packedfoodIV(sm_config.packedfoodIVID).setHardness(1.0f).setResistance(50.0f).setCreativeTab(StoreMoreTab).setUnlocalizedName("packedfoodIV");
 		packedfoodV = new mods.storemore.blocks.packedfoodV(sm_config.packedfoodVID).setHardness(1.0f).setResistance(50.0f).setCreativeTab(StoreMoreTab).setUnlocalizedName("packedfoodV");
+		BlockSuperCompressor = new BlockSuperCompressor(2180, false, Material.iron).setHardness(0.7F).setCreativeTab(StoreMoreTab).setUnlocalizedName("superCompressor");	
 		
 
 //Multiblock ItemBlocks	
 
-Item.itemsList[sm_config.packedblocksIID]	= new packedblocksIItem(sm_config.packedblocksIID-256).setUnlocalizedName("packedblocksI");
-Item.itemsList[sm_config.packedblocksIIID]	= new packedblocksIIItem(sm_config.packedblocksIIID-256).setUnlocalizedName("packedblocksII");
-Item.itemsList[sm_config.packedblocksIIIID] = new packedblocksIIIItem(sm_config.packedblocksIIIID-256).setUnlocalizedName("packedblocksIII");
-Item.itemsList[sm_config.packedblocksIVID] = new packedblocksIVItem(sm_config.packedblocksIVID-256).setUnlocalizedName("packedblocksIV");
-Item.itemsList[sm_config.packedblocksVID] = new packedblocksVItem(sm_config.packedblocksVID-256).setUnlocalizedName("packedblocksV");
-Item.itemsList[sm_config.packedblocksVIID] = new packedblocksVIItem(sm_config.packedblocksVIID-256).setUnlocalizedName("packedblocksVI");
-Item.itemsList[sm_config.packedblocksVIIID] = new packedblocksVIIItem(sm_config.packedblocksVIIID-256).setUnlocalizedName("packedblocksVII");
-Item.itemsList[sm_config.packedblocksVIIIID] = new packedblocksVIIIItem(sm_config.packedblocksVIIIID-256).setUnlocalizedName("packedblocksVIII");
-Item.itemsList[sm_config.packedblocksIXID] = new packedblocksIXItem(sm_config.packedblocksIXID-256).setUnlocalizedName("packedblocksIX");
-Item.itemsList[sm_config.packedglassID] = new packedglassItem(sm_config.packedglassID-256).setUnlocalizedName("packedglass");
-Item.itemsList[sm_config.packedcoalIID] = new packedcoalIItem(sm_config.packedcoalIID-256).setUnlocalizedName("packedcoalI");
-Item.itemsList[sm_config.packedcoalIIID] = new packedcoalIIItem(sm_config.packedcoalIIID-256).setUnlocalizedName("packedcoalII");
-Item.itemsList[sm_config.packedcoalIIIID] = new packedcoalIIIItem(sm_config.packedcoalIIIID-256).setUnlocalizedName("packedcoalIII");
-Item.itemsList[sm_config.packedcoalIVID] = new packedcoalIVItem(sm_config.packedcoalIVID-256).setUnlocalizedName("packedcoalIV");
-Item.itemsList[sm_config.packedcharcoalIID] = new packedcharcoalIItem(sm_config.packedcharcoalIID-256).setUnlocalizedName("packedcharcoalI");
-Item.itemsList[sm_config.packedcharcoalIIID] = new packedcharcoalIIItem(sm_config.packedcharcoalIIID-256).setUnlocalizedName("packedcharcoalII");
-Item.itemsList[sm_config.packedcharcoalIIIID] = new packedcharcoalIIIItem(sm_config.packedcharcoalIIIID-256).setUnlocalizedName("packedcharcoalIII");
-Item.itemsList[sm_config.packedcharcoalIVID] = new packedcharcoalIVItem(sm_config.packedcharcoalIVID-256).setUnlocalizedName("packedcharcoalIV");
-Item.itemsList[sm_config.packedfoodIID] = new packedfoodI_Item(sm_config.packedfoodIID-256).setUnlocalizedName("packedfoodI");
-Item.itemsList[sm_config.packedfoodIIID] = new packedfoodII_Item(sm_config.packedfoodIIID-256).setUnlocalizedName("packedfoodII");
-Item.itemsList[sm_config.packedfoodIIIID] = new packedfoodIII_Item(sm_config.packedfoodIIIID-256).setUnlocalizedName("packedfoodIII");
-Item.itemsList[sm_config.packedfoodIVID] = new packedfoodIV_Item(sm_config.packedfoodIVID-256).setUnlocalizedName("packedfoodIV");
-Item.itemsList[sm_config.packedfoodVID] = new packedfoodV_Item(sm_config.packedfoodVID-256).setUnlocalizedName("packedfoodV");
-	}
+		Item.itemsList[sm_config.packedblocksIID]	= new packedblocksIItem(sm_config.packedblocksIID-256).setUnlocalizedName("packedblocksI");
+		Item.itemsList[sm_config.packedblocksIIID]	= new packedblocksIIItem(sm_config.packedblocksIIID-256).setUnlocalizedName("packedblocksII");
+		Item.itemsList[sm_config.packedblocksIIIID] = new packedblocksIIIItem(sm_config.packedblocksIIIID-256).setUnlocalizedName("packedblocksIII");
+		Item.itemsList[sm_config.packedblocksIVID] = new packedblocksIVItem(sm_config.packedblocksIVID-256).setUnlocalizedName("packedblocksIV");
+		Item.itemsList[sm_config.packedblocksVID] = new packedblocksVItem(sm_config.packedblocksVID-256).setUnlocalizedName("packedblocksV");
+		Item.itemsList[sm_config.packedblocksVIID] = new packedblocksVIItem(sm_config.packedblocksVIID-256).setUnlocalizedName("packedblocksVI");
+		Item.itemsList[sm_config.packedblocksVIIID] = new packedblocksVIIItem(sm_config.packedblocksVIIID-256).setUnlocalizedName("packedblocksVII");
+		Item.itemsList[sm_config.packedblocksVIIIID] = new packedblocksVIIIItem(sm_config.packedblocksVIIIID-256).setUnlocalizedName("packedblocksVIII");
+		Item.itemsList[sm_config.packedblocksIXID] = new packedblocksIXItem(sm_config.packedblocksIXID-256).setUnlocalizedName("packedblocksIX");
+		Item.itemsList[sm_config.packedglassID] = new packedglassItem(sm_config.packedglassID-256).setUnlocalizedName("packedglass");
+		Item.itemsList[sm_config.packedcoalIID] = new packedcoalIItem(sm_config.packedcoalIID-256).setUnlocalizedName("packedcoalI");
+		Item.itemsList[sm_config.packedcoalIIID] = new packedcoalIIItem(sm_config.packedcoalIIID-256).setUnlocalizedName("packedcoalII");
+		Item.itemsList[sm_config.packedcoalIIIID] = new packedcoalIIIItem(sm_config.packedcoalIIIID-256).setUnlocalizedName("packedcoalIII");
+		Item.itemsList[sm_config.packedcoalIVID] = new packedcoalIVItem(sm_config.packedcoalIVID-256).setUnlocalizedName("packedcoalIV");
+		Item.itemsList[sm_config.packedcharcoalIID] = new packedcharcoalIItem(sm_config.packedcharcoalIID-256).setUnlocalizedName("packedcharcoalI");
+		Item.itemsList[sm_config.packedcharcoalIIID] = new packedcharcoalIIItem(sm_config.packedcharcoalIIID-256).setUnlocalizedName("packedcharcoalII");
+		Item.itemsList[sm_config.packedcharcoalIIIID] = new packedcharcoalIIIItem(sm_config.packedcharcoalIIIID-256).setUnlocalizedName("packedcharcoalIII");
+		Item.itemsList[sm_config.packedcharcoalIVID] = new packedcharcoalIVItem(sm_config.packedcharcoalIVID-256).setUnlocalizedName("packedcharcoalIV");
+		Item.itemsList[sm_config.packedfoodIID] = new packedfoodI_Item(sm_config.packedfoodIID-256).setUnlocalizedName("packedfoodI");
+		Item.itemsList[sm_config.packedfoodIIID] = new packedfoodII_Item(sm_config.packedfoodIIID-256).setUnlocalizedName("packedfoodII");
+		Item.itemsList[sm_config.packedfoodIIIID] = new packedfoodIII_Item(sm_config.packedfoodIIIID-256).setUnlocalizedName("packedfoodIII");
+		Item.itemsList[sm_config.packedfoodIVID] = new packedfoodIV_Item(sm_config.packedfoodIVID-256).setUnlocalizedName("packedfoodIV");
+		Item.itemsList[sm_config.packedfoodVID] = new packedfoodV_Item(sm_config.packedfoodVID-256).setUnlocalizedName("packedfoodV");
+		}
 	
-{
-
-GameRegistry.registerFuelHandler(new storemoreFuels());
+	{
+	
+		GameRegistry.registerBlock(BlockSuperCompressor, "superCompressor");
+	
+		GameRegistry.registerFuelHandler(new storemoreFuels());
 	}
-@PostInit
-public void postInit(FMLPostInitializationEvent event) {
+	@PostInit
+	public void postInit(FMLPostInitializationEvent event) {
 	 
 	        
 	        
-}
+	}
 }

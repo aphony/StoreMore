@@ -5,7 +5,7 @@ package mods.storemore.ic2.blocks;
 import java.util.List;
 import java.util.Random;
 
-import mods.storemore.storemoreMain;
+import mods.storemore.StoreMore;
 import mods.storemore.ic2.sm_ic2plugin;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -27,7 +27,7 @@ public class ic2blocksI extends Block {
 		super(id, Material.rock);
 		setHardness(3.0F);
 		setResistance(120.0F);
-		setCreativeTab(storemoreMain.StoreMoreTab);
+		setCreativeTab(StoreMore.StoreMoreTab);
 	    
 	}
 	

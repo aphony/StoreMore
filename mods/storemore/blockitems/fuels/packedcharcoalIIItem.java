@@ -1,6 +1,6 @@
 package mods.storemore.blockitems.fuels;
 
-import mods.storemore.storemoreMain;
+import mods.storemore.StoreMore;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Icon;
@@ -27,7 +27,7 @@ public class packedcharcoalIIItem extends ItemBlock {
 	@SideOnly(Side.CLIENT)
     public Icon getIconFromDamage(int par1)
     {
-        return storemoreMain.packedcharcoalII.getBlockTextureFromSide(par1);
+        return StoreMore.packedcharcoalII.getBlockTextureFromSide(par1);
     }
   
 }

@@ -1,7 +1,8 @@
-package mods.storemore;
+package mods.storemore.proxys;
 
 import java.io.File;
 
+import mods.storemore.StoreMore;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.world.World;
 import cpw.mods.fml.common.SidedProxy;
@@ -10,7 +11,7 @@ import cpw.mods.fml.common.network.IGuiHandler;
 public class SProxy 
 implements IGuiHandler{
 	
-	@SidedProxy(clientSide = "mods.storemore.client.CProxy", serverSide = "mods.storemore.SProxy")
+	@SidedProxy(clientSide = "mods.storemore.proxys.CProxy", serverSide = "mods.storemore.proxys.SProxy")
 	public static SProxy proxy;
 
 	public void registerRenderers(){
@@ -57,6 +58,13 @@ implements IGuiHandler{
 	  public File getStoreMoreBase() {
 			return new File("./");
 		}
+
+		public static String getIconLocation(String TextureName)
+		{
+		return StoreMore.MOD + ":" + TextureName;
+		}
+
+
 
 
 }

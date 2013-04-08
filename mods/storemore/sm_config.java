@@ -42,10 +42,14 @@ public class sm_config
 		public static int packedcharcoalIIIID = 2156;
 		public static int packedcharcoalIVID = 2157;
 		
+		public static int superCompressorIdleID = 2180; 
+		
 		public static int ic2blocksIID = 2160;
 		
 		
-	    public static boolean IC2Enabled; 
+	    public static boolean IC2Enabled;
+
+
 		
 		public static void initialize(File file)
 	    {
@@ -75,7 +79,9 @@ public class sm_config
 		    packedcharcoalIID = config.get("Packed Fuels", "Charcoal I", 2154).getInt();
 		    packedcharcoalIIID = config.get("Packed Fuels", "Charcoal II", 2155).getInt();
 		    packedcharcoalIIIID = config.get("Packed Fuels", "Charcoal III", 2156).getInt();
-		    packedcharcoalIVID = config.get("Packed Fuels", "Charcoal IV", 2157).getInt();	
+		    packedcharcoalIVID = config.get("Packed Fuels", "Charcoal IV", 2157).getInt();
+		    
+		    superCompressorIdleID = config.get("Machines", "Super Compressor", 2180).getInt();
 	        
 		    IC2Enabled = config.get("Mod Add-ons", "Enable Recipes for IC2", true).getBoolean(IC2Enabled);
 	        		    
