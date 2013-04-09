@@ -15,7 +15,7 @@ public class hardenedWoodPickaxeIV extends ItemPickaxe{
 	
 	public void updateIcons(IconRegister par1IconRegister)
 	{
-	    this.iconIndex = par1IconRegister.registerIcon(StoreMore.MOD + ":" + this.getUnlocalizedName());
+	    this.iconIndex = par1IconRegister.registerIcon(StoreMore.MODtextures + ":" + this.getUnlocalizedName());
 	}
 
 

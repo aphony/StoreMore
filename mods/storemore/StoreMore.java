@@ -53,6 +53,7 @@ public class StoreMore
 	public static StoreMore instance;
 
 	public static final String MOD = "StoreMore";
+	public static final String MODtextures = "storemore";
 
 	public static GuiHandler guiHandler = new GuiHandler();
 
