@@ -46,26 +46,26 @@ public class sm_config
 		
 		public static int ic2blocksIID = 2160;
 		
-		public static int hardenedWoodPickaxeIID = 15000;
-		public static int hardenedWoodPickaxeIIID = 15001;
-		public static int hardenedWoodPickaxeIIIID = 15002;
-		public static int hardenedWoodPickaxeIVID = 15003;		
-		public static int hardenedStonePickaxeIID = 15004;
-		public static int hardenedStonePickaxeIIID = 15005;
-		public static int hardenedStonePickaxeIIIID = 15006;
-		public static int hardenedStonePickaxeIVID = 15007;		
-		public static int hardenedIronPickaxeIID = 15008;
-		public static int hardenedIronPickaxeIIID = 15009;
-		public static int hardenedIronPickaxeIIIID = 15010;
-		public static int hardenedIronPickaxeIVID = 15011;		
-		public static int hardenedGoldPickaxeIID = 15012;
-		public static int hardenedGoldPickaxeIIID = 15013;
-		public static int hardenedGoldPickaxeIIIID = 15014;
-		public static int hardenedGoldPickaxeIVID = 15015;		
-		public static int hardenedDiamondPickaxeIID = 15016;
-		public static int hardenedDiamondPickaxeIIID = 15017;
-		public static int hardenedDiamondPickaxeIIIID = 15018;
-		public static int hardenedDiamondPickaxeIVID = 15019;
+		public static int hardenedWoodPickaxeIID = 8000;
+		public static int hardenedWoodPickaxeIIID = 8001;
+		public static int hardenedWoodPickaxeIIIID = 8002;
+		public static int hardenedWoodPickaxeIVID = 8003;		
+		public static int hardenedStonePickaxeIID = 8004;
+		public static int hardenedStonePickaxeIIID = 8005;
+		public static int hardenedStonePickaxeIIIID = 8006;
+		public static int hardenedStonePickaxeIVID = 8007;		
+		public static int hardenedIronPickaxeIID = 8008;
+		public static int hardenedIronPickaxeIIID = 8009;
+		public static int hardenedIronPickaxeIIIID = 8010;
+		public static int hardenedIronPickaxeIVID = 8011;		
+		public static int hardenedGoldPickaxeIID = 8012;
+		public static int hardenedGoldPickaxeIIID = 8013;
+		public static int hardenedGoldPickaxeIIIID = 8014;
+		public static int hardenedGoldPickaxeIVID = 8015;		
+		public static int hardenedDiamondPickaxeIID = 8016;
+		public static int hardenedDiamondPickaxeIIID = 8017;
+		public static int hardenedDiamondPickaxeIIIID = 8018;
+		public static int hardenedDiamondPickaxeIVID = 8019;
 		
 		
 	    public static boolean IC2Enabled;
@@ -106,26 +106,26 @@ public class sm_config
 	        		    
 		    ic2blocksIID = config.get("IC2 Blocks", "Copper, Tin, Uranium & Bronze", 2160).getInt();
 		    
-		    hardenedWoodPickaxeIID = config.get("Tools", "Hardened Wood Pickaxe I", 15000).getInt();
-		    hardenedWoodPickaxeIIID = config.get("Tools", "Hardened Wood Pickaxe II", 15001).getInt();
-		    hardenedWoodPickaxeIIIID = config.get("Tools", "Hardened Wood Pickaxe III", 15002).getInt();
-		    hardenedWoodPickaxeIVID = config.get("Tools", "Hardened Wood Pickaxe IV", 15003).getInt();
-		    hardenedStonePickaxeIID = config.get("Tools", "Hardened Stone Pickaxe I", 15004).getInt();
-		    hardenedStonePickaxeIIID = config.get("Tools", "Hardened Stone Pickaxe II", 15005).getInt();
-		    hardenedStonePickaxeIIIID = config.get("Tools", "Hardened Stone Pickaxe III", 15006).getInt();
-		    hardenedStonePickaxeIVID = config.get("Tools", "Hardened Stone Pickaxe IV", 15007).getInt();
-		    hardenedIronPickaxeIID = config.get("Tools", "Hardened Iron Pickaxe I", 15008).getInt();
-		    hardenedIronPickaxeIIID = config.get("Tools", "Hardened Iron Pickaxe II", 15009).getInt();
-		    hardenedIronPickaxeIIIID = config.get("Tools", "Hardened Iron Pickaxe III", 15010).getInt();
-		    hardenedIronPickaxeIVID = config.get("Tools", "Hardened Iron Pickaxe IV", 15011).getInt();
-		    hardenedGoldPickaxeIID = config.get("Tools", "Hardened Gold Pickaxe I", 15012).getInt();
-		    hardenedGoldPickaxeIIID = config.get("Tools", "Hardened Gold Pickaxe II", 15013).getInt();
-		    hardenedGoldPickaxeIIIID = config.get("Tools", "Hardened Gold Pickaxe III", 15014).getInt();
-		    hardenedGoldPickaxeIVID = config.get("Tools", "Hardened Gold Pickaxe IV", 15015).getInt();
-		    hardenedDiamondPickaxeIID = config.get("Tools", "Hardened Diamond Pickaxe I", 15016).getInt();
-		    hardenedDiamondPickaxeIIID = config.get("Tools", "Hardened Diamond Pickaxe II", 15017).getInt();
-		    hardenedDiamondPickaxeIIIID = config.get("Tools", "Hardened Diamond Pickaxe III", 15018).getInt();
-		    hardenedDiamondPickaxeIVID = config.get("Tools", "Hardened Diamond Pickaxe IV", 15019).getInt();
+		    hardenedWoodPickaxeIID = config.get("Tools", "Hardened Wood Pickaxe I", 8000).getInt();
+		    hardenedWoodPickaxeIIID = config.get("Tools", "Hardened Wood Pickaxe II", 8001).getInt();
+		    hardenedWoodPickaxeIIIID = config.get("Tools", "Hardened Wood Pickaxe III", 8002).getInt();
+		    hardenedWoodPickaxeIVID = config.get("Tools", "Hardened Wood Pickaxe IV", 8003).getInt();
+		    hardenedStonePickaxeIID = config.get("Tools", "Hardened Stone Pickaxe I", 8004).getInt();
+		    hardenedStonePickaxeIIID = config.get("Tools", "Hardened Stone Pickaxe II", 8005).getInt();
+		    hardenedStonePickaxeIIIID = config.get("Tools", "Hardened Stone Pickaxe III", 006).getInt();
+		    hardenedStonePickaxeIVID = config.get("Tools", "Hardened Stone Pickaxe IV", 8007).getInt();
+		    hardenedIronPickaxeIID = config.get("Tools", "Hardened Iron Pickaxe I", 8008).getInt();
+		    hardenedIronPickaxeIIID = config.get("Tools", "Hardened Iron Pickaxe II", 8009).getInt();
+		    hardenedIronPickaxeIIIID = config.get("Tools", "Hardened Iron Pickaxe III", 8010).getInt();
+		    hardenedIronPickaxeIVID = config.get("Tools", "Hardened Iron Pickaxe IV", 8011).getInt();
+		    hardenedGoldPickaxeIID = config.get("Tools", "Hardened Gold Pickaxe I", 8012).getInt();
+		    hardenedGoldPickaxeIIID = config.get("Tools", "Hardened Gold Pickaxe II", 8013).getInt();
+		    hardenedGoldPickaxeIIIID = config.get("Tools", "Hardened Gold Pickaxe III", 8014).getInt();
+		    hardenedGoldPickaxeIVID = config.get("Tools", "Hardened Gold Pickaxe IV", 8015).getInt();
+		    hardenedDiamondPickaxeIID = config.get("Tools", "Hardened Diamond Pickaxe I", 8016).getInt();
+		    hardenedDiamondPickaxeIIID = config.get("Tools", "Hardened Diamond Pickaxe II", 8017).getInt();
+		    hardenedDiamondPickaxeIIIID = config.get("Tools", "Hardened Diamond Pickaxe III", 8018).getInt();
+		    hardenedDiamondPickaxeIVID = config.get("Tools", "Hardened Diamond Pickaxe IV", 8019).getInt();
 		    
 		    
 		    config.save();
