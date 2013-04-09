@@ -25,8 +25,6 @@ import mods.storemore.blockitems.fuels.packedcoalIItem;
 import mods.storemore.blockitems.fuels.packedcoalIVItem;
 import mods.storemore.gui.GuiHandler;
 import mods.storemore.proxys.SProxy;
-import moony.compactcrafting.items.ItemC1WoodenPickaxe;
-import moony.compactcrafting.lib.ItemIDs;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
