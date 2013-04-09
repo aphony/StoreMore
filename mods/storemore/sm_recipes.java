@@ -244,6 +244,28 @@ public class sm_recipes extends StoreMore{
 		GameRegistry.addRecipe(new ItemStack(StoreMore.packedfoodV,1,13), "XXX", "XXX", "XXX", Character.valueOf('X'), new ItemStack(packedfoodV,1,12));
 		GameRegistry.addRecipe(new ItemStack(StoreMore.packedfoodV,1,14), "XXX", "XXX", "XXX", Character.valueOf('X'), new ItemStack(packedfoodV,1,13));
 		GameRegistry.addRecipe(new ItemStack(StoreMore.packedfoodV,1,15), "XXX", "XXX", "XXX", Character.valueOf('X'), new ItemStack(packedfoodV,1,14));
+		
+
+		GameRegistry.addRecipe(new ItemStack(StoreMore.hardenedWoodPickaxeI), "XXX", "XXX", "XXX", Character.valueOf('X'), new ItemStack(Item.pickaxeWood));
+		GameRegistry.addRecipe(new ItemStack(StoreMore.hardenedWoodPickaxeII), "XXX", "XXX", "XXX", Character.valueOf('X'), new ItemStack(StoreMore.hardenedWoodPickaxeI));
+		GameRegistry.addRecipe(new ItemStack(StoreMore.hardenedWoodPickaxeIII), "XXX", "XXX", "XXX", Character.valueOf('X'), new ItemStack(StoreMore.hardenedWoodPickaxeII));
+		GameRegistry.addRecipe(new ItemStack(StoreMore.hardenedWoodPickaxeIV), "XXX", "XXX", "XXX", Character.valueOf('X'), new ItemStack(StoreMore.hardenedWoodPickaxeIII));
+		GameRegistry.addRecipe(new ItemStack(StoreMore.hardenedStonePickaxeI), "XXX", "XXX", "XXX", Character.valueOf('X'), new ItemStack(Item.pickaxeStone));
+		GameRegistry.addRecipe(new ItemStack(StoreMore.hardenedStonePickaxeII), "XXX", "XXX", "XXX", Character.valueOf('X'), new ItemStack(StoreMore.hardenedStonePickaxeI));
+		GameRegistry.addRecipe(new ItemStack(StoreMore.hardenedStonePickaxeIII), "XXX", "XXX", "XXX", Character.valueOf('X'), new ItemStack(StoreMore.hardenedStonePickaxeII));
+		GameRegistry.addRecipe(new ItemStack(StoreMore.hardenedStonePickaxeIV), "XXX", "XXX", "XXX", Character.valueOf('X'), new ItemStack(StoreMore.hardenedStonePickaxeIII));
+		GameRegistry.addRecipe(new ItemStack(StoreMore.hardenedIronPickaxeI), "XXX", "XXX", "XXX", Character.valueOf('X'), new ItemStack(Item.pickaxeSteel));
+		GameRegistry.addRecipe(new ItemStack(StoreMore.hardenedIronPickaxeII), "XXX", "XXX", "XXX", Character.valueOf('X'), new ItemStack(StoreMore.hardenedIronPickaxeI));
+		GameRegistry.addRecipe(new ItemStack(StoreMore.hardenedIronPickaxeIII), "XXX", "XXX", "XXX", Character.valueOf('X'), new ItemStack(StoreMore.hardenedIronPickaxeII));
+		GameRegistry.addRecipe(new ItemStack(StoreMore.hardenedIronPickaxeIV), "XXX", "XXX", "XXX", Character.valueOf('X'), new ItemStack(StoreMore.hardenedIronPickaxeIII));
+		GameRegistry.addRecipe(new ItemStack(StoreMore.hardenedGoldPickaxeI), "XXX", "XXX", "XXX", Character.valueOf('X'), new ItemStack(Item.pickaxeGold));
+		GameRegistry.addRecipe(new ItemStack(StoreMore.hardenedGoldPickaxeII), "XXX", "XXX", "XXX", Character.valueOf('X'), new ItemStack(StoreMore.hardenedGoldPickaxeI));
+		GameRegistry.addRecipe(new ItemStack(StoreMore.hardenedGoldPickaxeIII), "XXX", "XXX", "XXX", Character.valueOf('X'), new ItemStack(StoreMore.hardenedGoldPickaxeII));
+		GameRegistry.addRecipe(new ItemStack(StoreMore.hardenedGoldPickaxeIV), "XXX", "XXX", "XXX", Character.valueOf('X'), new ItemStack(StoreMore.hardenedGoldPickaxeIII));
+		GameRegistry.addRecipe(new ItemStack(StoreMore.hardenedDiamondPickaxeI), "XXX", "XXX", "XXX", Character.valueOf('X'), new ItemStack(Item.pickaxeDiamond));
+		GameRegistry.addRecipe(new ItemStack(StoreMore.hardenedDiamondPickaxeII), "XXX", "XXX", "XXX", Character.valueOf('X'), new ItemStack(StoreMore.hardenedDiamondPickaxeI));
+		GameRegistry.addRecipe(new ItemStack(StoreMore.hardenedDiamondPickaxeIII), "XXX", "XXX", "XXX", Character.valueOf('X'), new ItemStack(StoreMore.hardenedDiamondPickaxeII));
+		GameRegistry.addRecipe(new ItemStack(StoreMore.hardenedDiamondPickaxeIV), "XXX", "XXX", "XXX", Character.valueOf('X'), new ItemStack(StoreMore.hardenedDiamondPickaxeIII));
 
 			//Unpacking
 		GameRegistry.addShapelessRecipe(new ItemStack(Block.cobblestone,9), new ItemStack(StoreMore.packedblocksI,1,0));

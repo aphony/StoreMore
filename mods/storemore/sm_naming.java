@@ -242,8 +242,27 @@ public class sm_naming {
         LanguageRegistry.instance().addName(new ItemStack(StoreMore.packedfoodV, 1, 14), "Packed Cooked Pork III");
         LanguageRegistry.instance().addName(new ItemStack(StoreMore.packedfoodV, 1, 15), "Packed Cooked Pork IV");
         
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.hardenedWoodPickaxeI), "Hardened Wood Pickaxe I");
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.hardenedWoodPickaxeII), "Hardened Wood Pickaxe II");
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.hardenedWoodPickaxeIII), "Hardened Wood Pickaxe III");
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.hardenedWoodPickaxeIV), "Hardened Wood Pickaxe IV");        
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.hardenedStonePickaxeI), "Hardened Stone Pickaxe I");
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.hardenedStonePickaxeII), "Hardened Stone Pickaxe II");
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.hardenedStonePickaxeIII), "Hardened Stone Pickaxe III");
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.hardenedStonePickaxeIV), "Hardened Stone Pickaxe IV");        
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.hardenedIronPickaxeI), "Hardened Iron Pickaxe I");
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.hardenedIronPickaxeII), "Hardened Iron Pickaxe II");
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.hardenedIronPickaxeIII), "Hardened Iron Pickaxe III");
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.hardenedIronPickaxeIV), "Hardened Iron Pickaxe IV");      
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.hardenedGoldPickaxeI), "Hardened Gold Pickaxe I");
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.hardenedGoldPickaxeII), "Hardened Gold Pickaxe II");
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.hardenedGoldPickaxeIII), "Hardened Gold Pickaxe III");
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.hardenedGoldPickaxeIV), "Hardened Gold Pickaxe IV");      
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.hardenedDiamondPickaxeI), "Hardened Diamond Pickaxe I");
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.hardenedDiamondPickaxeII), "Hardened Diamond Pickaxe II");
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.hardenedDiamondPickaxeIII), "Hardened Diamond Pickaxe III");
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.hardenedDiamondPickaxeIV), "Hardened Diamond Pickaxe IV");
 
-        LanguageRegistry.instance().addName(new ItemStack(StoreMore.BlockSuperCompressor), "Super Compressor");
     }
 		
 }
