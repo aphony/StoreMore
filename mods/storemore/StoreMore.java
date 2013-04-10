@@ -45,7 +45,7 @@ import cpw.mods.fml.common.network.NetworkMod;
 import cpw.mods.fml.common.network.NetworkRegistry;
 import cpw.mods.fml.common.registry.GameRegistry;
 
-@Mod(modid = "StoreMore", name = "StoreMore", version = "1.3.5 Alpha", useMetadata = false, dependencies = "before:StoreMore|IC2")
+@Mod(modid = "StoreMore", name = "StoreMore", version = "1.3.5_MC1.5.1", useMetadata = false, dependencies = "before:StoreMore|IC2")
 @NetworkMod(channels = "StoreMore", packetHandler = sm_packetHandler.class, clientSideRequired = true, serverSideRequired = false)
 public class StoreMore 
 {
@@ -92,11 +92,7 @@ public class StoreMore
 	public static Block packedfoodII;
 	public static Block packedfoodIII;
 	public static Block packedfoodIV;
-	public static Block packedfoodV;		
-
-	public static Block BlockSuperCompressor;
-	public static Block superCompressorIdle;
-	public static Block superCompressorActive;
+	public static Block packedfoodV;
 	
 	public static Item hardenedWoodPickaxeI;
 	public static Item hardenedWoodPickaxeII;
@@ -119,6 +115,89 @@ public class StoreMore
 	public static Item hardenedDiamondPickaxeIII;
 	public static Item hardenedDiamondPickaxeIV;
 	
+	public static Item hardenedWoodAxeI;
+	public static Item hardenedWoodAxeII;
+	public static Item hardenedWoodAxeIII;
+	public static Item hardenedWoodAxeIV;
+	public static Item hardenedStoneAxeI;
+	public static Item hardenedStoneAxeII;
+	public static Item hardenedStoneAxeIII;
+	public static Item hardenedStoneAxeIV;
+	public static Item hardenedIronAxeI;
+	public static Item hardenedIronAxeII;
+	public static Item hardenedIronAxeIII;
+	public static Item hardenedIronAxeIV;
+	public static Item hardenedGoldAxeI;
+	public static Item hardenedGoldAxeII;
+	public static Item hardenedGoldAxeIII;
+	public static Item hardenedGoldAxeIV;
+	public static Item hardenedDiamondAxeI;
+	public static Item hardenedDiamondAxeII;
+	public static Item hardenedDiamondAxeIII;
+	public static Item hardenedDiamondAxeIV;
+	
+	public static Item hardenedWoodShovelI;
+	public static Item hardenedWoodShovelII;
+	public static Item hardenedWoodShovelIII;
+	public static Item hardenedWoodShovelIV;
+	public static Item hardenedStoneShovelI;
+	public static Item hardenedStoneShovelII;
+	public static Item hardenedStoneShovelIII;
+	public static Item hardenedStoneShovelIV;
+	public static Item hardenedIronShovelI;
+	public static Item hardenedIronShovelII;
+	public static Item hardenedIronShovelIII;
+	public static Item hardenedIronShovelIV;
+	public static Item hardenedGoldShovelI;
+	public static Item hardenedGoldShovelII;
+	public static Item hardenedGoldShovelIII;
+	public static Item hardenedGoldShovelIV;
+	public static Item hardenedDiamondShovelI;
+	public static Item hardenedDiamondShovelII;
+	public static Item hardenedDiamondShovelIII;
+	public static Item hardenedDiamondShovelIV;
+	
+	public static Item hardenedWoodHoeI;
+	public static Item hardenedWoodHoeII;
+	public static Item hardenedWoodHoeIII;
+	public static Item hardenedWoodHoeIV;
+	public static Item hardenedStoneHoeI;
+	public static Item hardenedStoneHoeII;
+	public static Item hardenedStoneHoeIII;
+	public static Item hardenedStoneHoeIV;
+	public static Item hardenedIronHoeI;
+	public static Item hardenedIronHoeII;
+	public static Item hardenedIronHoeIII;
+	public static Item hardenedIronHoeIV;
+	public static Item hardenedGoldHoeI;
+	public static Item hardenedGoldHoeII;
+	public static Item hardenedGoldHoeIII;
+	public static Item hardenedGoldHoeIV;
+	public static Item hardenedDiamondHoeI;
+	public static Item hardenedDiamondHoeII;
+	public static Item hardenedDiamondHoeIII;
+	public static Item hardenedDiamondHoeIV;
+	
+	public static Item hardenedWoodSwordI;
+	public static Item hardenedWoodSwordII;
+	public static Item hardenedWoodSwordIII;
+	public static Item hardenedWoodSwordIV;
+	public static Item hardenedStoneSwordI;
+	public static Item hardenedStoneSwordII;
+	public static Item hardenedStoneSwordIII;
+	public static Item hardenedStoneSwordIV;
+	public static Item hardenedIronSwordI;
+	public static Item hardenedIronSwordII;
+	public static Item hardenedIronSwordIII;
+	public static Item hardenedIronSwordIV;
+	public static Item hardenedGoldSwordI;
+	public static Item hardenedGoldSwordII;
+	public static Item hardenedGoldSwordIII;
+	public static Item hardenedGoldSwordIV;
+	public static Item hardenedDiamondSwordI;
+	public static Item hardenedDiamondSwordII;
+	public static Item hardenedDiamondSwordIII;
+	public static Item hardenedDiamondSwordIV;
 
 	
 	@PreInit()
@@ -140,13 +219,9 @@ public class StoreMore
 		NetworkRegistry.instance().registerGuiHandler(this, guiHandler);
 	}
 
-
-
-
 	public static CreativeTabs StoreMoreTab = new StoreMoreTab(CreativeTabs.getNextID(), "Store More");
 
 	{
-
 
 		//Multiblocks	
 
@@ -173,7 +248,6 @@ public class StoreMore
 		packedfoodIII = new mods.storemore.blocks.packedfoodIII(sm_config.packedfoodIIIID).setHardness(1.0f).setResistance(50.0f).setCreativeTab(StoreMoreTab).setUnlocalizedName("packedfoodIII");
 		packedfoodIV = new mods.storemore.blocks.packedfoodIV(sm_config.packedfoodIVID).setHardness(1.0f).setResistance(50.0f).setCreativeTab(StoreMoreTab).setUnlocalizedName("packedfoodIV");
 		packedfoodV = new mods.storemore.blocks.packedfoodV(sm_config.packedfoodVID).setHardness(1.0f).setResistance(50.0f).setCreativeTab(StoreMoreTab).setUnlocalizedName("packedfoodV");
-
 
 		//Multiblock ItemBlocks	
 
@@ -222,26 +296,111 @@ public class StoreMore
 		EnumToolMaterial hardenedDiamondII = EnumHelper.addToolMaterial("hardenedDiamondII", 3, 126441, 16.0F, 0, 25);
 		EnumToolMaterial hardenedDiamondIII = EnumHelper.addToolMaterial("hardenedDiamondII", 3, 1137969, 16.0F, 0, 25);
 		EnumToolMaterial hardenedDiamondIV = EnumHelper.addToolMaterial("hardenedDiamondIV", 3, 10241721, 16.0F, 0, 25);
-		hardenedWoodPickaxeI = new mods.storemore.items.tools.hardenedWoodPickaxeI(sm_config.hardenedWoodPickaxeIID, hardenedWoodI).setUnlocalizedName("hardenedWoodPickaxeI");
-		hardenedWoodPickaxeII = new mods.storemore.items.tools.hardenedWoodPickaxeII(sm_config.hardenedWoodPickaxeIIID, hardenedWoodII).setUnlocalizedName("hardenedWoodPickaxeII");
-		hardenedWoodPickaxeIII = new mods.storemore.items.tools.hardenedWoodPickaxeIII(sm_config.hardenedWoodPickaxeIIIID, hardenedWoodIII).setUnlocalizedName("hardenedWoodPickaxeIII");
-		hardenedWoodPickaxeIV = new mods.storemore.items.tools.hardenedWoodPickaxeIV(sm_config.hardenedWoodPickaxeIVID, hardenedWoodIV).setUnlocalizedName("hardenedWoodPickaxeIV");
-		hardenedStonePickaxeI = new mods.storemore.items.tools.hardenedStonePickaxeI(sm_config.hardenedStonePickaxeIID, hardenedStoneI).setUnlocalizedName("hardenedStonePickaxeI");
-		hardenedStonePickaxeII = new mods.storemore.items.tools.hardenedStonePickaxeII(sm_config.hardenedStonePickaxeIIID, hardenedStoneII).setUnlocalizedName("hardenedStonePickaxeII");
-		hardenedStonePickaxeIII = new mods.storemore.items.tools.hardenedStonePickaxeIII(sm_config.hardenedStonePickaxeIIIID, hardenedStoneIII).setUnlocalizedName("hardenedStonePickaxeIII");
-		hardenedStonePickaxeIV = new mods.storemore.items.tools.hardenedStonePickaxeIV(sm_config.hardenedStonePickaxeIVID, hardenedStoneIV).setUnlocalizedName("hardenedStonePickaxeIV");
-		hardenedIronPickaxeI = new mods.storemore.items.tools.hardenedIronPickaxeI(sm_config.hardenedIronPickaxeIID, hardenedIronI).setUnlocalizedName("hardenedIronPickaxeI");
-		hardenedIronPickaxeII = new mods.storemore.items.tools.hardenedIronPickaxeII(sm_config.hardenedIronPickaxeIIID, hardenedIronII).setUnlocalizedName("hardenedIronPickaxeII");
-		hardenedIronPickaxeIII = new mods.storemore.items.tools.hardenedIronPickaxeIII(sm_config.hardenedIronPickaxeIIIID, hardenedIronIII).setUnlocalizedName("hardenedIronPickaxeIII");
-		hardenedIronPickaxeIV = new mods.storemore.items.tools.hardenedIronPickaxeIV(sm_config.hardenedIronPickaxeIVID, hardenedIronIV).setUnlocalizedName("hardenedIronPickaxeIV");
-		hardenedGoldPickaxeI = new mods.storemore.items.tools.hardenedGoldPickaxeI(sm_config.hardenedGoldPickaxeIID, hardenedGoldI).setUnlocalizedName("hardenedGoldPickaxeI");
-		hardenedGoldPickaxeII = new mods.storemore.items.tools.hardenedGoldPickaxeII(sm_config.hardenedGoldPickaxeIIID, hardenedGoldII).setUnlocalizedName("hardenedGoldPickaxeII");
-		hardenedGoldPickaxeIII = new mods.storemore.items.tools.hardenedGoldPickaxeIII(sm_config.hardenedGoldPickaxeIIIID, hardenedGoldIII).setUnlocalizedName("hardenedGoldPickaxeIII");
-		hardenedGoldPickaxeIV = new mods.storemore.items.tools.hardenedGoldPickaxeIV(sm_config.hardenedGoldPickaxeIVID, hardenedGoldIV).setUnlocalizedName("hardenedGoldPickaxeIV");
-		hardenedDiamondPickaxeI = new mods.storemore.items.tools.hardenedDiamondPickaxeI(sm_config.hardenedDiamondPickaxeIID, hardenedDiamondI).setUnlocalizedName("hardenedDiamondPickaxeI");
-		hardenedDiamondPickaxeII = new mods.storemore.items.tools.hardenedDiamondPickaxeII(sm_config.hardenedDiamondPickaxeIIID, hardenedDiamondII).setUnlocalizedName("hardenedDiamondPickaxeII");
-		hardenedDiamondPickaxeIII = new mods.storemore.items.tools.hardenedDiamondPickaxeIII(sm_config.hardenedDiamondPickaxeIIIID, hardenedDiamondIII).setUnlocalizedName("hardenedDiamondPickaxeIII");
-		hardenedDiamondPickaxeIV = new mods.storemore.items.tools.hardenedDiamondPickaxeIV(sm_config.hardenedDiamondPickaxeIVID, hardenedDiamondIV).setUnlocalizedName("hardenedDiamondPickaxeIV");
+		
+		hardenedWoodPickaxeI = new mods.storemore.items.tools.wood.hardenedWoodPickaxeI(sm_config.hardenedWoodPickaxeIID, hardenedWoodI).setUnlocalizedName("hardenedWoodPickaxeI");
+		hardenedWoodPickaxeII = new mods.storemore.items.tools.wood.hardenedWoodPickaxeII(sm_config.hardenedWoodPickaxeIIID, hardenedWoodII).setUnlocalizedName("hardenedWoodPickaxeII");
+		hardenedWoodPickaxeIII = new mods.storemore.items.tools.wood.hardenedWoodPickaxeIII(sm_config.hardenedWoodPickaxeIIIID, hardenedWoodIII).setUnlocalizedName("hardenedWoodPickaxeIII");
+		hardenedWoodPickaxeIV = new mods.storemore.items.tools.wood.hardenedWoodPickaxeIV(sm_config.hardenedWoodPickaxeIVID, hardenedWoodIV).setUnlocalizedName("hardenedWoodPickaxeIV");
+		hardenedStonePickaxeI = new mods.storemore.items.tools.stone.hardenedStonePickaxeI(sm_config.hardenedStonePickaxeIID, hardenedStoneI).setUnlocalizedName("hardenedStonePickaxeI");
+		hardenedStonePickaxeII = new mods.storemore.items.tools.stone.hardenedStonePickaxeII(sm_config.hardenedStonePickaxeIIID, hardenedStoneII).setUnlocalizedName("hardenedStonePickaxeII");
+		hardenedStonePickaxeIII = new mods.storemore.items.tools.stone.hardenedStonePickaxeIII(sm_config.hardenedStonePickaxeIIIID, hardenedStoneIII).setUnlocalizedName("hardenedStonePickaxeIII");
+		hardenedStonePickaxeIV = new mods.storemore.items.tools.stone.hardenedStonePickaxeIV(sm_config.hardenedStonePickaxeIVID, hardenedStoneIV).setUnlocalizedName("hardenedStonePickaxeIV");
+		hardenedIronPickaxeI = new mods.storemore.items.tools.iron.hardenedIronPickaxeI(sm_config.hardenedIronPickaxeIID, hardenedIronI).setUnlocalizedName("hardenedIronPickaxeI");
+		hardenedIronPickaxeII = new mods.storemore.items.tools.iron.hardenedIronPickaxeII(sm_config.hardenedIronPickaxeIIID, hardenedIronII).setUnlocalizedName("hardenedIronPickaxeII");
+		hardenedIronPickaxeIII = new mods.storemore.items.tools.iron.hardenedIronPickaxeIII(sm_config.hardenedIronPickaxeIIIID, hardenedIronIII).setUnlocalizedName("hardenedIronPickaxeIII");
+		hardenedIronPickaxeIV = new mods.storemore.items.tools.iron.hardenedIronPickaxeIV(sm_config.hardenedIronPickaxeIVID, hardenedIronIV).setUnlocalizedName("hardenedIronPickaxeIV");
+		hardenedGoldPickaxeI = new mods.storemore.items.tools.gold.hardenedGoldPickaxeI(sm_config.hardenedGoldPickaxeIID, hardenedGoldI).setUnlocalizedName("hardenedGoldPickaxeI");
+		hardenedGoldPickaxeII = new mods.storemore.items.tools.gold.hardenedGoldPickaxeII(sm_config.hardenedGoldPickaxeIIID, hardenedGoldII).setUnlocalizedName("hardenedGoldPickaxeII");
+		hardenedGoldPickaxeIII = new mods.storemore.items.tools.gold.hardenedGoldPickaxeIII(sm_config.hardenedGoldPickaxeIIIID, hardenedGoldIII).setUnlocalizedName("hardenedGoldPickaxeIII");
+		hardenedGoldPickaxeIV = new mods.storemore.items.tools.gold.hardenedGoldPickaxeIV(sm_config.hardenedGoldPickaxeIVID, hardenedGoldIV).setUnlocalizedName("hardenedGoldPickaxeIV");
+		hardenedDiamondPickaxeI = new mods.storemore.items.tools.diamond.hardenedDiamondPickaxeI(sm_config.hardenedDiamondPickaxeIID, hardenedDiamondI).setUnlocalizedName("hardenedDiamondPickaxeI");
+		hardenedDiamondPickaxeII = new mods.storemore.items.tools.diamond.hardenedDiamondPickaxeII(sm_config.hardenedDiamondPickaxeIIID, hardenedDiamondII).setUnlocalizedName("hardenedDiamondPickaxeII");
+		hardenedDiamondPickaxeIII = new mods.storemore.items.tools.diamond.hardenedDiamondPickaxeIII(sm_config.hardenedDiamondPickaxeIIIID, hardenedDiamondIII).setUnlocalizedName("hardenedDiamondPickaxeIII");
+		hardenedDiamondPickaxeIV = new mods.storemore.items.tools.diamond.hardenedDiamondPickaxeIV(sm_config.hardenedDiamondPickaxeIVID, hardenedDiamondIV).setUnlocalizedName("hardenedDiamondPickaxeIV");
+		
+		hardenedWoodAxeI = new mods.storemore.items.tools.wood.hardenedWoodAxeI(sm_config.hardenedWoodAxeIID, hardenedWoodI).setUnlocalizedName("hardenedWoodAxeI");
+		hardenedWoodAxeII = new mods.storemore.items.tools.wood.hardenedWoodAxeII(sm_config.hardenedWoodAxeIIID, hardenedWoodII).setUnlocalizedName("hardenedWoodAxeII");
+		hardenedWoodAxeIII = new mods.storemore.items.tools.wood.hardenedWoodAxeIII(sm_config.hardenedWoodAxeIIIID, hardenedWoodIII).setUnlocalizedName("hardenedWoodAxeIII");
+		hardenedWoodAxeIV = new mods.storemore.items.tools.wood.hardenedWoodAxeIV(sm_config.hardenedWoodAxeIVID, hardenedWoodIV).setUnlocalizedName("hardenedWoodAxeIV");
+		hardenedStoneAxeI = new mods.storemore.items.tools.stone.hardenedStoneAxeI(sm_config.hardenedStoneAxeIID, hardenedStoneI).setUnlocalizedName("hardenedStoneAxeI");
+		hardenedStoneAxeII = new mods.storemore.items.tools.stone.hardenedStoneAxeII(sm_config.hardenedStoneAxeIIID, hardenedStoneII).setUnlocalizedName("hardenedStoneAxeII");
+		hardenedStoneAxeIII = new mods.storemore.items.tools.stone.hardenedStoneAxeIII(sm_config.hardenedStoneAxeIIIID, hardenedStoneIII).setUnlocalizedName("hardenedStoneAxeIII");
+		hardenedStoneAxeIV = new mods.storemore.items.tools.stone.hardenedStoneAxeIV(sm_config.hardenedStoneAxeIVID, hardenedStoneIV).setUnlocalizedName("hardenedStoneAxeIV");
+		hardenedIronAxeI = new mods.storemore.items.tools.iron.hardenedIronAxeI(sm_config.hardenedIronAxeIID, hardenedIronI).setUnlocalizedName("hardenedIronAxeI");
+		hardenedIronAxeII = new mods.storemore.items.tools.iron.hardenedIronAxeII(sm_config.hardenedIronAxeIIID, hardenedIronII).setUnlocalizedName("hardenedIronAxeII");
+		hardenedIronAxeIII = new mods.storemore.items.tools.iron.hardenedIronAxeIII(sm_config.hardenedIronAxeIIIID, hardenedIronIII).setUnlocalizedName("hardenedIronAxeIII");
+		hardenedIronAxeIV = new mods.storemore.items.tools.iron.hardenedIronAxeIV(sm_config.hardenedIronAxeIVID, hardenedIronIV).setUnlocalizedName("hardenedIronAxeIV");
+		hardenedGoldAxeI = new mods.storemore.items.tools.gold.hardenedGoldAxeI(sm_config.hardenedGoldAxeIID, hardenedGoldI).setUnlocalizedName("hardenedGoldAxeI");
+		hardenedGoldAxeII = new mods.storemore.items.tools.gold.hardenedGoldAxeII(sm_config.hardenedGoldAxeIIID, hardenedGoldII).setUnlocalizedName("hardenedGoldAxeII");
+		hardenedGoldAxeIII = new mods.storemore.items.tools.gold.hardenedGoldAxeIII(sm_config.hardenedGoldAxeIIIID, hardenedGoldIII).setUnlocalizedName("hardenedGoldAxeIII");
+		hardenedGoldAxeIV = new mods.storemore.items.tools.gold.hardenedGoldAxeIV(sm_config.hardenedGoldAxeIVID, hardenedGoldIV).setUnlocalizedName("hardenedGoldAxeIV");
+		hardenedDiamondAxeI = new mods.storemore.items.tools.diamond.hardenedDiamondAxeI(sm_config.hardenedDiamondAxeIID, hardenedDiamondI).setUnlocalizedName("hardenedDiamondAxeI");
+		hardenedDiamondAxeII = new mods.storemore.items.tools.diamond.hardenedDiamondAxeII(sm_config.hardenedDiamondAxeIIID, hardenedDiamondII).setUnlocalizedName("hardenedDiamondAxeII");
+		hardenedDiamondAxeIII = new mods.storemore.items.tools.diamond.hardenedDiamondAxeIII(sm_config.hardenedDiamondAxeIIIID, hardenedDiamondIII).setUnlocalizedName("hardenedDiamondAxeIII");
+		hardenedDiamondAxeIV = new mods.storemore.items.tools.diamond.hardenedDiamondAxeIV(sm_config.hardenedDiamondAxeIVID, hardenedDiamondIV).setUnlocalizedName("hardenedDiamondAxeIV");
+		
+		hardenedWoodShovelI = new mods.storemore.items.tools.wood.hardenedWoodShovelI(sm_config.hardenedWoodShovelIID, hardenedWoodI).setUnlocalizedName("hardenedWoodShovelI");
+		hardenedWoodShovelII = new mods.storemore.items.tools.wood.hardenedWoodShovelII(sm_config.hardenedWoodShovelIIID, hardenedWoodII).setUnlocalizedName("hardenedWoodShovelII");
+		hardenedWoodShovelIII = new mods.storemore.items.tools.wood.hardenedWoodShovelIII(sm_config.hardenedWoodShovelIIIID, hardenedWoodIII).setUnlocalizedName("hardenedWoodShovelIII");
+		hardenedWoodShovelIV = new mods.storemore.items.tools.wood.hardenedWoodShovelIV(sm_config.hardenedWoodShovelIVID, hardenedWoodIV).setUnlocalizedName("hardenedWoodShovelIV");
+		hardenedStoneShovelI = new mods.storemore.items.tools.stone.hardenedStoneShovelI(sm_config.hardenedStoneShovelIID, hardenedStoneI).setUnlocalizedName("hardenedStoneShovelI");
+		hardenedStoneShovelII = new mods.storemore.items.tools.stone.hardenedStoneShovelII(sm_config.hardenedStoneShovelIIID, hardenedStoneII).setUnlocalizedName("hardenedStoneShovelII");
+		hardenedStoneShovelIII = new mods.storemore.items.tools.stone.hardenedStoneShovelIII(sm_config.hardenedStoneShovelIIIID, hardenedStoneIII).setUnlocalizedName("hardenedStoneShovelIII");
+		hardenedStoneShovelIV = new mods.storemore.items.tools.stone.hardenedStoneShovelIV(sm_config.hardenedStoneShovelIVID, hardenedStoneIV).setUnlocalizedName("hardenedStoneShovelIV");
+		hardenedIronShovelI = new mods.storemore.items.tools.iron.hardenedIronShovelI(sm_config.hardenedIronShovelIID, hardenedIronI).setUnlocalizedName("hardenedIronShovelI");
+		hardenedIronShovelII = new mods.storemore.items.tools.iron.hardenedIronShovelII(sm_config.hardenedIronShovelIIID, hardenedIronII).setUnlocalizedName("hardenedIronShovelII");
+		hardenedIronShovelIII = new mods.storemore.items.tools.iron.hardenedIronShovelIII(sm_config.hardenedIronShovelIIIID, hardenedIronIII).setUnlocalizedName("hardenedIronShovelIII");
+		hardenedIronShovelIV = new mods.storemore.items.tools.iron.hardenedIronShovelIV(sm_config.hardenedIronShovelIVID, hardenedIronIV).setUnlocalizedName("hardenedIronShovelIV");
+		hardenedGoldShovelI = new mods.storemore.items.tools.gold.hardenedGoldShovelI(sm_config.hardenedGoldShovelIID, hardenedGoldI).setUnlocalizedName("hardenedGoldShovelI");
+		hardenedGoldShovelII = new mods.storemore.items.tools.gold.hardenedGoldShovelII(sm_config.hardenedGoldShovelIIID, hardenedGoldII).setUnlocalizedName("hardenedGoldShovelII");
+		hardenedGoldShovelIII = new mods.storemore.items.tools.gold.hardenedGoldShovelIII(sm_config.hardenedGoldShovelIIIID, hardenedGoldIII).setUnlocalizedName("hardenedGoldShovelIII");
+		hardenedGoldShovelIV = new mods.storemore.items.tools.gold.hardenedGoldShovelIV(sm_config.hardenedGoldShovelIVID, hardenedGoldIV).setUnlocalizedName("hardenedGoldShovelIV");
+		hardenedDiamondShovelI = new mods.storemore.items.tools.diamond.hardenedDiamondShovelI(sm_config.hardenedDiamondShovelIID, hardenedDiamondI).setUnlocalizedName("hardenedDiamondShovelI");
+		hardenedDiamondShovelII = new mods.storemore.items.tools.diamond.hardenedDiamondShovelII(sm_config.hardenedDiamondShovelIIID, hardenedDiamondII).setUnlocalizedName("hardenedDiamondShovelII");
+		hardenedDiamondShovelIII = new mods.storemore.items.tools.diamond.hardenedDiamondShovelIII(sm_config.hardenedDiamondShovelIIIID, hardenedDiamondIII).setUnlocalizedName("hardenedDiamondShovelIII");
+		hardenedDiamondShovelIV = new mods.storemore.items.tools.diamond.hardenedDiamondShovelIV(sm_config.hardenedDiamondShovelIVID, hardenedDiamondIV).setUnlocalizedName("hardenedDiamondShovelIV");
+		
+		hardenedWoodHoeI = new mods.storemore.items.tools.wood.hardenedWoodHoeI(sm_config.hardenedWoodHoeIID, hardenedWoodI).setUnlocalizedName("hardenedWoodHoeI");
+		hardenedWoodHoeII = new mods.storemore.items.tools.wood.hardenedWoodHoeII(sm_config.hardenedWoodHoeIIID, hardenedWoodII).setUnlocalizedName("hardenedWoodHoeII");
+		hardenedWoodHoeIII = new mods.storemore.items.tools.wood.hardenedWoodHoeIII(sm_config.hardenedWoodHoeIIIID, hardenedWoodIII).setUnlocalizedName("hardenedWoodHoeIII");
+		hardenedWoodHoeIV = new mods.storemore.items.tools.wood.hardenedWoodHoeIV(sm_config.hardenedWoodHoeIVID, hardenedWoodIV).setUnlocalizedName("hardenedWoodHoeIV");
+		hardenedStoneHoeI = new mods.storemore.items.tools.stone.hardenedStoneHoeI(sm_config.hardenedStoneHoeIID, hardenedStoneI).setUnlocalizedName("hardenedStoneHoeI");
+		hardenedStoneHoeII = new mods.storemore.items.tools.stone.hardenedStoneHoeII(sm_config.hardenedStoneHoeIIID, hardenedStoneII).setUnlocalizedName("hardenedStoneHoeII");
+		hardenedStoneHoeIII = new mods.storemore.items.tools.stone.hardenedStoneHoeIII(sm_config.hardenedStoneHoeIIIID, hardenedStoneIII).setUnlocalizedName("hardenedStoneHoeIII");
+		hardenedStoneHoeIV = new mods.storemore.items.tools.stone.hardenedStoneHoeIV(sm_config.hardenedStoneHoeIVID, hardenedStoneIV).setUnlocalizedName("hardenedStoneHoeIV");
+		hardenedIronHoeI = new mods.storemore.items.tools.iron.hardenedIronHoeI(sm_config.hardenedIronHoeIID, hardenedIronI).setUnlocalizedName("hardenedIronHoeI");
+		hardenedIronHoeII = new mods.storemore.items.tools.iron.hardenedIronHoeII(sm_config.hardenedIronHoeIIID, hardenedIronII).setUnlocalizedName("hardenedIronHoeII");
+		hardenedIronHoeIII = new mods.storemore.items.tools.iron.hardenedIronHoeIII(sm_config.hardenedIronHoeIIIID, hardenedIronIII).setUnlocalizedName("hardenedIronHoeIII");
+		hardenedIronHoeIV = new mods.storemore.items.tools.iron.hardenedIronHoeIV(sm_config.hardenedIronHoeIVID, hardenedIronIV).setUnlocalizedName("hardenedIronHoeIV");
+		hardenedGoldHoeI = new mods.storemore.items.tools.gold.hardenedGoldHoeI(sm_config.hardenedGoldHoeIID, hardenedGoldI).setUnlocalizedName("hardenedGoldHoeI");
+		hardenedGoldHoeII = new mods.storemore.items.tools.gold.hardenedGoldHoeII(sm_config.hardenedGoldHoeIIID, hardenedGoldII).setUnlocalizedName("hardenedGoldHoeII");
+		hardenedGoldHoeIII = new mods.storemore.items.tools.gold.hardenedGoldHoeIII(sm_config.hardenedGoldHoeIIIID, hardenedGoldIII).setUnlocalizedName("hardenedGoldHoeIII");
+		hardenedGoldHoeIV = new mods.storemore.items.tools.gold.hardenedGoldHoeIV(sm_config.hardenedGoldHoeIVID, hardenedGoldIV).setUnlocalizedName("hardenedGoldHoeIV");
+		hardenedDiamondHoeI = new mods.storemore.items.tools.diamond.hardenedDiamondHoeI(sm_config.hardenedDiamondHoeIID, hardenedDiamondI).setUnlocalizedName("hardenedDiamondHoeI");
+		hardenedDiamondHoeII = new mods.storemore.items.tools.diamond.hardenedDiamondHoeII(sm_config.hardenedDiamondHoeIIID, hardenedDiamondII).setUnlocalizedName("hardenedDiamondHoeII");
+		hardenedDiamondHoeIII = new mods.storemore.items.tools.diamond.hardenedDiamondHoeIII(sm_config.hardenedDiamondHoeIIIID, hardenedDiamondIII).setUnlocalizedName("hardenedDiamondHoeIII");
+		hardenedDiamondHoeIV = new mods.storemore.items.tools.diamond.hardenedDiamondHoeIV(sm_config.hardenedDiamondHoeIVID, hardenedDiamondIV).setUnlocalizedName("hardenedDiamondHoeIV");
+		
+		hardenedWoodSwordI = new mods.storemore.items.tools.wood.hardenedWoodSwordI(sm_config.hardenedWoodSwordIID, hardenedWoodI).setUnlocalizedName("hardenedWoodSwordI");
+		hardenedWoodSwordII = new mods.storemore.items.tools.wood.hardenedWoodSwordII(sm_config.hardenedWoodSwordIIID, hardenedWoodII).setUnlocalizedName("hardenedWoodSwordII");
+		hardenedWoodSwordIII = new mods.storemore.items.tools.wood.hardenedWoodSwordIII(sm_config.hardenedWoodSwordIIIID, hardenedWoodIII).setUnlocalizedName("hardenedWoodSwordIII");
+		hardenedWoodSwordIV = new mods.storemore.items.tools.wood.hardenedWoodSwordIV(sm_config.hardenedWoodSwordIVID, hardenedWoodIV).setUnlocalizedName("hardenedWoodSwordIV");
+		hardenedStoneSwordI = new mods.storemore.items.tools.stone.hardenedStoneSwordI(sm_config.hardenedStoneSwordIID, hardenedStoneI).setUnlocalizedName("hardenedStoneSwordI");
+		hardenedStoneSwordII = new mods.storemore.items.tools.stone.hardenedStoneSwordII(sm_config.hardenedStoneSwordIIID, hardenedStoneII).setUnlocalizedName("hardenedStoneSwordII");
+		hardenedStoneSwordIII = new mods.storemore.items.tools.stone.hardenedStoneSwordIII(sm_config.hardenedStoneSwordIIIID, hardenedStoneIII).setUnlocalizedName("hardenedStoneSwordIII");
+		hardenedStoneSwordIV = new mods.storemore.items.tools.stone.hardenedStoneSwordIV(sm_config.hardenedStoneSwordIVID, hardenedStoneIV).setUnlocalizedName("hardenedStoneSwordIV");
+		hardenedIronSwordI = new mods.storemore.items.tools.iron.hardenedIronSwordI(sm_config.hardenedIronSwordIID, hardenedIronI).setUnlocalizedName("hardenedIronSwordI");
+		hardenedIronSwordII = new mods.storemore.items.tools.iron.hardenedIronSwordII(sm_config.hardenedIronSwordIIID, hardenedIronII).setUnlocalizedName("hardenedIronSwordII");
+		hardenedIronSwordIII = new mods.storemore.items.tools.iron.hardenedIronSwordIII(sm_config.hardenedIronSwordIIIID, hardenedIronIII).setUnlocalizedName("hardenedIronSwordIII");
+		hardenedIronSwordIV = new mods.storemore.items.tools.iron.hardenedIronSwordIV(sm_config.hardenedIronSwordIVID, hardenedIronIV).setUnlocalizedName("hardenedIronSwordIV");
+		hardenedGoldSwordI = new mods.storemore.items.tools.gold.hardenedGoldSwordI(sm_config.hardenedGoldSwordIID, hardenedGoldI).setUnlocalizedName("hardenedGoldSwordI");
+		hardenedGoldSwordII = new mods.storemore.items.tools.gold.hardenedGoldSwordII(sm_config.hardenedGoldSwordIIID, hardenedGoldII).setUnlocalizedName("hardenedGoldSwordII");
+		hardenedGoldSwordIII = new mods.storemore.items.tools.gold.hardenedGoldSwordIII(sm_config.hardenedGoldSwordIIIID, hardenedGoldIII).setUnlocalizedName("hardenedGoldSwordIII");
+		hardenedGoldSwordIV = new mods.storemore.items.tools.gold.hardenedGoldSwordIV(sm_config.hardenedGoldSwordIVID, hardenedGoldIV).setUnlocalizedName("hardenedGoldSwordIV");
+		hardenedDiamondSwordI = new mods.storemore.items.tools.diamond.hardenedDiamondSwordI(sm_config.hardenedDiamondSwordIID, hardenedDiamondI).setUnlocalizedName("hardenedDiamondSwordI");
+		hardenedDiamondSwordII = new mods.storemore.items.tools.diamond.hardenedDiamondSwordII(sm_config.hardenedDiamondSwordIIID, hardenedDiamondII).setUnlocalizedName("hardenedDiamondSwordII");
+		hardenedDiamondSwordIII = new mods.storemore.items.tools.diamond.hardenedDiamondSwordIII(sm_config.hardenedDiamondSwordIIIID, hardenedDiamondIII).setUnlocalizedName("hardenedDiamondSwordIII");
+		hardenedDiamondSwordIV = new mods.storemore.items.tools.diamond.hardenedDiamondSwordIV(sm_config.hardenedDiamondSwordIVID, hardenedDiamondIV).setUnlocalizedName("hardenedDiamondSwordIV");
 		
 	}
 

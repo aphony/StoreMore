@@ -1,6 +1,6 @@
 package mods.storemore;
 
-import mods.storemore.ic2.sm_ic2plugin;
+import mods.storemore.addons.ic2.sm_ic2plugin;
 import net.minecraft.item.ItemStack;
 import cpw.mods.fml.common.Loader;
 import cpw.mods.fml.common.registry.LanguageRegistry;
@@ -262,6 +262,90 @@ public class sm_naming {
         LanguageRegistry.instance().addName(new ItemStack(StoreMore.hardenedDiamondPickaxeII), "Hardened Diamond Pickaxe II");
         LanguageRegistry.instance().addName(new ItemStack(StoreMore.hardenedDiamondPickaxeIII), "Hardened Diamond Pickaxe III");
         LanguageRegistry.instance().addName(new ItemStack(StoreMore.hardenedDiamondPickaxeIV), "Hardened Diamond Pickaxe IV");
+        
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.hardenedWoodAxeI), "Hardened Wood Axe I");
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.hardenedWoodAxeII), "Hardened Wood Axe II");
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.hardenedWoodAxeIII), "Hardened Wood Axe III");
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.hardenedWoodAxeIV), "Hardened Wood Axe IV");        
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.hardenedStoneAxeI), "Hardened Stone Axe I");
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.hardenedStoneAxeII), "Hardened Stone Axe II");
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.hardenedStoneAxeIII), "Hardened Stone Axe III");
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.hardenedStoneAxeIV), "Hardened Stone Axe IV");        
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.hardenedIronAxeI), "Hardened Iron Axe I");
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.hardenedIronAxeII), "Hardened Iron Axe II");
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.hardenedIronAxeIII), "Hardened Iron Axe III");
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.hardenedIronAxeIV), "Hardened Iron Axe IV");      
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.hardenedGoldAxeI), "Hardened Gold Axe I");
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.hardenedGoldAxeII), "Hardened Gold Axe II");
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.hardenedGoldAxeIII), "Hardened Gold Axe III");
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.hardenedGoldAxeIV), "Hardened Gold Axe IV");      
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.hardenedDiamondAxeI), "Hardened Diamond Axe I");
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.hardenedDiamondAxeII), "Hardened Diamond Axe II");
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.hardenedDiamondAxeIII), "Hardened Diamond Axe III");
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.hardenedDiamondAxeIV), "Hardened Diamond Axe IV");
+        
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.hardenedWoodShovelI), "Hardened Wood Shovel I");
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.hardenedWoodShovelII), "Hardened Wood Shovel II");
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.hardenedWoodShovelIII), "Hardened Wood Shovel III");
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.hardenedWoodShovelIV), "Hardened Wood Shovel IV");        
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.hardenedStoneShovelI), "Hardened Stone Shovel I");
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.hardenedStoneShovelII), "Hardened Stone Shovel II");
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.hardenedStoneShovelIII), "Hardened Stone Shovel III");
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.hardenedStoneShovelIV), "Hardened Stone Shovel IV");        
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.hardenedIronShovelI), "Hardened Iron Shovel I");
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.hardenedIronShovelII), "Hardened Iron Shovel II");
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.hardenedIronShovelIII), "Hardened Iron Shovel III");
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.hardenedIronShovelIV), "Hardened Iron Shovel IV");      
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.hardenedGoldShovelI), "Hardened Gold Shovel I");
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.hardenedGoldShovelII), "Hardened Gold Shovel II");
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.hardenedGoldShovelIII), "Hardened Gold Shovel III");
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.hardenedGoldShovelIV), "Hardened Gold Shovel IV");      
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.hardenedDiamondShovelI), "Hardened Diamond Shovel I");
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.hardenedDiamondShovelII), "Hardened Diamond Shovel II");
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.hardenedDiamondShovelIII), "Hardened Diamond Shovel III");
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.hardenedDiamondShovelIV), "Hardened Diamond Shovel IV");
+        
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.hardenedWoodHoeI), "Hardened Wood Hoe I");
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.hardenedWoodHoeII), "Hardened Wood Hoe II");
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.hardenedWoodHoeIII), "Hardened Wood Hoe III");
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.hardenedWoodHoeIV), "Hardened Wood Hoe IV");        
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.hardenedStoneHoeI), "Hardened Stone Hoe I");
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.hardenedStoneHoeII), "Hardened Stone Hoe II");
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.hardenedStoneHoeIII), "Hardened Stone Hoe III");
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.hardenedStoneHoeIV), "Hardened Stone Hoe IV");        
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.hardenedIronHoeI), "Hardened Iron Hoe I");
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.hardenedIronHoeII), "Hardened Iron Hoe II");
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.hardenedIronHoeIII), "Hardened Iron Hoe III");
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.hardenedIronHoeIV), "Hardened Iron Hoe IV");      
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.hardenedGoldHoeI), "Hardened Gold Hoe I");
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.hardenedGoldHoeII), "Hardened Gold Hoe II");
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.hardenedGoldHoeIII), "Hardened Gold Hoe III");
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.hardenedGoldHoeIV), "Hardened Gold Hoe IV");      
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.hardenedDiamondHoeI), "Hardened Diamond Hoe I");
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.hardenedDiamondHoeII), "Hardened Diamond Hoe II");
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.hardenedDiamondHoeIII), "Hardened Diamond Hoe III");
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.hardenedDiamondHoeIV), "Hardened Diamond Hoe IV");
+        
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.hardenedWoodSwordI), "Hardened Wood Sword I");
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.hardenedWoodSwordII), "Hardened Wood Sword II");
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.hardenedWoodSwordIII), "Hardened Wood Sword III");
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.hardenedWoodSwordIV), "Hardened Wood Sword IV");        
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.hardenedStoneSwordI), "Hardened Stone Sword I");
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.hardenedStoneSwordII), "Hardened Stone Sword II");
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.hardenedStoneSwordIII), "Hardened Stone Sword III");
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.hardenedStoneSwordIV), "Hardened Stone Sword IV");        
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.hardenedIronSwordI), "Hardened Iron Sword I");
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.hardenedIronSwordII), "Hardened Iron Sword II");
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.hardenedIronSwordIII), "Hardened Iron Sword III");
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.hardenedIronSwordIV), "Hardened Iron Sword IV");      
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.hardenedGoldSwordI), "Hardened Gold Sword I");
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.hardenedGoldSwordII), "Hardened Gold Sword II");
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.hardenedGoldSwordIII), "Hardened Gold Sword III");
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.hardenedGoldSwordIV), "Hardened Gold Sword IV");      
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.hardenedDiamondSwordI), "Hardened Diamond Sword I");
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.hardenedDiamondSwordII), "Hardened Diamond Sword II");
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.hardenedDiamondSwordIII), "Hardened Diamond Sword III");
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.hardenedDiamondSwordIV), "Hardened Diamond Sword IV");
 
     }
 		
