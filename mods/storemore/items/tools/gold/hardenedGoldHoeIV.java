@@ -3,9 +3,10 @@ package mods.storemore.items.tools.gold;
 import mods.storemore.StoreMore;
 import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.item.EnumToolMaterial;
+import net.minecraft.item.ItemHoe;
 import net.minecraft.item.ItemSpade;
 
-public class hardenedGoldHoeIV  extends ItemSpade{
+public class hardenedGoldHoeIV  extends ItemHoe{
 
 	public hardenedGoldHoeIV(int id, EnumToolMaterial hardenedGoldIV) {
 		super(id, hardenedGoldIV);

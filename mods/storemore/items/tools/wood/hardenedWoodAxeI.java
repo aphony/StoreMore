@@ -9,8 +9,7 @@ public class hardenedWoodAxeI extends ItemAxe{
 
 	public hardenedWoodAxeI(int id, EnumToolMaterial hardenedWoodI) {
 		super(id, hardenedWoodI);
-		this.setCreativeTab(StoreMore.StoreMoreTab);	
-		// TODO Auto-generated constructor stub
+		this.setCreativeTab(StoreMore.StoreMoreTab);
 	}
 	
 	public void updateIcons(IconRegister par1IconRegister)

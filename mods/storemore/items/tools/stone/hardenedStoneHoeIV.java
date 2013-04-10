@@ -3,9 +3,10 @@ package mods.storemore.items.tools.stone;
 import mods.storemore.StoreMore;
 import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.item.EnumToolMaterial;
+import net.minecraft.item.ItemHoe;
 import net.minecraft.item.ItemSpade;
 
-public class hardenedStoneHoeIV  extends ItemSpade{
+public class hardenedStoneHoeIV  extends ItemHoe{
 
 	public hardenedStoneHoeIV(int id, EnumToolMaterial hardenedStoneIV) {
 		super(id, hardenedStoneIV);
