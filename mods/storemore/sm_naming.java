@@ -1,6 +1,6 @@
 package mods.storemore;
 
-import mods.storemore.addons.ic2.sm_ic2plugin;
+import mods.storemore.ic2.sm_ic2plugin;
 import net.minecraft.item.ItemStack;
 import cpw.mods.fml.common.Loader;
 import cpw.mods.fml.common.registry.LanguageRegistry;
