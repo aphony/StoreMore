@@ -1,8 +1,10 @@
 package mods.storemore;
 
+import mods.storemore.ic2.sm_ic2plugin;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraftforge.oredict.ShapedOreRecipe;
 import cpw.mods.fml.common.registry.GameRegistry;
 
 public class sm_recipes extends StoreMore{
@@ -747,9 +749,20 @@ public class sm_recipes extends StoreMore{
 		GameRegistry.addShapelessRecipe(new ItemStack(Item.porkCooked,9,0), new ItemStack(StoreMore.packedfoodV,1,12));
 		GameRegistry.addShapelessRecipe(new ItemStack(StoreMore.packedfoodV,9,12), new ItemStack(StoreMore.packedfoodV,1,13));
 		GameRegistry.addShapelessRecipe(new ItemStack(StoreMore.packedfoodV,9,13), new ItemStack(StoreMore.packedfoodV,1,14));
-		GameRegistry.addShapelessRecipe(new ItemStack(StoreMore.packedfoodV,9,14), new ItemStack(StoreMore.packedfoodV,1,15));           	
- 
+		GameRegistry.addShapelessRecipe(new ItemStack(StoreMore.packedfoodV,9,14), new ItemStack(StoreMore.packedfoodV,1,15));   
+		
 		}
+	
+	//oredictionary recipes
+	 public static void addOreRecipes()
+       {
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.packedblocksVI,1,0), "XXX", "XXX", "XXX", Character.valueOf('X'), "woodLog"));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.packedblocksVI,1,1), "XXX", "XXX", "XXX", Character.valueOf('X'), "packedWoodI"));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.packedblocksVI,1,2), "XXX", "XXX", "XXX", Character.valueOf('X'), "packedWoodII"));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.packedblocksVI,1,3), "XXX", "XXX", "XXX", Character.valueOf('X'), "packedWoodIII"));
+		
+       }
+
 	
 }
 	
