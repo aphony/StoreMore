@@ -62,14 +62,6 @@ public class StoreMore
 	public static SProxy proxy;
 
 
-	public static final int sideBottom = 0;
-	public static final int sideTop = 1;
-	public static final int sideNorth = 2;
-	public static final int sideSouth = 3;
-	public static final int sideWest = 4;
-	public static final int sideEast = 5;
-
-
 	//Block Registering
 	public static Block packedblocksI;
 	public static Block packedblocksII;
@@ -218,8 +210,6 @@ public class StoreMore
 		sm_naming.init();
 		sm_recipes.initRecipes();
 		NetworkRegistry.instance().registerGuiHandler(this, guiHandler);
-		sm_recipes.oreRegistration();
-		sm_recipes.addOreRecipes();
 	}
 
 	public static CreativeTabs StoreMoreTab = new StoreMoreTab(CreativeTabs.getNextID(), "Store More");
@@ -417,8 +407,9 @@ public class StoreMore
 	}
 	@PostInit
 	public void postInit(FMLPostInitializationEvent event) {
-
-
+		
+		sm_recipes.registerOres();
+		sm_recipes.addOreRecipes();
 
 	}
 }
