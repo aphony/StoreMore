@@ -218,6 +218,8 @@ public class StoreMore
 		sm_naming.init();
 		sm_recipes.initRecipes();
 		NetworkRegistry.instance().registerGuiHandler(this, guiHandler);
+		oreRegistration();
+		sm_recipes.addOreRecipes();
 	}
 
 	public static CreativeTabs StoreMoreTab = new StoreMoreTab(CreativeTabs.getNextID(), "Store More");
