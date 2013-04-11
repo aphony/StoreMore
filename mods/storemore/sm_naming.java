@@ -101,10 +101,10 @@ public class sm_naming {
         LanguageRegistry.instance().addName(new ItemStack(StoreMore.packedblocksVI, 1, 13), "Packed Flint II");
         LanguageRegistry.instance().addName(new ItemStack(StoreMore.packedblocksVI, 1, 14), "Packed Flint III");
         LanguageRegistry.instance().addName(new ItemStack(StoreMore.packedblocksVI, 1, 15), "Packed Flint IV");
-        LanguageRegistry.instance().addName(new ItemStack(StoreMore.packedblocksVII, 1, 0), "Packed Oak Wood I");
-        LanguageRegistry.instance().addName(new ItemStack(StoreMore.packedblocksVII, 1, 1), "Packed Oak Wood II");
-        LanguageRegistry.instance().addName(new ItemStack(StoreMore.packedblocksVII, 1, 2), "Packed Oak Wood III");
-        LanguageRegistry.instance().addName(new ItemStack(StoreMore.packedblocksVII, 1, 3), "Packed Oak Wood IV");
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.packedblocksVII, 1, 0), "Packed Wood I");
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.packedblocksVII, 1, 1), "Packed Wood II");
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.packedblocksVII, 1, 2), "Packed Wood III");
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.packedblocksVII, 1, 3), "Packed Wood IV");
         LanguageRegistry.instance().addName(new ItemStack(StoreMore.packedblocksVII, 1, 4), "Packed Spruce Wood I");
         LanguageRegistry.instance().addName(new ItemStack(StoreMore.packedblocksVII, 1, 5), "Packed Spruce Wood II");
         LanguageRegistry.instance().addName(new ItemStack(StoreMore.packedblocksVII, 1, 6), "Packed Spruce Wood III");

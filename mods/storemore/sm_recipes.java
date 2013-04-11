@@ -825,10 +825,10 @@ public class sm_recipes extends StoreMore{
            OreDictionary.registerOre("packedIronII", new ItemStack(packedblocksV,1,1));
            OreDictionary.registerOre("packedIronIII", new ItemStack(packedblocksV,1,2));
            OreDictionary.registerOre("packedIronIV", new ItemStack(packedblocksV,1,3));
-           OreDictionary.registerOre("packedGoldV", new ItemStack(packedblocksV,1,4));
-           OreDictionary.registerOre("packedGoldVI", new ItemStack(packedblocksV,1,5));
-           OreDictionary.registerOre("packedGoldVII", new ItemStack(packedblocksV,1,6));
-           OreDictionary.registerOre("packedGoldVIII", new ItemStack(packedblocksV,1,7));
+           OreDictionary.registerOre("packedGoldI", new ItemStack(packedblocksV,1,4));
+           OreDictionary.registerOre("packedGoldII", new ItemStack(packedblocksV,1,5));
+           OreDictionary.registerOre("packedGoldIII", new ItemStack(packedblocksV,1,6));
+           OreDictionary.registerOre("packedGoldIV", new ItemStack(packedblocksV,1,7));
            OreDictionary.registerOre("packedDiamondlI", new ItemStack(packedblocksV,1,8));
            OreDictionary.registerOre("packedDiamondlII", new ItemStack(packedblocksV,1,9));
            OreDictionary.registerOre("packedDiamondlIII", new ItemStack(packedblocksV,1,10));
@@ -841,10 +841,10 @@ public class sm_recipes extends StoreMore{
            OreDictionary.registerOre("packedSticksII", new ItemStack(packedblocksVI,1,1));
            OreDictionary.registerOre("packedSticksIII", new ItemStack(packedblocksVI,1,2));
            OreDictionary.registerOre("packedSticksIV", new ItemStack(packedblocksVI,1,3));
-           OreDictionary.registerOre("packedTorchesV", new ItemStack(packedblocksVI,1,4));
-           OreDictionary.registerOre("packedTorchesVI", new ItemStack(packedblocksVI,1,5));
-           OreDictionary.registerOre("packedTorchesVII", new ItemStack(packedblocksVI,1,6));
-           OreDictionary.registerOre("packedTorchesVIII", new ItemStack(packedblocksVI,1,7));
+           OreDictionary.registerOre("packedTorchesI", new ItemStack(packedblocksVI,1,4));
+           OreDictionary.registerOre("packedTorchesII", new ItemStack(packedblocksVI,1,5));
+           OreDictionary.registerOre("packedTorchesIII", new ItemStack(packedblocksVI,1,6));
+           OreDictionary.registerOre("packedTorchesIV", new ItemStack(packedblocksVI,1,7));
            OreDictionary.registerOre("packedGunpowderlI", new ItemStack(packedblocksVI,1,8));
            OreDictionary.registerOre("packedGunpowderlII", new ItemStack(packedblocksVI,1,9));
            OreDictionary.registerOre("packedGunpowderlIII", new ItemStack(packedblocksVI,1,10));
@@ -857,10 +857,10 @@ public class sm_recipes extends StoreMore{
            OreDictionary.registerOre("packedWoodII", new ItemStack(packedblocksVII,1,1));
            OreDictionary.registerOre("packedWoodIII", new ItemStack(packedblocksVII,1,2));
            OreDictionary.registerOre("packedWoodIV", new ItemStack(packedblocksVII,1,3));
-           OreDictionary.registerOre("packedWoodV", new ItemStack(packedblocksVII,1,4));
-           OreDictionary.registerOre("packedWoodVI", new ItemStack(packedblocksVII,1,5));
-           OreDictionary.registerOre("packedWoodVII", new ItemStack(packedblocksVII,1,6));
-           OreDictionary.registerOre("packedWoodVIII", new ItemStack(packedblocksVII,1,7));
+           OreDictionary.registerOre("packedWoodI", new ItemStack(packedblocksVII,1,4));
+           OreDictionary.registerOre("packedWoodII", new ItemStack(packedblocksVII,1,5));
+           OreDictionary.registerOre("packedWoodIII", new ItemStack(packedblocksVII,1,6));
+           OreDictionary.registerOre("packedWoodIV", new ItemStack(packedblocksVII,1,7));
            OreDictionary.registerOre("packedWoodI", new ItemStack(packedblocksVII,1,8));
            OreDictionary.registerOre("packedWoodII", new ItemStack(packedblocksVII,1,9));
            OreDictionary.registerOre("packedWoodIII", new ItemStack(packedblocksVII,1,10));
@@ -873,10 +873,10 @@ public class sm_recipes extends StoreMore{
            OreDictionary.registerOre("packedPlanksII", new ItemStack(packedblocksVIII,1,1));
            OreDictionary.registerOre("packedPlanksIII", new ItemStack(packedblocksVIII,1,2));
            OreDictionary.registerOre("packedPlanksIV", new ItemStack(packedblocksVIII,1,3));
-           OreDictionary.registerOre("packedPlanksV", new ItemStack(packedblocksVIII,1,4));
-           OreDictionary.registerOre("packedPlanksVI", new ItemStack(packedblocksVIII,1,5));
-           OreDictionary.registerOre("packedPlanksVII", new ItemStack(packedblocksVIII,1,6));
-           OreDictionary.registerOre("packedPlanksVIII", new ItemStack(packedblocksVIII,1,7));
+           OreDictionary.registerOre("packedPlanksI", new ItemStack(packedblocksVIII,1,4));
+           OreDictionary.registerOre("packedPlanksII", new ItemStack(packedblocksVIII,1,5));
+           OreDictionary.registerOre("packedPlanksIII", new ItemStack(packedblocksVIII,1,6));
+           OreDictionary.registerOre("packedPlanksIV", new ItemStack(packedblocksVIII,1,7));
            OreDictionary.registerOre("packedPlanksI", new ItemStack(packedblocksVIII,1,8));
            OreDictionary.registerOre("packedPlanksII", new ItemStack(packedblocksVIII,1,9));
            OreDictionary.registerOre("packedPlanksIII", new ItemStack(packedblocksVIII,1,10));
@@ -889,10 +889,10 @@ public class sm_recipes extends StoreMore{
            OreDictionary.registerOre("packedRedstoneII", new ItemStack(packedblocksIX,1,1));
            OreDictionary.registerOre("packedRedstoneIII", new ItemStack(packedblocksIX,1,2));
            OreDictionary.registerOre("packedRedstoneIV", new ItemStack(packedblocksIX,1,3));
-           OreDictionary.registerOre("packedQuartzV", new ItemStack(packedblocksIX,1,4));
-           OreDictionary.registerOre("packedQuartzVI", new ItemStack(packedblocksIX,1,5));
-           OreDictionary.registerOre("packedQuartzVII", new ItemStack(packedblocksIX,1,6));
-           OreDictionary.registerOre("packedQuartzVIII", new ItemStack(packedblocksIX,1,7));
+           OreDictionary.registerOre("packedQuartzI", new ItemStack(packedblocksIX,1,4));
+           OreDictionary.registerOre("packedQuartzII", new ItemStack(packedblocksIX,1,5));
+           OreDictionary.registerOre("packedQuartzIII", new ItemStack(packedblocksIX,1,6));
+           OreDictionary.registerOre("packedQuartzIV", new ItemStack(packedblocksIX,1,7));
            OreDictionary.registerOre("packedSoulsandlI", new ItemStack(packedblocksIX,1,8));
            OreDictionary.registerOre("packedSoulsandlII", new ItemStack(packedblocksIX,1,9));
            OreDictionary.registerOre("packedSoulsandlIII", new ItemStack(packedblocksIX,1,10));
@@ -901,6 +901,14 @@ public class sm_recipes extends StoreMore{
            OreDictionary.registerOre("packedClaylII", new ItemStack(packedblocksIX,1,13));
            OreDictionary.registerOre("packedClaylIII", new ItemStack(packedblocksIX,1,14));
            OreDictionary.registerOre("packedClaylIV", new ItemStack(packedblocksIX,1,15));
+           OreDictionary.registerOre("packedCoalI", packedcoalI);
+           OreDictionary.registerOre("packedCoalI", packedcoalII);
+           OreDictionary.registerOre("packedCoalI", packedcoalIII);
+           OreDictionary.registerOre("packedCoalI", packedcoalIV);
+           OreDictionary.registerOre("packedCharcoalI", packedcharcoalI);
+           OreDictionary.registerOre("packedCharcoalI", packedcharcoalII);
+           OreDictionary.registerOre("packedCharcoalI", packedcharcoalIII);
+           OreDictionary.registerOre("packedCharcoalI", packedcharcoalIV);
        }
           
            
@@ -910,6 +918,132 @@ public class sm_recipes extends StoreMore{
        	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.packedblocksVII,1,1), new Object[]{"XXX","XXX","XXX",Character.valueOf('X'), "packedWoodI",}));
        	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.packedblocksVII,1,2), new Object[]{"XXX","XXX","XXX",Character.valueOf('X'), "packedWoodII",}));
        	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.packedblocksVII,1,3), new Object[]{"XXX","XXX","XXX",Character.valueOf('X'), "packedWoodIII",}));
+       	
+       	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.packedblocksVIII,1,0), new Object[]{"XXX","XXX","XXX",Character.valueOf('X'), "woodPlank",}));
+       	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.packedblocksVIII,1,1), new Object[]{"XXX","XXX","XXX",Character.valueOf('X'), "packedPlanksI",}));
+       	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.packedblocksVIII,1,2), new Object[]{"XXX","XXX","XXX",Character.valueOf('X'), "packedPlanksII",}));
+       	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.packedblocksVIII,1,3), new Object[]{"XXX","XXX","XXX",Character.valueOf('X'), "packedPlanksIII",}));
+       	
+       	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.packedblocksVI,4,0), new Object[]{"P","P",Character.valueOf('X'), "packedPlanksI",}));
+       	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.packedblocksVI,4,1), new Object[]{"P","P",Character.valueOf('X'), "packedPlanksII",}));
+       	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.packedblocksVI,4,2), new Object[]{"P","P",Character.valueOf('X'), "packedPlanksIII",}));
+       	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.packedblocksVI,4,3), new Object[]{"P","P",Character.valueOf('X'), "packedPlanksIV",}));
+       	
+       	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.packedblocksVI,6,4), new Object[]{"C","S",Character.valueOf('P'), "packedCoalI", Character.valueOf('S'), "packedSticksI"}));
+       	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.packedblocksVI,6,5), new Object[]{"C","S",Character.valueOf('P'), "packedCoalII", Character.valueOf('S'), "packedSticksII"}));
+       	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.packedblocksVI,6,6), new Object[]{"C","S",Character.valueOf('P'), "packedCoalIII", Character.valueOf('S'), "packedSticksIII"}));
+       	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.packedblocksVI,6,7), new Object[]{"C","S",Character.valueOf('P'), "packedCoalIV", Character.valueOf('S'), "packedSticksIV"}));
+       	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.packedblocksVI,6,4), new Object[]{"C","S",Character.valueOf('P'), "packedCharcoalI", Character.valueOf('S'), "packedSticksI"}));
+       	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.packedblocksVI,6,5), new Object[]{"C","S",Character.valueOf('P'), "packedCharcoalII", Character.valueOf('S'), "packedSticksII"}));
+       	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.packedblocksVI,6,6), new Object[]{"C","S",Character.valueOf('P'), "packedCharcoalIII", Character.valueOf('S'), "packedSticksIII"}));
+       	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.packedblocksVI,6,7), new Object[]{"C","S",Character.valueOf('P'), "packedCharcoalIV", Character.valueOf('S'), "packedSticksIV"}));
+       	
+       	
+       	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.hardenedWoodPickaxeI), new Object[]{"PPP"," S "," S ",Character.valueOf('P'), "packedPlanksI", Character.valueOf('S'), "packedSticksI"}));
+       	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.hardenedWoodPickaxeII), new Object[]{"PPP"," S "," S ",Character.valueOf('P'), "packedPlanksII", Character.valueOf('S'), "packedSticksII"}));
+       	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.hardenedWoodPickaxeIII), new Object[]{"PPP"," S "," S ",Character.valueOf('P'), "packedPlanksIII", Character.valueOf('S'), "packedSticksIII"}));
+       	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.hardenedWoodPickaxeIV), new Object[]{"PPP"," S "," S ",Character.valueOf('P'), "packedPlanksIII", Character.valueOf('S'), "packedSticksIV"}));
+       	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.hardenedWoodAxeI), new Object[]{"PP ","PS "," S ",Character.valueOf('P'), "packedPlanksI", Character.valueOf('S'), "packedSticksI"}));
+       	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.hardenedWoodAxeII), new Object[]{"PP ","PS "," S ",Character.valueOf('P'), "packedPlanksII", Character.valueOf('S'), "packedSticksII"}));
+       	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.hardenedWoodAxeIII), new Object[]{"PP ","PS "," S ",Character.valueOf('P'), "packedPlanksIII", Character.valueOf('S'), "packedSticksIII"}));
+       	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.hardenedWoodAxeIV), new Object[]{"PP ","PS "," S ",Character.valueOf('P'), "packedPlanksIII", Character.valueOf('S'), "packedSticksIV"}));
+       	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.hardenedWoodHoeI), new Object[]{"PP "," S "," S ",Character.valueOf('P'), "packedPlanksI", Character.valueOf('S'), "packedSticksI"}));
+       	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.hardenedWoodHoeII), new Object[]{"PP "," S "," S ",Character.valueOf('P'), "packedPlanksII", Character.valueOf('S'), "packedSticksII"}));
+       	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.hardenedWoodHoeIII), new Object[]{"PP "," S "," S ",Character.valueOf('P'), "packedPlanksIII", Character.valueOf('S'), "packedSticksIII"}));
+       	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.hardenedWoodHoeIV), new Object[]{"PP "," S "," S ",Character.valueOf('P'), "packedPlanksIII", Character.valueOf('S'), "packedSticksIV"}));
+       	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.hardenedWoodShovelI), new Object[]{" P "," S "," S ",Character.valueOf('P'), "packedPlanksI", Character.valueOf('S'), "packedSticksI"}));
+       	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.hardenedWoodShovelII), new Object[]{" P "," S "," S ",Character.valueOf('P'), "packedPlanksII", Character.valueOf('S'), "packedSticksII"}));
+       	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.hardenedWoodShovelIII), new Object[]{" P "," S "," S ",Character.valueOf('P'), "packedPlanksIII", Character.valueOf('S'), "packedSticksIII"}));
+       	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.hardenedWoodShovelIV), new Object[]{" P "," S "," S ",Character.valueOf('P'), "packedPlanksIII", Character.valueOf('S'), "packedSticksIV"}));
+       	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.hardenedWoodSwordI), new Object[]{" P "," P "," S ",Character.valueOf('P'), "packedPlanksI", Character.valueOf('S'), "packedSticksI"}));
+       	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.hardenedWoodSwordII), new Object[]{" P "," P "," S ",Character.valueOf('P'), "packedPlanksII", Character.valueOf('S'), "packedSticksII"}));
+       	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.hardenedWoodSwordIII), new Object[]{" P "," P "," S ",Character.valueOf('P'), "packedPlanksIII", Character.valueOf('S'), "packedSticksIII"}));
+       	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.hardenedWoodSwordIV), new Object[]{" P "," P "," S ",Character.valueOf('P'), "packedPlanksIII", Character.valueOf('S'), "packedSticksIV"}));
+       	
+     	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.hardenedStonePickaxeI), new Object[]{"PPP"," S "," S ",Character.valueOf('P'), "packedCobbleI", Character.valueOf('S'), "packedSticksI"}));
+       	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.hardenedStonePickaxeII), new Object[]{"PPP"," S "," S ",Character.valueOf('P'), "packedCobbleII", Character.valueOf('S'), "packedSticksII"}));
+       	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.hardenedStonePickaxeIII), new Object[]{"PPP"," S "," S ",Character.valueOf('P'), "packedCobbleIII", Character.valueOf('S'), "packedSticksIII"}));
+       	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.hardenedStonePickaxeIV), new Object[]{"PPP"," S "," S ",Character.valueOf('P'), "packedCobbleIII", Character.valueOf('S'), "packedSticksIV"}));
+       	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.hardenedStoneAxeI), new Object[]{"PP ","PS "," S ",Character.valueOf('P'), "packedCobbleI", Character.valueOf('S'), "packedSticksI"}));
+       	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.hardenedStoneAxeII), new Object[]{"PP ","PS "," S ",Character.valueOf('P'), "packedCobbleII", Character.valueOf('S'), "packedSticksII"}));
+       	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.hardenedStoneAxeIII), new Object[]{"PP ","PS "," S ",Character.valueOf('P'), "packedCobbleIII", Character.valueOf('S'), "packedSticksIII"}));
+       	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.hardenedStoneAxeIV), new Object[]{"PP ","PS "," S ",Character.valueOf('P'), "packedCobbleIII", Character.valueOf('S'), "packedSticksIV"}));
+       	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.hardenedStoneHoeI), new Object[]{"PP "," S "," S ",Character.valueOf('P'), "packedCobbleI", Character.valueOf('S'), "packedSticksI"}));
+       	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.hardenedStoneHoeII), new Object[]{"PP "," S "," S ",Character.valueOf('P'), "packedCobbleII", Character.valueOf('S'), "packedSticksII"}));
+       	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.hardenedStoneHoeIII), new Object[]{"PP "," S "," S ",Character.valueOf('P'), "packedCobbleIII", Character.valueOf('S'), "packedSticksIII"}));
+       	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.hardenedStoneHoeIV), new Object[]{"PP "," S "," S ",Character.valueOf('P'), "packedCobbleIII", Character.valueOf('S'), "packedSticksIV"}));
+       	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.hardenedStoneShovelI), new Object[]{" P "," S "," S ",Character.valueOf('P'), "packedCobbleI", Character.valueOf('S'), "packedSticksI"}));
+       	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.hardenedStoneShovelII), new Object[]{" P "," S "," S ",Character.valueOf('P'), "packedCobbleII", Character.valueOf('S'), "packedSticksII"}));
+       	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.hardenedStoneShovelIII), new Object[]{" P "," S "," S ",Character.valueOf('P'), "packedCobbleIII", Character.valueOf('S'), "packedSticksIII"}));
+       	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.hardenedStoneShovelIV), new Object[]{" P "," S "," S ",Character.valueOf('P'), "packedCobbleIII", Character.valueOf('S'), "packedSticksIV"}));
+       	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.hardenedStoneSwordI), new Object[]{" P "," P "," S ",Character.valueOf('P'), "packedCobbleI", Character.valueOf('S'), "packedSticksI"}));
+       	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.hardenedStoneSwordII), new Object[]{" P "," P "," S ",Character.valueOf('P'), "packedCobbleII", Character.valueOf('S'), "packedSticksII"}));
+       	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.hardenedStoneSwordIII), new Object[]{" P "," P "," S ",Character.valueOf('P'), "packedCobbleIII", Character.valueOf('S'), "packedSticksIII"}));
+       	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.hardenedStoneSwordIV), new Object[]{" P "," P "," S ",Character.valueOf('P'), "packedCobbleIII", Character.valueOf('S'), "packedSticksIV"}));
+       	
+     	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.hardenedIronPickaxeI), new Object[]{"PPP"," S "," S ",Character.valueOf('P'), "packedIronI", Character.valueOf('S'), "packedSticksI"}));
+       	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.hardenedIronPickaxeII), new Object[]{"PPP"," S "," S ",Character.valueOf('P'), "packedIronII", Character.valueOf('S'), "packedSticksII"}));
+       	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.hardenedIronPickaxeIII), new Object[]{"PPP"," S "," S ",Character.valueOf('P'), "packedIronIII", Character.valueOf('S'), "packedSticksIII"}));
+       	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.hardenedIronPickaxeIV), new Object[]{"PPP"," S "," S ",Character.valueOf('P'), "packedIronIII", Character.valueOf('S'), "packedSticksIV"}));
+       	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.hardenedIronAxeI), new Object[]{"PP ","PS "," S ",Character.valueOf('P'), "packedIronI", Character.valueOf('S'), "packedSticksI"}));
+       	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.hardenedIronAxeII), new Object[]{"PP ","PS "," S ",Character.valueOf('P'), "packedIronII", Character.valueOf('S'), "packedSticksII"}));
+       	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.hardenedIronAxeIII), new Object[]{"PP ","PS "," S ",Character.valueOf('P'), "packedIronIII", Character.valueOf('S'), "packedSticksIII"}));
+       	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.hardenedIronAxeIV), new Object[]{"PP ","PS "," S ",Character.valueOf('P'), "packedIronIII", Character.valueOf('S'), "packedSticksIV"}));
+       	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.hardenedIronHoeI), new Object[]{"PP "," S "," S ",Character.valueOf('P'), "packedIronI", Character.valueOf('S'), "packedSticksI"}));
+       	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.hardenedIronHoeII), new Object[]{"PP "," S "," S ",Character.valueOf('P'), "packedIronII", Character.valueOf('S'), "packedSticksII"}));
+       	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.hardenedIronHoeIII), new Object[]{"PP "," S "," S ",Character.valueOf('P'), "packedIronIII", Character.valueOf('S'), "packedSticksIII"}));
+       	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.hardenedIronHoeIV), new Object[]{"PP "," S "," S ",Character.valueOf('P'), "packedIronIII", Character.valueOf('S'), "packedSticksIV"}));
+       	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.hardenedIronShovelI), new Object[]{" P "," S "," S ",Character.valueOf('P'), "packedIronI", Character.valueOf('S'), "packedSticksI"}));
+       	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.hardenedIronShovelII), new Object[]{" P "," S "," S ",Character.valueOf('P'), "packedIronII", Character.valueOf('S'), "packedSticksII"}));
+       	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.hardenedIronShovelIII), new Object[]{" P "," S "," S ",Character.valueOf('P'), "packedIronIII", Character.valueOf('S'), "packedSticksIII"}));
+       	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.hardenedIronShovelIV), new Object[]{" P "," S "," S ",Character.valueOf('P'), "packedIronIII", Character.valueOf('S'), "packedSticksIV"}));
+       	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.hardenedIronSwordI), new Object[]{" P "," P "," S ",Character.valueOf('P'), "packedIronI", Character.valueOf('S'), "packedSticksI"}));
+       	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.hardenedIronSwordII), new Object[]{" P "," P "," S ",Character.valueOf('P'), "packedIronII", Character.valueOf('S'), "packedSticksII"}));
+       	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.hardenedIronSwordIII), new Object[]{" P "," P "," S ",Character.valueOf('P'), "packedIronIII", Character.valueOf('S'), "packedSticksIII"}));
+       	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.hardenedIronSwordIV), new Object[]{" P "," P "," S ",Character.valueOf('P'), "packedIronIII", Character.valueOf('S'), "packedSticksIV"}));
+       	
+     	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.hardenedGoldPickaxeI), new Object[]{"PPP"," S "," S ",Character.valueOf('P'), "packedGoldI", Character.valueOf('S'), "packedSticksI"}));
+       	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.hardenedGoldPickaxeII), new Object[]{"PPP"," S "," S ",Character.valueOf('P'), "packedGoldII", Character.valueOf('S'), "packedSticksII"}));
+       	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.hardenedGoldPickaxeIII), new Object[]{"PPP"," S "," S ",Character.valueOf('P'), "packedGoldIII", Character.valueOf('S'), "packedSticksIII"}));
+       	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.hardenedGoldPickaxeIV), new Object[]{"PPP"," S "," S ",Character.valueOf('P'), "packedGoldIII", Character.valueOf('S'), "packedSticksIV"}));
+       	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.hardenedGoldAxeI), new Object[]{"PP ","PS "," S ",Character.valueOf('P'), "packedGoldI", Character.valueOf('S'), "packedSticksI"}));
+       	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.hardenedGoldAxeII), new Object[]{"PP ","PS "," S ",Character.valueOf('P'), "packedGoldII", Character.valueOf('S'), "packedSticksII"}));
+       	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.hardenedGoldAxeIII), new Object[]{"PP ","PS "," S ",Character.valueOf('P'), "packedGoldIII", Character.valueOf('S'), "packedSticksIII"}));
+       	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.hardenedGoldAxeIV), new Object[]{"PP ","PS "," S ",Character.valueOf('P'), "packedGoldIII", Character.valueOf('S'), "packedSticksIV"}));
+       	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.hardenedGoldHoeI), new Object[]{"PP "," S "," S ",Character.valueOf('P'), "packedGoldI", Character.valueOf('S'), "packedSticksI"}));
+       	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.hardenedGoldHoeII), new Object[]{"PP "," S "," S ",Character.valueOf('P'), "packedGoldII", Character.valueOf('S'), "packedSticksII"}));
+       	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.hardenedGoldHoeIII), new Object[]{"PP "," S "," S ",Character.valueOf('P'), "packedGoldIII", Character.valueOf('S'), "packedSticksIII"}));
+       	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.hardenedGoldHoeIV), new Object[]{"PP "," S "," S ",Character.valueOf('P'), "packedGoldIII", Character.valueOf('S'), "packedSticksIV"}));
+       	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.hardenedGoldShovelI), new Object[]{" P "," S "," S ",Character.valueOf('P'), "packedGoldI", Character.valueOf('S'), "packedSticksI"}));
+       	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.hardenedGoldShovelII), new Object[]{" P "," S "," S ",Character.valueOf('P'), "packedGoldII", Character.valueOf('S'), "packedSticksII"}));
+       	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.hardenedGoldShovelIII), new Object[]{" P "," S "," S ",Character.valueOf('P'), "packedGoldIII", Character.valueOf('S'), "packedSticksIII"}));
+       	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.hardenedGoldShovelIV), new Object[]{" P "," S "," S ",Character.valueOf('P'), "packedGoldIII", Character.valueOf('S'), "packedSticksIV"}));
+       	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.hardenedGoldSwordI), new Object[]{" P "," P "," S ",Character.valueOf('P'), "packedGoldI", Character.valueOf('S'), "packedSticksI"}));
+       	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.hardenedGoldSwordII), new Object[]{" P "," P "," S ",Character.valueOf('P'), "packedGoldII", Character.valueOf('S'), "packedSticksII"}));
+       	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.hardenedGoldSwordIII), new Object[]{" P "," P "," S ",Character.valueOf('P'), "packedGoldIII", Character.valueOf('S'), "packedSticksIII"}));
+       	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.hardenedGoldSwordIV), new Object[]{" P "," P "," S ",Character.valueOf('P'), "packedGoldIII", Character.valueOf('S'), "packedSticksIV"}));
+       	
+     	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.hardenedDiamondPickaxeI), new Object[]{"PPP"," S "," S ",Character.valueOf('P'), "packedDiamondI", Character.valueOf('S'), "packedSticksI"}));
+       	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.hardenedDiamondPickaxeII), new Object[]{"PPP"," S "," S ",Character.valueOf('P'), "packedDiamondII", Character.valueOf('S'), "packedSticksII"}));
+       	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.hardenedDiamondPickaxeIII), new Object[]{"PPP"," S "," S ",Character.valueOf('P'), "packedDiamondIII", Character.valueOf('S'), "packedSticksIII"}));
+       	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.hardenedDiamondPickaxeIV), new Object[]{"PPP"," S "," S ",Character.valueOf('P'), "packedDiamondIII", Character.valueOf('S'), "packedSticksIV"}));
+       	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.hardenedDiamondAxeI), new Object[]{"PP ","PS "," S ",Character.valueOf('P'), "packedDiamondI", Character.valueOf('S'), "packedSticksI"}));
+       	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.hardenedDiamondAxeII), new Object[]{"PP ","PS "," S ",Character.valueOf('P'), "packedDiamondII", Character.valueOf('S'), "packedSticksII"}));
+       	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.hardenedDiamondAxeIII), new Object[]{"PP ","PS "," S ",Character.valueOf('P'), "packedDiamondIII", Character.valueOf('S'), "packedSticksIII"}));
+       	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.hardenedDiamondAxeIV), new Object[]{"PP ","PS "," S ",Character.valueOf('P'), "packedDiamondIII", Character.valueOf('S'), "packedSticksIV"}));
+       	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.hardenedDiamondHoeI), new Object[]{"PP "," S "," S ",Character.valueOf('P'), "packedDiamondI", Character.valueOf('S'), "packedSticksI"}));
+       	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.hardenedDiamondHoeII), new Object[]{"PP "," S "," S ",Character.valueOf('P'), "packedDiamondII", Character.valueOf('S'), "packedSticksII"}));
+       	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.hardenedDiamondHoeIII), new Object[]{"PP "," S "," S ",Character.valueOf('P'), "packedDiamondIII", Character.valueOf('S'), "packedSticksIII"}));
+       	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.hardenedDiamondHoeIV), new Object[]{"PP "," S "," S ",Character.valueOf('P'), "packedDiamondIII", Character.valueOf('S'), "packedSticksIV"}));
+       	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.hardenedDiamondShovelI), new Object[]{" P "," S "," S ",Character.valueOf('P'), "packedDiamondI", Character.valueOf('S'), "packedSticksI"}));
+       	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.hardenedDiamondShovelII), new Object[]{" P "," S "," S ",Character.valueOf('P'), "packedDiamondII", Character.valueOf('S'), "packedSticksII"}));
+       	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.hardenedDiamondShovelIII), new Object[]{" P "," S "," S ",Character.valueOf('P'), "packedDiamondIII", Character.valueOf('S'), "packedSticksIII"}));
+       	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.hardenedDiamondShovelIV), new Object[]{" P "," S "," S ",Character.valueOf('P'), "packedDiamondIII", Character.valueOf('S'), "packedSticksIV"}));
+       	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.hardenedDiamondSwordI), new Object[]{" P "," P "," S ",Character.valueOf('P'), "packedDiamondI", Character.valueOf('S'), "packedSticksI"}));
+       	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.hardenedDiamondSwordII), new Object[]{" P "," P "," S ",Character.valueOf('P'), "packedDiamondII", Character.valueOf('S'), "packedSticksII"}));
+       	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.hardenedDiamondSwordIII), new Object[]{" P "," P "," S ",Character.valueOf('P'), "packedDiamondIII", Character.valueOf('S'), "packedSticksIII"}));
+       	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.hardenedDiamondSwordIV), new Object[]{" P "," P "," S ",Character.valueOf('P'), "packedDiamondIII", Character.valueOf('S'), "packedSticksIV"}));
+
 
 	
        }
