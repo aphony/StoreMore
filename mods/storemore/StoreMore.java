@@ -202,6 +202,7 @@ public class StoreMore
 
 		sm_config.save(); 
 
+		sm_recipes.registerOres();
 	}
 
 	@Init
@@ -407,8 +408,6 @@ public class StoreMore
 	}
 	@PostInit
 	public void postInit(FMLPostInitializationEvent event) {
-		
-		sm_recipes.registerOres();
 		sm_recipes.addOreRecipes();
 
 	}
