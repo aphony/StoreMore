@@ -202,7 +202,6 @@ public class StoreMore
 
 		sm_config.save(); 
 
-		sm_recipes.registerOres();
 	}
 
 	@Init
@@ -211,6 +210,7 @@ public class StoreMore
 		sm_naming.init();
 		sm_recipes.initRecipes();
 		NetworkRegistry.instance().registerGuiHandler(this, guiHandler);
+		sm_recipes.registerOres();
 	}
 
 	public static CreativeTabs StoreMoreTab = new StoreMoreTab(CreativeTabs.getNextID(), "Store More");
