@@ -4,10 +4,158 @@ import mods.storemore.ic2.sm_ic2plugin;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.crafting.CraftingManager;
+import net.minecraftforge.oredict.OreDictionary;
 import net.minecraftforge.oredict.ShapedOreRecipe;
 import cpw.mods.fml.common.registry.GameRegistry;
 
 public class sm_recipes extends StoreMore{
+	
+    public static void oreRegistration()
+    {
+            OreDictionary.registerOre("packedCobbleI", new ItemStack(packedblocksI,1,0));
+            OreDictionary.registerOre("packedCobbleII", new ItemStack(packedblocksI,1,1));
+            OreDictionary.registerOre("packedCobbleIII", new ItemStack(packedblocksI,1,2));
+            OreDictionary.registerOre("packedCobbleIV", new ItemStack(packedblocksI,1,3));
+            OreDictionary.registerOre("packedCobbleV", new ItemStack(packedblocksI,1,4));
+            OreDictionary.registerOre("packedCobbleVI", new ItemStack(packedblocksI,1,5));
+            OreDictionary.registerOre("packedCobbleVII", new ItemStack(packedblocksI,1,6));
+            OreDictionary.registerOre("packedStoneVIII", new ItemStack(packedblocksI,1,7));
+            OreDictionary.registerOre("packedStoneI", new ItemStack(packedblocksI,1,8));
+            OreDictionary.registerOre("packedStoneII", new ItemStack(packedblocksI,1,9));
+            OreDictionary.registerOre("packedStoneIII", new ItemStack(packedblocksI,1,10));
+            OreDictionary.registerOre("packedStoneIV", new ItemStack(packedblocksI,1,11));
+            OreDictionary.registerOre("packedStoneV", new ItemStack(packedblocksI,1,12));
+            OreDictionary.registerOre("packedStoneVI", new ItemStack(packedblocksI,1,3));
+            OreDictionary.registerOre("packedStoneVII", new ItemStack(packedblocksI,1,14));
+            OreDictionary.registerOre("packedStoneVIII", new ItemStack(packedblocksI,1,15));
+            OreDictionary.registerOre("packedDirtI", new ItemStack(packedblocksII,1,0));
+            OreDictionary.registerOre("packedDirtII", new ItemStack(packedblocksII,1,1));
+            OreDictionary.registerOre("packedDirtIII", new ItemStack(packedblocksII,1,2));
+            OreDictionary.registerOre("packedDirtIV", new ItemStack(packedblocksII,1,3));
+            OreDictionary.registerOre("packedDirtV", new ItemStack(packedblocksII,1,4));
+            OreDictionary.registerOre("packedDirtVI", new ItemStack(packedblocksII,1,5));
+            OreDictionary.registerOre("packedDirtVII", new ItemStack(packedblocksII,1,6));
+            OreDictionary.registerOre("packedDirtVIII", new ItemStack(packedblocksII,1,7));
+            OreDictionary.registerOre("packedGravelI", new ItemStack(packedblocksII,1,8));
+            OreDictionary.registerOre("packedGravelII", new ItemStack(packedblocksII,1,9));
+            OreDictionary.registerOre("packedGravelIII", new ItemStack(packedblocksII,1,10));
+            OreDictionary.registerOre("packedGravelIV", new ItemStack(packedblocksII,1,11));
+            OreDictionary.registerOre("packedGravelV", new ItemStack(packedblocksII,1,12));
+            OreDictionary.registerOre("packedGravelVI", new ItemStack(packedblocksII,1,3));
+            OreDictionary.registerOre("packedGravelVII", new ItemStack(packedblocksII,1,14));
+            OreDictionary.registerOre("packedGravelVIII", new ItemStack(packedblocksII,1,15));
+            OreDictionary.registerOre("packedSandI", new ItemStack(packedblocksIII,1,0));
+            OreDictionary.registerOre("packedSandII", new ItemStack(packedblocksIII,1,1));
+            OreDictionary.registerOre("packedSandIII", new ItemStack(packedblocksIII,1,2));
+            OreDictionary.registerOre("packedSandIV", new ItemStack(packedblocksIII,1,3));
+            OreDictionary.registerOre("packedSandV", new ItemStack(packedblocksIII,1,4));
+            OreDictionary.registerOre("packedSandVI", new ItemStack(packedblocksIII,1,5));
+            OreDictionary.registerOre("packedSandVII", new ItemStack(packedblocksIII,1,6));
+            OreDictionary.registerOre("packedSandVIII", new ItemStack(packedblocksIII,1,7));
+            OreDictionary.registerOre("packedSandstonelI", new ItemStack(packedblocksIII,1,8));
+            OreDictionary.registerOre("packedSandstonelII", new ItemStack(packedblocksIII,1,9));
+            OreDictionary.registerOre("packedSandstonelIII", new ItemStack(packedblocksIII,1,10));
+            OreDictionary.registerOre("packedSandstonelIV", new ItemStack(packedblocksIII,1,11));
+            OreDictionary.registerOre("packedSandstonelV", new ItemStack(packedblocksIII,1,12));
+            OreDictionary.registerOre("packedSandstonelVI", new ItemStack(packedblocksIII,1,3));
+            OreDictionary.registerOre("packedSandstonelVII", new ItemStack(packedblocksIII,1,14));
+            OreDictionary.registerOre("packedSandstonelVIII", new ItemStack(packedblocksIII,1,15));
+            OreDictionary.registerOre("packedObsidianI", new ItemStack(packedblocksIV,1,0));
+            OreDictionary.registerOre("packedObsidianII", new ItemStack(packedblocksIV,1,1));
+            OreDictionary.registerOre("packedObsidianIII", new ItemStack(packedblocksIV,1,2));
+            OreDictionary.registerOre("packedObsidianIV", new ItemStack(packedblocksIV,1,3));
+            OreDictionary.registerOre("packedGlowstoneV", new ItemStack(packedblocksIV,1,4));
+            OreDictionary.registerOre("packedGlowstoneVI", new ItemStack(packedblocksIV,1,5));
+            OreDictionary.registerOre("packedGlowstoneVII", new ItemStack(packedblocksIV,1,6));
+            OreDictionary.registerOre("packedGlowstoneVIII", new ItemStack(packedblocksIV,1,7));
+            OreDictionary.registerOre("packedNetherracklI", new ItemStack(packedblocksIV,1,8));
+            OreDictionary.registerOre("packedNetherracklII", new ItemStack(packedblocksIV,1,9));
+            OreDictionary.registerOre("packedNetherracklIII", new ItemStack(packedblocksIV,1,10));
+            OreDictionary.registerOre("packedNetherracklIV", new ItemStack(packedblocksIV,1,11));
+            OreDictionary.registerOre("packedIronI", new ItemStack(packedblocksV,1,0));
+            OreDictionary.registerOre("packedIronII", new ItemStack(packedblocksV,1,1));
+            OreDictionary.registerOre("packedIronIII", new ItemStack(packedblocksV,1,2));
+            OreDictionary.registerOre("packedIronIV", new ItemStack(packedblocksV,1,3));
+            OreDictionary.registerOre("packedGoldV", new ItemStack(packedblocksV,1,4));
+            OreDictionary.registerOre("packedGoldVI", new ItemStack(packedblocksV,1,5));
+            OreDictionary.registerOre("packedGoldVII", new ItemStack(packedblocksV,1,6));
+            OreDictionary.registerOre("packedGoldVIII", new ItemStack(packedblocksV,1,7));
+            OreDictionary.registerOre("packedDiamondlI", new ItemStack(packedblocksV,1,8));
+            OreDictionary.registerOre("packedDiamondlII", new ItemStack(packedblocksV,1,9));
+            OreDictionary.registerOre("packedDiamondlIII", new ItemStack(packedblocksV,1,10));
+            OreDictionary.registerOre("packedDiamondlIV", new ItemStack(packedblocksV,1,11));
+            OreDictionary.registerOre("packedEmeraldlI", new ItemStack(packedblocksV,1,12));
+            OreDictionary.registerOre("packedEmeraldlII", new ItemStack(packedblocksV,1,13));
+            OreDictionary.registerOre("packedEmeraldlIII", new ItemStack(packedblocksV,1,14));
+            OreDictionary.registerOre("packedEmeraldlIV", new ItemStack(packedblocksV,1,15));
+            OreDictionary.registerOre("packedSticksI", new ItemStack(packedblocksVI,1,0));
+            OreDictionary.registerOre("packedSticksII", new ItemStack(packedblocksVI,1,1));
+            OreDictionary.registerOre("packedSticksIII", new ItemStack(packedblocksVI,1,2));
+            OreDictionary.registerOre("packedSticksIV", new ItemStack(packedblocksVI,1,3));
+            OreDictionary.registerOre("packedTorchesV", new ItemStack(packedblocksVI,1,4));
+            OreDictionary.registerOre("packedTorchesVI", new ItemStack(packedblocksVI,1,5));
+            OreDictionary.registerOre("packedTorchesVII", new ItemStack(packedblocksVI,1,6));
+            OreDictionary.registerOre("packedTorchesVIII", new ItemStack(packedblocksVI,1,7));
+            OreDictionary.registerOre("packedGunpowderlI", new ItemStack(packedblocksVI,1,8));
+            OreDictionary.registerOre("packedGunpowderlII", new ItemStack(packedblocksVI,1,9));
+            OreDictionary.registerOre("packedGunpowderlIII", new ItemStack(packedblocksVI,1,10));
+            OreDictionary.registerOre("packedGunpowderlIV", new ItemStack(packedblocksVI,1,11));
+            OreDictionary.registerOre("packedFlintlI", new ItemStack(packedblocksVI,1,12));
+            OreDictionary.registerOre("packedFlintlII", new ItemStack(packedblocksVI,1,13));
+            OreDictionary.registerOre("packedFlintlIII", new ItemStack(packedblocksVI,1,14));
+            OreDictionary.registerOre("packedFlintlIV", new ItemStack(packedblocksVI,1,15));
+            OreDictionary.registerOre("packedWoodI", new ItemStack(packedblocksVII,1,0));
+            OreDictionary.registerOre("packedWoodII", new ItemStack(packedblocksVII,1,1));
+            OreDictionary.registerOre("packedWoodIII", new ItemStack(packedblocksVII,1,2));
+            OreDictionary.registerOre("packedWoodIV", new ItemStack(packedblocksVII,1,3));
+            OreDictionary.registerOre("packedWoodV", new ItemStack(packedblocksVII,1,4));
+            OreDictionary.registerOre("packedWoodVI", new ItemStack(packedblocksVII,1,5));
+            OreDictionary.registerOre("packedWoodVII", new ItemStack(packedblocksVII,1,6));
+            OreDictionary.registerOre("packedWoodVIII", new ItemStack(packedblocksVII,1,7));
+            OreDictionary.registerOre("packedWoodI", new ItemStack(packedblocksVII,1,8));
+            OreDictionary.registerOre("packedWoodII", new ItemStack(packedblocksVII,1,9));
+            OreDictionary.registerOre("packedWoodIII", new ItemStack(packedblocksVII,1,10));
+            OreDictionary.registerOre("packedWoodIV", new ItemStack(packedblocksVII,1,11));
+            OreDictionary.registerOre("packedWoodI", new ItemStack(packedblocksVII,1,12));
+            OreDictionary.registerOre("packedWoodII", new ItemStack(packedblocksVII,1,13));
+            OreDictionary.registerOre("packedWoodIII", new ItemStack(packedblocksVII,1,14));
+            OreDictionary.registerOre("packedWoodIV", new ItemStack(packedblocksVII,1,15));
+            OreDictionary.registerOre("packedPlanksI", new ItemStack(packedblocksVIII,1,0));
+            OreDictionary.registerOre("packedPlanksII", new ItemStack(packedblocksVIII,1,1));
+            OreDictionary.registerOre("packedPlanksIII", new ItemStack(packedblocksVIII,1,2));
+            OreDictionary.registerOre("packedPlanksIV", new ItemStack(packedblocksVIII,1,3));
+            OreDictionary.registerOre("packedPlanksV", new ItemStack(packedblocksVIII,1,4));
+            OreDictionary.registerOre("packedPlanksVI", new ItemStack(packedblocksVIII,1,5));
+            OreDictionary.registerOre("packedPlanksVII", new ItemStack(packedblocksVIII,1,6));
+            OreDictionary.registerOre("packedPlanksVIII", new ItemStack(packedblocksVIII,1,7));
+            OreDictionary.registerOre("packedPlanksI", new ItemStack(packedblocksVIII,1,8));
+            OreDictionary.registerOre("packedPlanksII", new ItemStack(packedblocksVIII,1,9));
+            OreDictionary.registerOre("packedPlanksIII", new ItemStack(packedblocksVIII,1,10));
+            OreDictionary.registerOre("packedPlanksIV", new ItemStack(packedblocksVIII,1,11));
+            OreDictionary.registerOre("packedPlanksI", new ItemStack(packedblocksVIII,1,12));
+            OreDictionary.registerOre("packedPlanksII", new ItemStack(packedblocksVIII,1,13));
+            OreDictionary.registerOre("packedPlanksIII", new ItemStack(packedblocksVIII,1,14));
+            OreDictionary.registerOre("packedPlanksIV", new ItemStack(packedblocksVIII,1,15));
+            OreDictionary.registerOre("packedRedstoneI", new ItemStack(packedblocksIX,1,0));
+            OreDictionary.registerOre("packedRedstoneII", new ItemStack(packedblocksIX,1,1));
+            OreDictionary.registerOre("packedRedstoneIII", new ItemStack(packedblocksIX,1,2));
+            OreDictionary.registerOre("packedRedstoneIV", new ItemStack(packedblocksIX,1,3));
+            OreDictionary.registerOre("packedQuartzV", new ItemStack(packedblocksIX,1,4));
+            OreDictionary.registerOre("packedQuartzVI", new ItemStack(packedblocksIX,1,5));
+            OreDictionary.registerOre("packedQuartzVII", new ItemStack(packedblocksIX,1,6));
+            OreDictionary.registerOre("packedQuartzVIII", new ItemStack(packedblocksIX,1,7));
+            OreDictionary.registerOre("packedSoulsandlI", new ItemStack(packedblocksIX,1,8));
+            OreDictionary.registerOre("packedSoulsandlII", new ItemStack(packedblocksIX,1,9));
+            OreDictionary.registerOre("packedSoulsandlIII", new ItemStack(packedblocksIX,1,10));
+            OreDictionary.registerOre("packedSoulsandlIV", new ItemStack(packedblocksIX,1,11));
+            OreDictionary.registerOre("packedClaylI", new ItemStack(packedblocksIX,1,12));
+            OreDictionary.registerOre("packedClaylII", new ItemStack(packedblocksIX,1,13));
+            OreDictionary.registerOre("packedClaylIII", new ItemStack(packedblocksIX,1,14));
+            OreDictionary.registerOre("packedClaylIV", new ItemStack(packedblocksIX,1,15));
+    
+    
+    }
 	public static void initRecipes()
 		
 
@@ -756,10 +904,13 @@ public class sm_recipes extends StoreMore{
 	//oredictionary recipes
 	 public static void addOreRecipes()
        {
-		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.packedblocksVI,1,0), "XXX", "XXX", "XXX", Character.valueOf('X'), "woodLog"));
-		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.packedblocksVI,1,1), "XXX", "XXX", "XXX", Character.valueOf('X'), "packedWoodI"));
-		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.packedblocksVI,1,2), "XXX", "XXX", "XXX", Character.valueOf('X'), "packedWoodII"));
-		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.packedblocksVI,1,3), "XXX", "XXX", "XXX", Character.valueOf('X'), "packedWoodIII"));
+		 
+		 OreDictionary.getOreNames();
+		 
+		 CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(new ItemStack(StoreMore.packedblocksVII,1,0),"XXX","XXX","XXX", Character.valueOf('X'), "woodLog"));
+		 CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(new ItemStack(StoreMore.packedblocksVII,1,1),"XXX","XXX","XXX", Character.valueOf('X'), "packedWoodI"));
+		 CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(new ItemStack(StoreMore.packedblocksVII,1,2),"XXX","XXX","XXX", Character.valueOf('X'), "packedWoodII"));
+		 CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(new ItemStack(StoreMore.packedblocksVII,1,3),"XXX","XXX","XXX", Character.valueOf('X'), "packedWoodIII"));
 		
        }
 
