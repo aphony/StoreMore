@@ -902,13 +902,13 @@ public class sm_recipes extends StoreMore{
            OreDictionary.registerOre("packedClaylIII", new ItemStack(packedblocksIX,1,14));
            OreDictionary.registerOre("packedClaylIV", new ItemStack(packedblocksIX,1,15));
            OreDictionary.registerOre("packedCoalI", packedcoalI);
-           OreDictionary.registerOre("packedCoalI", packedcoalII);
-           OreDictionary.registerOre("packedCoalI", packedcoalIII);
-           OreDictionary.registerOre("packedCoalI", packedcoalIV);
+           OreDictionary.registerOre("packedCoalII", packedcoalII);
+           OreDictionary.registerOre("packedCoalIII", packedcoalIII);
+           OreDictionary.registerOre("packedCoalIV", packedcoalIV);
            OreDictionary.registerOre("packedCharcoalI", packedcharcoalI);
-           OreDictionary.registerOre("packedCharcoalI", packedcharcoalII);
-           OreDictionary.registerOre("packedCharcoalI", packedcharcoalIII);
-           OreDictionary.registerOre("packedCharcoalI", packedcharcoalIV);
+           OreDictionary.registerOre("packedCharcoalII", packedcharcoalII);
+           OreDictionary.registerOre("packedCharcoalIII", packedcharcoalIII);
+           OreDictionary.registerOre("packedCharcoalIV", packedcharcoalIV);
        }
           
            
