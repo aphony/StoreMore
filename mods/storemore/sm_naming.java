@@ -346,6 +346,62 @@ public class sm_naming {
         LanguageRegistry.instance().addName(new ItemStack(StoreMore.hardenedDiamondSwordII), "Hardened Diamond Sword II");
         LanguageRegistry.instance().addName(new ItemStack(StoreMore.hardenedDiamondSwordIII), "Hardened Diamond Sword III");
         LanguageRegistry.instance().addName(new ItemStack(StoreMore.hardenedDiamondSwordIV), "Hardened Diamond Sword IV");
+        
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.SuperPackedCobble8), "Placeable Packed Cobble VIII");
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.SuperPackedStone8), "Placeable Packed Stone VIII"); 
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.SuperPackedDirt8), "Placeable Packed Dirt VIII");
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.SuperPackedGravel8), "Placeable Packed Gravel VIII"); 
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.SuperPackedSand8), "Placeable Packed Sand VIII");
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.SuperPackedSandstone8), "Placeable Packed Sandstone VIII");
+        
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.SuperPackedCobble7), "Placeable Packed Cobble VII");
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.SuperPackedStone7), "Placeable Packed Stone VII"); 
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.SuperPackedDirt7), "Placeable Packed Dirt VII");
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.SuperPackedGravel7), "Placeable Packed Gravel VII"); 
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.SuperPackedSand7), "Placeable Packed Sand VII");
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.SuperPackedSandstone7), "Placeable Packed Sandstone VII");
+        
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.SuperPackedCobble6), "Placeable Packed Cobble VI");
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.SuperPackedStone6), "Placeable Packed Stone VI"); 
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.SuperPackedDirt6), "Placeable Packed Dirt VI");
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.SuperPackedGravel6), "Placeable Packed Gravel VI"); 
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.SuperPackedSand6), "Placeable Packed Sand VI");
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.SuperPackedSandstone6), "Placeable Packed Sandstone VI");
+        
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.SuperPackedCobble5), "Placeable Packed Cobble V");
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.SuperPackedStone5), "Placeable Packed Stone V"); 
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.SuperPackedDirt5), "Placeable Packed Dirt V");
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.SuperPackedGravel5), "Placeable Packed Gravel V"); 
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.SuperPackedSand5), "Placeable Packed Sand V");
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.SuperPackedSandstone5), "Placeable Packed Sandstone V");
+        
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.SuperPackedCobble4), "Placeable Packed Cobble IV");
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.SuperPackedStone4), "Placeable Packed Stone IV"); 
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.SuperPackedDirt4), "Placeable Packed Dirt IV");
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.SuperPackedGravel4), "Placeable Packed Gravel IV"); 
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.SuperPackedSand4), "Placeable Packed Sand IV");
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.SuperPackedSandstone4), "Placeable Packed Sandstone IV");
+        
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.SuperPackedCobble3), "Placeable Packed Cobble III");
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.SuperPackedStone3), "Placeable Packed Stone III"); 
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.SuperPackedDirt3), "Placeable Packed Dirt III");
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.SuperPackedGravel3), "Placeable Packed Gravel III"); 
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.SuperPackedSand3), "Placeable Packed Sand III");
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.SuperPackedSandstone3), "Placeable Packed Sandstone III");
+        
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.SuperPackedCobble2), "Placeable Packed Cobble II");
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.SuperPackedStone2), "Placeable Packed Stone II"); 
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.SuperPackedDirt2), "Placeable Packed Dirt II");
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.SuperPackedGravel2), "Placeable Packed Gravel II"); 
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.SuperPackedSand2), "Placeable Packed Sand II");
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.SuperPackedSandstone2), "Placeable Packed Sandstone II");
+        
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.SuperPackedCobble1), "Placeable Packed Cobble I");
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.SuperPackedStone1), "Placeable Packed Stone I"); 
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.SuperPackedDirt1), "Placeable Packed Dirt I");
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.SuperPackedGravel1), "Placeable Packed Gravel I"); 
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.SuperPackedSand1), "Placeable Packed Sand I");
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.SuperPackedSandstone1), "Placeable Packed Sandstone I");
 
     }
 		

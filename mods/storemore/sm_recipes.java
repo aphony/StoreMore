@@ -919,7 +919,7 @@ public class sm_recipes extends StoreMore{
        	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.packedblocksVII,1,2), new Object[]{"XXX","XXX","XXX",Character.valueOf('X'), "packedWoodII",}));
        	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.packedblocksVII,1,3), new Object[]{"XXX","XXX","XXX",Character.valueOf('X'), "packedWoodIII",}));
        	
-       	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.packedblocksVIII,1,0), new Object[]{"XXX","XXX","XXX",Character.valueOf('X'), "woodPlank",}));
+       	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.packedblocksVIII,1,0), new Object[]{"XXX","XXX","XXX",Character.valueOf('X'), "plankWood",}));
        	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.packedblocksVIII,1,1), new Object[]{"XXX","XXX","XXX",Character.valueOf('X'), "packedPlanksI",}));
        	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.packedblocksVIII,1,2), new Object[]{"XXX","XXX","XXX",Character.valueOf('X'), "packedPlanksII",}));
        	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(StoreMore.packedblocksVIII,1,3), new Object[]{"XXX","XXX","XXX",Character.valueOf('X'), "packedPlanksIII",}));
