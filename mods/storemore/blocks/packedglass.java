@@ -11,12 +11,15 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Icon;
 import net.minecraft.util.MovingObjectPosition;
+import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
 
 
 
 public class packedglass extends Block {
+	
+	private boolean RenderSide = false;
 	
 	protected Icon[] icon = new Icon [16];
 	
@@ -25,7 +28,7 @@ public class packedglass extends Block {
 		setHardness(3.0F);
 		setResistance(120.0F);
 		setCreativeTab(StoreMore.StoreMoreTab);
-	    
+		this.RenderSide = false;
 	}
 	
 	
@@ -80,5 +83,30 @@ public void getSubBlocks(int i,CreativeTabs tab, List list)
     list.add(new ItemStack(i,1,3));
 }
 
+public boolean renderAsNormalBlock()
+{
+    return false;
+}
+  
+public int getRenderBlockPass()
+{
+    return 0;
+}
+  
+public boolean isOpaqueCube()
+{
+    return false;
+}
+  
+protected boolean canSilkHarvest()
+{
+    return true;
+}
+  
+public boolean shouldSideBeRendered(IBlockAccess par1IBlockAccess, int par2, int par3, int par4, int par5)
+{
+    int var6 = par1IBlockAccess.getBlockId(par2, par3, par4);
+    return !this.RenderSide && var6 == this.blockID ? false : super.shouldSideBeRendered(par1IBlockAccess, par2, par3, par4, par5);
+} 
 
 }

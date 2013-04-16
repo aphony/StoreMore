@@ -151,6 +151,9 @@ public class sm_config
 		public static int hardenedDiamondSwordIIIID = 8098;
 		public static int hardenedDiamondSwordIVID = 8099;
 		
+		public static int SuperPackedCobbleID = 8300;
+		public static int SuperPackedStoneID = 8301;
+		
 		
 	    public static boolean IC2Enabled;
 		
@@ -171,9 +174,9 @@ public class sm_config
 		    
 		    packedfoodIID = config.get("Packed Foods", "Red Apples, Gold Apples, Raw Beef, Cooked Beef", 2130).getInt();
 		    packedfoodIIID = config.get("Packed Foods", "Bread, Cake, Carrots, Golden Carrots", 2131).getInt();
-		    packedfoodIIID = config.get("Packed Foods", "Raw Chicken, Cooked Chicken, Cookies, Eggs", 2132).getInt();
-		    packedfoodIIID = config.get("Packed Foods", "Sugar, Potato, Baked Potato, Poisened Potato", 2133).getInt();
-		    packedfoodIIID = config.get("Packed Foods", "Raw Fish, Cooked Fish, Raw Pork, Cooked Pork", 2134).getInt();
+		    packedfoodIIIID = config.get("Packed Foods", "Raw Chicken, Cooked Chicken, Cookies, Eggs", 2132).getInt();
+		    packedfoodIVID = config.get("Packed Foods", "Sugar, Potato, Baked Potato, Poisened Potato", 2133).getInt();
+		    packedfoodVID = config.get("Packed Foods", "Raw Fish, Cooked Fish, Raw Pork, Cooked Pork", 2134).getInt();
 
 		    packedcoalIID = config.get("Packed Fuels", "Coal I", 2150).getInt();
 		    packedcoalIIID = config.get("Packed Fuels", "Coal II", 2151).getInt();
@@ -292,6 +295,9 @@ public class sm_config
 		    hardenedDiamondSwordIIID = config.get("Tools", "Hardened Diamond Sword II", 8097).getInt();
 		    hardenedDiamondSwordIIIID = config.get("Tools", "Hardened Diamond Sword III", 8098).getInt();
 		    hardenedDiamondSwordIVID = config.get("Tools", "Hardened Diamond Sword IV", 8099).getInt();
+		    
+		    SuperPackedCobbleID = config.get("Super Packed Blocks", "Super Packed Cobble", 8300).getInt();
+		    SuperPackedStoneID = config.get("Super Packed Blocks", "Super Packed Stone", 8301).getInt();
 		    
 		    
 		    config.save();

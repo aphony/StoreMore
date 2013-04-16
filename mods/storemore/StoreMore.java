@@ -26,13 +26,10 @@ import mods.storemore.blockitems.fuels.packedcoalIVItem;
 import mods.storemore.gui.GuiHandler;
 import mods.storemore.proxys.SProxy;
 import net.minecraft.block.Block;
-import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.EnumToolMaterial;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.EnumHelper;
-import net.minecraftforge.oredict.OreDictionary;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.Init;
 import cpw.mods.fml.common.Mod.Instance;
@@ -191,6 +188,11 @@ public class StoreMore
 	public static Item hardenedDiamondSwordII;
 	public static Item hardenedDiamondSwordIII;
 	public static Item hardenedDiamondSwordIV;
+	
+	//SuperPackedBlocks
+	
+	public static Item SuperPackedCobble;
+	public static Item SuperPackedStone;
 
 	
 	@PreInit()
@@ -395,6 +397,11 @@ public class StoreMore
 		hardenedDiamondSwordII = new mods.storemore.items.tools.hardenedDiamondSwordII(sm_config.hardenedDiamondSwordIIID, hardenedDiamondII).setUnlocalizedName("hardenedDiamondSwordII");
 		hardenedDiamondSwordIII = new mods.storemore.items.tools.hardenedDiamondSwordIII(sm_config.hardenedDiamondSwordIIIID, hardenedDiamondIII).setUnlocalizedName("hardenedDiamondSwordIII");
 		hardenedDiamondSwordIV = new mods.storemore.items.tools.hardenedDiamondSwordIV(sm_config.hardenedDiamondSwordIVID, hardenedDiamondIV).setUnlocalizedName("hardenedDiamondSwordIV");
+		
+		//SuperBlocks
+		
+		SuperPackedCobble = new mods.storemore.items.SuperPackedCobble(sm_config.SuperPackedCobbleID).setUnlocalizedName("SuperPackedCobble");
+		SuperPackedStone = new mods.storemore.items.SuperPackedStone(sm_config.SuperPackedStoneID).setUnlocalizedName("SuperPackedStone");
 		
 	}
 
