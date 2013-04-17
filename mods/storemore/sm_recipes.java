@@ -122,38 +122,18 @@ public class sm_recipes extends StoreMore{
 		GameRegistry.addRecipe(new ItemStack(StoreMore.packedblocksVI,1,13), "XXX", "XXX", "XXX", Character.valueOf('X'), new ItemStack(packedblocksVII,1,12));
 		GameRegistry.addRecipe(new ItemStack(StoreMore.packedblocksVI,1,14), "XXX", "XXX", "XXX", Character.valueOf('X'), new ItemStack(packedblocksVII,1,13));
 		GameRegistry.addRecipe(new ItemStack(StoreMore.packedblocksVI,1,15), "XXX", "XXX", "XXX", Character.valueOf('X'), new ItemStack(packedblocksVII,1,14));
-		GameRegistry.addRecipe(new ItemStack(StoreMore.packedblocksVII,1,0), "XXX", "XXX", "XXX", Character.valueOf('X'), new ItemStack(Block.wood));
+
+		
+		//Wood First Stage Handled In OreDictionary
 		GameRegistry.addRecipe(new ItemStack(StoreMore.packedblocksVII,1,1), "XXX", "XXX", "XXX", Character.valueOf('X'), new ItemStack(packedblocksVII,1,0));
 		GameRegistry.addRecipe(new ItemStack(StoreMore.packedblocksVII,1,2), "XXX", "XXX", "XXX", Character.valueOf('X'), new ItemStack(packedblocksVII,1,1));
 		GameRegistry.addRecipe(new ItemStack(StoreMore.packedblocksVII,1,3), "XXX", "XXX", "XXX", Character.valueOf('X'), new ItemStack(packedblocksVII,1,2));
-		GameRegistry.addRecipe(new ItemStack(StoreMore.packedblocksVII,1,4), "XXX", "XXX", "XXX", Character.valueOf('X'), new ItemStack(Block.wood,1,1));
-		GameRegistry.addRecipe(new ItemStack(StoreMore.packedblocksVII,1,5), "XXX", "XXX", "XXX", Character.valueOf('X'), new ItemStack(packedblocksVII,1,4));
-		GameRegistry.addRecipe(new ItemStack(StoreMore.packedblocksVII,1,6), "XXX", "XXX", "XXX", Character.valueOf('X'), new ItemStack(packedblocksVII,1,5));
-		GameRegistry.addRecipe(new ItemStack(StoreMore.packedblocksVII,1,7), "XXX", "XXX", "XXX", Character.valueOf('X'), new ItemStack(packedblocksVII,1,6));
-		GameRegistry.addRecipe(new ItemStack(StoreMore.packedblocksVII,1,8), "XXX", "XXX", "XXX", Character.valueOf('X'), new ItemStack(Block.wood,1,2));
-		GameRegistry.addRecipe(new ItemStack(StoreMore.packedblocksVII,1,9), "XXX", "XXX", "XXX", Character.valueOf('X'), new ItemStack(packedblocksVII,1,8));
-		GameRegistry.addRecipe(new ItemStack(StoreMore.packedblocksVII,1,10), "XXX", "XXX", "XXX", Character.valueOf('X'), new ItemStack(packedblocksVII,1,9));
-		GameRegistry.addRecipe(new ItemStack(StoreMore.packedblocksVII,1,11), "XXX", "XXX", "XXX", Character.valueOf('X'), new ItemStack(packedblocksVII,1,10));
-		GameRegistry.addRecipe(new ItemStack(StoreMore.packedblocksVII,1,12), "XXX", "XXX", "XXX", Character.valueOf('X'), new ItemStack(Block.wood,1,3));
-		GameRegistry.addRecipe(new ItemStack(StoreMore.packedblocksVII,1,13), "XXX", "XXX", "XXX", Character.valueOf('X'), new ItemStack(packedblocksVII,1,12));
-		GameRegistry.addRecipe(new ItemStack(StoreMore.packedblocksVII,1,14), "XXX", "XXX", "XXX", Character.valueOf('X'), new ItemStack(packedblocksVII,1,13));
-		GameRegistry.addRecipe(new ItemStack(StoreMore.packedblocksVII,1,15), "XXX", "XXX", "XXX", Character.valueOf('X'), new ItemStack(packedblocksVII,1,14));
-		GameRegistry.addRecipe(new ItemStack(StoreMore.packedblocksVIII,1,0), "XXX", "XXX", "XXX", Character.valueOf('X'), new ItemStack(Block.planks));
-		GameRegistry.addRecipe(new ItemStack(StoreMore.packedblocksVIII,1,1), "XXX", "XXX", "XXX", Character.valueOf('X'), new ItemStack(packedblocksVIII,1,0));
-		GameRegistry.addRecipe(new ItemStack(StoreMore.packedblocksVIII,1,2), "XXX", "XXX", "XXX", Character.valueOf('X'), new ItemStack(packedblocksVIII,1,1));
-		GameRegistry.addRecipe(new ItemStack(StoreMore.packedblocksVIII,1,3), "XXX", "XXX", "XXX", Character.valueOf('X'), new ItemStack(packedblocksVIII,1,2));
-		GameRegistry.addRecipe(new ItemStack(StoreMore.packedblocksVIII,1,4), "XXX", "XXX", "XXX", Character.valueOf('X'), new ItemStack(Block.planks,1,1));
-		GameRegistry.addRecipe(new ItemStack(StoreMore.packedblocksVIII,1,5), "XXX", "XXX", "XXX", Character.valueOf('X'), new ItemStack(packedblocksVIII,1,4));
-		GameRegistry.addRecipe(new ItemStack(StoreMore.packedblocksVIII,1,6), "XXX", "XXX", "XXX", Character.valueOf('X'), new ItemStack(packedblocksVIII,1,5));
-		GameRegistry.addRecipe(new ItemStack(StoreMore.packedblocksVIII,1,7), "XXX", "XXX", "XXX", Character.valueOf('X'), new ItemStack(packedblocksVIII,1,6));
-		GameRegistry.addRecipe(new ItemStack(StoreMore.packedblocksVIII,1,8), "XXX", "XXX", "XXX", Character.valueOf('X'), new ItemStack(Block.planks,1,2));
-		GameRegistry.addRecipe(new ItemStack(StoreMore.packedblocksVIII,1,9), "XXX", "XXX", "XXX", Character.valueOf('X'), new ItemStack(packedblocksVIII,1,8));
-		GameRegistry.addRecipe(new ItemStack(StoreMore.packedblocksVIII,1,10), "XXX", "XXX", "XXX", Character.valueOf('X'), new ItemStack(packedblocksVIII,1,9));
-		GameRegistry.addRecipe(new ItemStack(StoreMore.packedblocksVIII,1,11), "XXX", "XXX", "XXX", Character.valueOf('X'), new ItemStack(packedblocksVIII,1,10));
-		GameRegistry.addRecipe(new ItemStack(StoreMore.packedblocksVIII,1,12), "XXX", "XXX", "XXX", Character.valueOf('X'), new ItemStack(Block.planks,1,3));
-		GameRegistry.addRecipe(new ItemStack(StoreMore.packedblocksVIII,1,13), "XXX", "XXX", "XXX", Character.valueOf('X'), new ItemStack(packedblocksVIII,1,12));
-		GameRegistry.addRecipe(new ItemStack(StoreMore.packedblocksVIII,1,14), "XXX", "XXX", "XXX", Character.valueOf('X'), new ItemStack(packedblocksVIII,1,13));
-		GameRegistry.addRecipe(new ItemStack(StoreMore.packedblocksVIII,1,15), "XXX", "XXX", "XXX", Character.valueOf('X'), new ItemStack(packedblocksVIII,1,14));
+		
+		//Planks First Stage Handled In OreDictionary
+		GameRegistry.addRecipe(new ItemStack(StoreMore.packedblocksVIII,1,1), "XXX", "XXX", "XXX", Character.valueOf('X'), new ItemStack(packedblocksVIII,1,1));
+		GameRegistry.addRecipe(new ItemStack(StoreMore.packedblocksVIII,1,2), "XXX", "XXX", "XXX", Character.valueOf('X'), new ItemStack(packedblocksVIII,1,2));
+		GameRegistry.addRecipe(new ItemStack(StoreMore.packedblocksVIII,1,3), "XXX", "XXX", "XXX", Character.valueOf('X'), new ItemStack(packedblocksVIII,1,3));
+		
 		GameRegistry.addRecipe(new ItemStack(StoreMore.packedblocksIX,1,0), "XXX", "XXX", "XXX", Character.valueOf('X'), new ItemStack(Block.blockRedstone));
 		GameRegistry.addRecipe(new ItemStack(StoreMore.packedblocksIX,1,1), "XXX", "XXX", "XXX", Character.valueOf('X'), new ItemStack(packedblocksIX,1,0));
 		GameRegistry.addRecipe(new ItemStack(StoreMore.packedblocksIX,1,2), "XXX", "XXX", "XXX", Character.valueOf('X'), new ItemStack(packedblocksIX,1,1));

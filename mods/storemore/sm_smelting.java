@@ -57,18 +57,6 @@ public class sm_smelting extends StoreMore
 		FurnaceRecipes.smelting().addSmelting(StoreMore.packedblocksVII.blockID, 1, new ItemStack(StoreMore.packedcharcoalII), 0.9F);
 		FurnaceRecipes.smelting().addSmelting(StoreMore.packedblocksVII.blockID, 2, new ItemStack(StoreMore.packedcharcoalIII), 0.9F);
 		FurnaceRecipes.smelting().addSmelting(StoreMore.packedblocksVII.blockID, 3, new ItemStack(StoreMore.packedcharcoalIV), 0.9F);
-		FurnaceRecipes.smelting().addSmelting(StoreMore.packedblocksVII.blockID, 4, new ItemStack(StoreMore.packedcharcoalI), 0.9F);
-		FurnaceRecipes.smelting().addSmelting(StoreMore.packedblocksVII.blockID, 5, new ItemStack(StoreMore.packedcharcoalII), 0.9F);
-		FurnaceRecipes.smelting().addSmelting(StoreMore.packedblocksVII.blockID, 6, new ItemStack(StoreMore.packedcharcoalIII), 0.9F);
-		FurnaceRecipes.smelting().addSmelting(StoreMore.packedblocksVII.blockID, 7, new ItemStack(StoreMore.packedcharcoalIV), 0.9F);
-		FurnaceRecipes.smelting().addSmelting(StoreMore.packedblocksVII.blockID, 8, new ItemStack(StoreMore.packedcharcoalI), 0.9F);
-		FurnaceRecipes.smelting().addSmelting(StoreMore.packedblocksVII.blockID, 9, new ItemStack(StoreMore.packedcharcoalII), 0.9F);
-		FurnaceRecipes.smelting().addSmelting(StoreMore.packedblocksVII.blockID, 10, new ItemStack(StoreMore.packedcharcoalIII), 0.9F);
-		FurnaceRecipes.smelting().addSmelting(StoreMore.packedblocksVII.blockID, 11, new ItemStack(StoreMore.packedcharcoalIV), 0.9F);
-		FurnaceRecipes.smelting().addSmelting(StoreMore.packedblocksVII.blockID, 12, new ItemStack(StoreMore.packedcharcoalI), 0.9F);
-		FurnaceRecipes.smelting().addSmelting(StoreMore.packedblocksVII.blockID, 13, new ItemStack(StoreMore.packedcharcoalII), 0.9F);
-		FurnaceRecipes.smelting().addSmelting(StoreMore.packedblocksVII.blockID, 14, new ItemStack(StoreMore.packedcharcoalIII), 0.9F);
-		FurnaceRecipes.smelting().addSmelting(StoreMore.packedblocksVII.blockID, 15, new ItemStack(StoreMore.packedcharcoalIV), 0.9F);
     
 	}
 
