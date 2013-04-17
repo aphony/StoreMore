@@ -2,7 +2,6 @@ package mods.storemore;
 
 import java.io.File;
 
-import mods.storemore.blockitems.packedblocksIItem;
 import net.minecraftforge.common.Configuration;
 import cpw.mods.fml.common.registry.GameRegistry;
 
@@ -41,8 +40,6 @@ public class sm_config
 		public static int packedcharcoalIIID = 2155;
 		public static int packedcharcoalIIIID = 2156;
 		public static int packedcharcoalIVID = 2157;
-		
-		public static int superCompressorIdleID = 2180; 
 		
 		public static int ic2blocksIID = 2160;
 		
