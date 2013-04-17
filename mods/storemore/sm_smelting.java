@@ -37,20 +37,20 @@ public class sm_smelting extends StoreMore
 		FurnaceRecipes.smelting().addSmelting(StoreMore.packedfoodI.blockID, 11, new ItemStack(StoreMore.packedfoodI, 15), 20.0F);
 		
 		//Sand to Glass
-		FurnaceRecipes.smelting().addSmelting(StoreMore.packedglass.blockID, 0, new ItemStack(PackedSand1), 0.9F);
-		FurnaceRecipes.smelting().addSmelting(StoreMore.packedglass.blockID, 1, new ItemStack(PackedSand2), 0.9F);
-		FurnaceRecipes.smelting().addSmelting(StoreMore.packedglass.blockID, 2, new ItemStack(PackedSand3), 0.9F);
-		FurnaceRecipes.smelting().addSmelting(StoreMore.packedglass.blockID, 3, new ItemStack(PackedSand4), 0.9F);
+		FurnaceRecipes.smelting().addSmelting(PackedSand1.itemID, new ItemStack(StoreMore.packedglass, 0), 0.9F);
+		FurnaceRecipes.smelting().addSmelting(PackedSand2.itemID, new ItemStack(StoreMore.packedglass, 1), 0.9F);
+		FurnaceRecipes.smelting().addSmelting(PackedSand3.itemID, new ItemStack(StoreMore.packedglass, 2), 0.9F);
+		FurnaceRecipes.smelting().addSmelting(PackedSand4.itemID, new ItemStack(StoreMore.packedglass, 3), 0.9F);
 		
 		//Cobblestone to Stone
-		FurnaceRecipes.smelting().addSmelting(PackedStone1.itemID, new ItemStack(PackedCobble1), 0.9F);
-		FurnaceRecipes.smelting().addSmelting(PackedStone2.itemID, new ItemStack(PackedCobble2), 0.9F);
-		FurnaceRecipes.smelting().addSmelting(PackedStone3.itemID, new ItemStack(PackedCobble3), 0.9F);
-		FurnaceRecipes.smelting().addSmelting(PackedStone4.itemID, new ItemStack(PackedCobble4), 0.9F);
-		FurnaceRecipes.smelting().addSmelting(PackedStone5.itemID, new ItemStack(PackedCobble5), 0.9F);
-		FurnaceRecipes.smelting().addSmelting(PackedStone6.itemID, new ItemStack(PackedCobble6), 0.9F);
-		FurnaceRecipes.smelting().addSmelting(PackedStone7.itemID, new ItemStack(PackedCobble7), 0.9F);
-		FurnaceRecipes.smelting().addSmelting(PackedStone8.itemID, new ItemStack(PackedCobble8), 0.9F);
+		FurnaceRecipes.smelting().addSmelting(PackedCobble1.itemID, new ItemStack(PackedStone1), 0.9F);
+		FurnaceRecipes.smelting().addSmelting(PackedCobble2.itemID, new ItemStack(PackedStone2), 0.9F);
+		FurnaceRecipes.smelting().addSmelting(PackedCobble3.itemID, new ItemStack(PackedStone3), 0.9F);
+		FurnaceRecipes.smelting().addSmelting(PackedCobble4.itemID, new ItemStack(PackedStone4), 0.9F);
+		FurnaceRecipes.smelting().addSmelting(PackedCobble5.itemID, new ItemStack(PackedStone5), 0.9F);
+		FurnaceRecipes.smelting().addSmelting(PackedCobble6.itemID, new ItemStack(PackedStone6), 0.9F);
+		FurnaceRecipes.smelting().addSmelting(PackedCobble7.itemID, new ItemStack(PackedStone7), 0.9F);
+		FurnaceRecipes.smelting().addSmelting(PackedCobble8.itemID, new ItemStack(PackedStone8), 0.9F);
 		
 		//Wood to Charcoal
 		FurnaceRecipes.smelting().addSmelting(StoreMore.packedblocksVII.blockID, 0, new ItemStack(StoreMore.packedcharcoalI), 0.9F);
