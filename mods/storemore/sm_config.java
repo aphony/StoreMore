@@ -210,10 +210,7 @@ public class sm_config
 		public static void initialize(File file)
 	    {
 	        config = new Configuration(file); 
-
-	        packedblocksIID = config.get("Packed Blocks", "Cobblestone & Stone", 2100).getInt();
-		    packedblocksIIID = config.get("Packed Blocks", "Dirt & Gravel", 2101).getInt();
-		    packedblocksIIIID = config.get("Packed Blocks", "Sand & Sandstone", 2102).getInt();
+	        
 		    packedblocksIVID = config.get("Packed Blocks", "Obsidian, Glowstone, & Netherrack", 2103).getInt();
 		    packedblocksVID = config.get("Packed Blocks", "Iron, Gold, Diamond, & Emerald", 2104).getInt();
 		    packedglassID = config.get("Packed Blocks", "Glass", 2105).getInt();

@@ -261,7 +261,7 @@ public class StoreMore
 		sm_recipes.initRecipes();
 		sm_smelting.initSmelting();
 		NetworkRegistry.instance().registerGuiHandler(this, guiHandler);
-		sm_recipes.registerOres();
+		sm_oredictionary.registerOres();
 	}
 
 	public static CreativeTabs StoreMoreTab = new StoreMoreTab(CreativeTabs.getNextID(), "Store More");
@@ -511,7 +511,7 @@ public class StoreMore
 	}
 	@PostInit
 	public void postInit(FMLPostInitializationEvent event) {
-		sm_recipes.addOreRecipes();
+		sm_oredictionary.addOreRecipes();
 
 	}
 }
