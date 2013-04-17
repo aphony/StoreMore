@@ -40,7 +40,7 @@ import cpw.mods.fml.common.network.NetworkMod;
 import cpw.mods.fml.common.network.NetworkRegistry;
 import cpw.mods.fml.common.registry.GameRegistry;
 
-@Mod(modid = "StoreMore", name = "StoreMore", version = "1.3.5_MC1.5.1", useMetadata = false, dependencies = "before:StoreMore|IC2")
+@Mod(modid = "StoreMore", name = "StoreMore", version = "0.9.0 Public_PR", useMetadata = false, dependencies = "before:StoreMore|IC2")
 @NetworkMod(channels = "StoreMore", packetHandler = sm_packetHandler.class, clientSideRequired = true, serverSideRequired = false)
 public class StoreMore 
 {
