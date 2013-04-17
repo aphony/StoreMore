@@ -148,61 +148,61 @@ public class sm_config
 		public static int hardenedDiamondSwordIIIID = 8098;
 		public static int hardenedDiamondSwordIVID = 8099;
 		
-		public static int SuperPackedCobble8ID = 8300;
-		public static int SuperPackedStone8ID = 8301;
-		public static int SuperPackedDirt8ID = 8302;
-		public static int SuperPackedGravel8ID = 8303;
-		public static int SuperPackedSand8ID = 8304;
-		public static int SuperPackedSandstone8ID = 8305;
+		public static int PackedCobble8ID = 8300;
+		public static int PackedStone8ID = 8301;
+		public static int PackedDirt8ID = 8302;
+		public static int PackedGravel8ID = 8303;
+		public static int PackedSand8ID = 8304;
+		public static int PackedSandstone8ID = 8305;
 		
-		public static int SuperPackedCobble7ID = 8306;
-		public static int SuperPackedStone7ID = 8307;
-		public static int SuperPackedDirt7ID = 8308;
-		public static int SuperPackedGravel7ID = 8309;
-		public static int SuperPackedSand7ID = 8310;
-		public static int SuperPackedSandstone7ID = 8311;
+		public static int PackedCobble7ID = 8306;
+		public static int PackedStone7ID = 8307;
+		public static int PackedDirt7ID = 8308;
+		public static int PackedGravel7ID = 8309;
+		public static int PackedSand7ID = 8310;
+		public static int PackedSandstone7ID = 8311;
 		
-		public static int SuperPackedCobble6ID = 8312;
-		public static int SuperPackedStone6ID = 8313;
-		public static int SuperPackedDirt6ID = 8314;
-		public static int SuperPackedGravel6ID = 8315;
-		public static int SuperPackedSand6ID = 8316;
-		public static int SuperPackedSandstone6ID = 8317;
+		public static int PackedCobble6ID = 8312;
+		public static int PackedStone6ID = 8313;
+		public static int PackedDirt6ID = 8314;
+		public static int PackedGravel6ID = 8315;
+		public static int PackedSand6ID = 8316;
+		public static int PackedSandstone6ID = 8317;
 		
-		public static int SuperPackedCobble5ID = 8318;
-		public static int SuperPackedStone5ID = 8319;
-		public static int SuperPackedDirt5ID = 8320;
-		public static int SuperPackedGravel5ID = 8321;
-		public static int SuperPackedSand5ID = 8322;
-		public static int SuperPackedSandstone5ID = 8324;
+		public static int PackedCobble5ID = 8318;
+		public static int PackedStone5ID = 8319;
+		public static int PackedDirt5ID = 8320;
+		public static int PackedGravel5ID = 8321;
+		public static int PackedSand5ID = 8322;
+		public static int PackedSandstone5ID = 8324;
 		
-		public static int SuperPackedCobble4ID = 8325;
-		public static int SuperPackedStone4ID = 8326;
-		public static int SuperPackedDirt4ID = 8327;
-		public static int SuperPackedGravel4ID = 8328;
-		public static int SuperPackedSand4ID = 8329;
-		public static int SuperPackedSandstone4ID = 8330;
+		public static int PackedCobble4ID = 8325;
+		public static int PackedStone4ID = 8326;
+		public static int PackedDirt4ID = 8327;
+		public static int PackedGravel4ID = 8328;
+		public static int PackedSand4ID = 8329;
+		public static int PackedSandstone4ID = 8330;
 		
-		public static int SuperPackedCobble3ID = 8331;
-		public static int SuperPackedStone3ID = 8332;
-		public static int SuperPackedDirt3ID = 8333;
-		public static int SuperPackedGravel3ID = 8334;
-		public static int SuperPackedSand3ID = 8335;
-		public static int SuperPackedSandstone3ID = 8336;
+		public static int PackedCobble3ID = 8331;
+		public static int PackedStone3ID = 8332;
+		public static int PackedDirt3ID = 8333;
+		public static int PackedGravel3ID = 8334;
+		public static int PackedSand3ID = 8335;
+		public static int PackedSandstone3ID = 8336;
 		
-		public static int SuperPackedCobble2ID = 8337;
-		public static int SuperPackedStone2ID = 8338;
-		public static int SuperPackedDirt2ID = 8339;
-		public static int SuperPackedGravel2ID = 8340;
-		public static int SuperPackedSand2ID = 8341;
-		public static int SuperPackedSandstone2ID = 8342;
+		public static int PackedCobble2ID = 8337;
+		public static int PackedStone2ID = 8338;
+		public static int PackedDirt2ID = 8339;
+		public static int PackedGravel2ID = 8340;
+		public static int PackedSand2ID = 8341;
+		public static int PackedSandstone2ID = 8342;
 		
-		public static int SuperPackedCobble1ID = 8343;
-		public static int SuperPackedStone1ID = 8344;
-		public static int SuperPackedDirt1ID = 8345;
-		public static int SuperPackedGravel1ID = 8346;
-		public static int SuperPackedSand1ID = 8347;
-		public static int SuperPackedSandstone1ID = 8348;
+		public static int PackedCobble1ID = 8343;
+		public static int PackedStone1ID = 8344;
+		public static int PackedDirt1ID = 8345;
+		public static int PackedGravel1ID = 8346;
+		public static int PackedSand1ID = 8347;
+		public static int PackedSandstone1ID = 8348;
 		
 		
 	    public static boolean IC2Enabled;
@@ -346,61 +346,61 @@ public class sm_config
 		    hardenedDiamondSwordIIIID = config.get("Tools", "Hardened Diamond Sword III", 8098).getInt();
 		    hardenedDiamondSwordIVID = config.get("Tools", "Hardened Diamond Sword IV", 8099).getInt();
 		    
-		    SuperPackedCobble8ID = config.get("Placeable Packed Blocks", "Placeable Packed Cobble VIII", 8300).getInt();
-		    SuperPackedStone8ID = config.get("Placeable Packed Blocks", "Placeable Packed Stone VIII", 8301).getInt();
-		    SuperPackedDirt8ID = config.get("Placeable Packed Blocks", "Placeable Packed Dirt VIII", 8302).getInt();
-		    SuperPackedGravel8ID = config.get("Placeable Packed Blocks", "Placeable Packed Gravel VIII", 8303).getInt();
-		    SuperPackedSand8ID = config.get("Placeable Packed Blocks", "Placeable Packed Sand VIII", 8304).getInt();
-		    SuperPackedSandstone8ID = config.get("Placeable Packed Blocks", "Placeable Packed Sandstone VIII", 8305).getInt();
+		    PackedCobble8ID = config.get("Placeable Packed Blocks", "Placeable Packed Cobble VIII", 8300).getInt();
+		    PackedStone8ID = config.get("Placeable Packed Blocks", "Placeable Packed Stone VIII", 8301).getInt();
+		    PackedDirt8ID = config.get("Placeable Packed Blocks", "Placeable Packed Dirt VIII", 8302).getInt();
+		    PackedGravel8ID = config.get("Placeable Packed Blocks", "Placeable Packed Gravel VIII", 8303).getInt();
+		    PackedSand8ID = config.get("Placeable Packed Blocks", "Placeable Packed Sand VIII", 8304).getInt();
+		    PackedSandstone8ID = config.get("Placeable Packed Blocks", "Placeable Packed Sandstone VIII", 8305).getInt();
 		    
-		    SuperPackedCobble7ID = config.get("Placeable Packed Blocks", "Placeable Packed Cobble VII", 8306).getInt();
-		    SuperPackedStone7ID = config.get("Placeable Packed Blocks", "Placeable Packed Stone VII", 8307).getInt();
-		    SuperPackedDirt7ID = config.get("Placeable Packed Blocks", "Placeable Packed Dirt VII", 8308).getInt();
-		    SuperPackedGravel7ID = config.get("Placeable Packed Blocks", "Placeable Packed Gravel VII", 8309).getInt();
-		    SuperPackedSand7ID = config.get("Placeable Packed Blocks", "Placeable Packed Sand VII", 8310).getInt();
-		    SuperPackedSandstone7ID = config.get("Placeable Packed Blocks", "Placeable Packed Sandstone VII", 8311).getInt();
+		    PackedCobble7ID = config.get("Placeable Packed Blocks", "Placeable Packed Cobble VII", 8306).getInt();
+		    PackedStone7ID = config.get("Placeable Packed Blocks", "Placeable Packed Stone VII", 8307).getInt();
+		    PackedDirt7ID = config.get("Placeable Packed Blocks", "Placeable Packed Dirt VII", 8308).getInt();
+		    PackedGravel7ID = config.get("Placeable Packed Blocks", "Placeable Packed Gravel VII", 8309).getInt();
+		    PackedSand7ID = config.get("Placeable Packed Blocks", "Placeable Packed Sand VII", 8310).getInt();
+		    PackedSandstone7ID = config.get("Placeable Packed Blocks", "Placeable Packed Sandstone VII", 8311).getInt();
 		    
-		    SuperPackedCobble6ID = config.get("Placeable Packed Blocks", "Placeable Packed Cobble VI", 8312).getInt();
-		    SuperPackedStone6ID = config.get("Placeable Packed Blocks", "Placeable Packed Stone VI", 8313).getInt();
-		    SuperPackedDirt6ID = config.get("Placeable Packed Blocks", "Placeable Packed Dirt VI", 8314).getInt();
-		    SuperPackedGravel6ID = config.get("Placeable Packed Blocks", "Placeable Packed Gravel VI", 8315).getInt();
-		    SuperPackedSand6ID = config.get("Placeable Packed Blocks", "Placeable Packed Sand VI", 8316).getInt();
-		    SuperPackedSandstone6ID = config.get("Placeable Packed Blocks", "Placeable Packed Sandstone VI", 8317).getInt();
+		    PackedCobble6ID = config.get("Placeable Packed Blocks", "Placeable Packed Cobble VI", 8312).getInt();
+		    PackedStone6ID = config.get("Placeable Packed Blocks", "Placeable Packed Stone VI", 8313).getInt();
+		    PackedDirt6ID = config.get("Placeable Packed Blocks", "Placeable Packed Dirt VI", 8314).getInt();
+		    PackedGravel6ID = config.get("Placeable Packed Blocks", "Placeable Packed Gravel VI", 8315).getInt();
+		    PackedSand6ID = config.get("Placeable Packed Blocks", "Placeable Packed Sand VI", 8316).getInt();
+		    PackedSandstone6ID = config.get("Placeable Packed Blocks", "Placeable Packed Sandstone VI", 8317).getInt();
 		    
-		    SuperPackedCobble5ID = config.get("Placeable Packed Blocks", "Placeable Packed Cobble V", 8318).getInt();
-		    SuperPackedStone5ID = config.get("Placeable Packed Blocks", "Placeable Packed Stone V", 8319).getInt();
-		    SuperPackedDirt5ID = config.get("Placeable Packed Blocks", "Placeable Packed Dirt V", 8320).getInt();
-		    SuperPackedGravel5ID = config.get("Placeable Packed Blocks", "Placeable Packed Gravel V", 8321).getInt();
-		    SuperPackedSand5ID = config.get("Placeable Packed Blocks", "Placeable Packed Sand V", 8322).getInt();
-		    SuperPackedSandstone5ID = config.get("Placeable Packed Blocks", "Placeable Packed Sandstone V", 8323).getInt();
+		    PackedCobble5ID = config.get("Placeable Packed Blocks", "Placeable Packed Cobble V", 8318).getInt();
+		    PackedStone5ID = config.get("Placeable Packed Blocks", "Placeable Packed Stone V", 8319).getInt();
+		    PackedDirt5ID = config.get("Placeable Packed Blocks", "Placeable Packed Dirt V", 8320).getInt();
+		    PackedGravel5ID = config.get("Placeable Packed Blocks", "Placeable Packed Gravel V", 8321).getInt();
+		    PackedSand5ID = config.get("Placeable Packed Blocks", "Placeable Packed Sand V", 8322).getInt();
+		    PackedSandstone5ID = config.get("Placeable Packed Blocks", "Placeable Packed Sandstone V", 8323).getInt();
 		    
-		    SuperPackedCobble4ID = config.get("Placeable Packed Blocks", "Placeable Packed Cobble IV", 8324).getInt();
-		    SuperPackedStone4ID = config.get("Placeable Packed Blocks", "Placeable Packed Stone IV", 8325).getInt();
-		    SuperPackedDirt4ID = config.get("Placeable Packed Blocks", "Placeable Packed Dirt IV", 8326).getInt();
-		    SuperPackedGravel4ID = config.get("Placeable Packed Blocks", "Placeable Packed Gravel IV", 8327).getInt();
-		    SuperPackedSand4ID = config.get("Placeable Packed Blocks", "Placeable Packed Sand IV", 8328).getInt();
-		    SuperPackedSandstone4ID = config.get("Placeable Packed Blocks", "Placeable Packed Sandstone IV", 8329).getInt();
+		    PackedCobble4ID = config.get("Placeable Packed Blocks", "Placeable Packed Cobble IV", 8324).getInt();
+		    PackedStone4ID = config.get("Placeable Packed Blocks", "Placeable Packed Stone IV", 8325).getInt();
+		    PackedDirt4ID = config.get("Placeable Packed Blocks", "Placeable Packed Dirt IV", 8326).getInt();
+		    PackedGravel4ID = config.get("Placeable Packed Blocks", "Placeable Packed Gravel IV", 8327).getInt();
+		    PackedSand4ID = config.get("Placeable Packed Blocks", "Placeable Packed Sand IV", 8328).getInt();
+		    PackedSandstone4ID = config.get("Placeable Packed Blocks", "Placeable Packed Sandstone IV", 8329).getInt();
 		    
-		    SuperPackedCobble3ID = config.get("Placeable Packed Blocks", "Placeable Packed Cobble III", 8330).getInt();
-		    SuperPackedStone3ID = config.get("Placeable Packed Blocks", "Placeable Packed Stone III", 8331).getInt();
-		    SuperPackedDirt3ID = config.get("Placeable Packed Blocks", "Placeable Packed Dirt III", 8332).getInt();
-		    SuperPackedGravel3ID = config.get("Placeable Packed Blocks", "Placeable Packed Gravel III", 8333).getInt();
-		    SuperPackedSand3ID = config.get("Placeable Packed Blocks", "Placeable Packed Sand III", 8334).getInt();
-		    SuperPackedSandstone3ID = config.get("Placeable Packed Blocks", "Placeable Packed Sandstone III", 8335).getInt();
+		    PackedCobble3ID = config.get("Placeable Packed Blocks", "Placeable Packed Cobble III", 8330).getInt();
+		    PackedStone3ID = config.get("Placeable Packed Blocks", "Placeable Packed Stone III", 8331).getInt();
+		    PackedDirt3ID = config.get("Placeable Packed Blocks", "Placeable Packed Dirt III", 8332).getInt();
+		    PackedGravel3ID = config.get("Placeable Packed Blocks", "Placeable Packed Gravel III", 8333).getInt();
+		    PackedSand3ID = config.get("Placeable Packed Blocks", "Placeable Packed Sand III", 8334).getInt();
+		    PackedSandstone3ID = config.get("Placeable Packed Blocks", "Placeable Packed Sandstone III", 8335).getInt();
 		    
-		    SuperPackedCobble2ID = config.get("Placeable Packed Blocks", "Placeable Packed Cobble II", 8336).getInt();
-		    SuperPackedStone2ID = config.get("Placeable Packed Blocks", "Placeable Packed Stone II", 8337).getInt();
-		    SuperPackedDirt2ID = config.get("Placeable Packed Blocks", "Placeable Packed Dirt II", 8338).getInt();
-		    SuperPackedGravel2ID = config.get("Placeable Packed Blocks", "Placeable Packed Gravel II", 8339).getInt();
-		    SuperPackedSand2ID = config.get("Placeable Packed Blocks", "Placeable Packed Sand II", 8340).getInt();
-		    SuperPackedSandstone2ID = config.get("Placeable Packed Blocks", "Placeable Packed Sandstone II", 8341).getInt();
+		    PackedCobble2ID = config.get("Placeable Packed Blocks", "Placeable Packed Cobble II", 8336).getInt();
+		    PackedStone2ID = config.get("Placeable Packed Blocks", "Placeable Packed Stone II", 8337).getInt();
+		    PackedDirt2ID = config.get("Placeable Packed Blocks", "Placeable Packed Dirt II", 8338).getInt();
+		    PackedGravel2ID = config.get("Placeable Packed Blocks", "Placeable Packed Gravel II", 8339).getInt();
+		    PackedSand2ID = config.get("Placeable Packed Blocks", "Placeable Packed Sand II", 8340).getInt();
+		    PackedSandstone2ID = config.get("Placeable Packed Blocks", "Placeable Packed Sandstone II", 8341).getInt();
 		    
-		    SuperPackedCobble1ID = config.get("Placeable Packed Blocks", "Placeable Packed Cobble I", 8342).getInt();
-		    SuperPackedStone1ID = config.get("Placeable Packed Blocks", "Placeable Packed Stone I", 8343).getInt();
-		    SuperPackedDirt1ID = config.get("Placeable Packed Blocks", "Placeable Packed Dirt I", 8344).getInt();
-		    SuperPackedGravel1ID = config.get("Placeable Packed Blocks", "Placeable Packed Gravel I", 8345).getInt();
-		    SuperPackedSand1ID = config.get("Placeable Packed Blocks", "Placeable Packed Sand I", 8346).getInt();
-		    SuperPackedSandstone1ID = config.get("Placeable Packed Blocks", "Placeable Packed Sandstone I", 8347).getInt();
+		    PackedCobble1ID = config.get("Placeable Packed Blocks", "Placeable Packed Cobble I", 8342).getInt();
+		    PackedStone1ID = config.get("Placeable Packed Blocks", "Placeable Packed Stone I", 8343).getInt();
+		    PackedDirt1ID = config.get("Placeable Packed Blocks", "Placeable Packed Dirt I", 8344).getInt();
+		    PackedGravel1ID = config.get("Placeable Packed Blocks", "Placeable Packed Gravel I", 8345).getInt();
+		    PackedSand1ID = config.get("Placeable Packed Blocks", "Placeable Packed Sand I", 8346).getInt();
+		    PackedSandstone1ID = config.get("Placeable Packed Blocks", "Placeable Packed Sandstone I", 8347).getInt();
 		    
 		    
 		    config.save();

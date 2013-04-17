@@ -1,8 +1,5 @@
 package mods.storemore;
 
-import mods.storemore.blockitems.packedblocksIIIItem;
-import mods.storemore.blockitems.packedblocksIIItem;
-import mods.storemore.blockitems.packedblocksIItem;
 import mods.storemore.blockitems.packedblocksIVItem;
 import mods.storemore.blockitems.packedblocksIXItem;
 import mods.storemore.blockitems.packedblocksVIIIItem;
@@ -60,9 +57,6 @@ public class StoreMore
 
 
 	//Block Registering
-	public static Block packedblocksI;
-	public static Block packedblocksII;
-	public static Block packedblocksIII;
 	public static Block packedblocksIV;
 	public static Block packedblocksV;
 	public static Block packedglass;
@@ -191,61 +185,61 @@ public class StoreMore
 	
 	//SuperPackedBlocks
 	
-	public static Item SuperPackedCobble8;
-	public static Item SuperPackedStone8;
-	public static Item SuperPackedDirt8;
-	public static Item SuperPackedGravel8;
-	public static Item SuperPackedSand8;
-	public static Item SuperPackedSandstone8;
+	public static Item PackedCobble8;
+	public static Item PackedStone8;
+	public static Item PackedDirt8;
+	public static Item PackedGravel8;
+	public static Item PackedSand8;
+	public static Item PackedSandstone8;
 	
-	public static Item SuperPackedCobble7;
-	public static Item SuperPackedStone7;
-	public static Item SuperPackedDirt7;
-	public static Item SuperPackedGravel7;
-	public static Item SuperPackedSand7;
-	public static Item SuperPackedSandstone7;
+	public static Item PackedCobble7;
+	public static Item PackedStone7;
+	public static Item PackedDirt7;
+	public static Item PackedGravel7;
+	public static Item PackedSand7;
+	public static Item PackedSandstone7;
 	
-	public static Item SuperPackedCobble6;
-	public static Item SuperPackedStone6;
-	public static Item SuperPackedDirt6;
-	public static Item SuperPackedGravel6;
-	public static Item SuperPackedSand6;
-	public static Item SuperPackedSandstone6;
+	public static Item PackedCobble6;
+	public static Item PackedStone6;
+	public static Item PackedDirt6;
+	public static Item PackedGravel6;
+	public static Item PackedSand6;
+	public static Item PackedSandstone6;
 	
-	public static Item SuperPackedCobble5;
-	public static Item SuperPackedStone5;
-	public static Item SuperPackedDirt5;
-	public static Item SuperPackedGravel5;
-	public static Item SuperPackedSand5;
-	public static Item SuperPackedSandstone5;
+	public static Item PackedCobble5;
+	public static Item PackedStone5;
+	public static Item PackedDirt5;
+	public static Item PackedGravel5;
+	public static Item PackedSand5;
+	public static Item PackedSandstone5;
 	
-	public static Item SuperPackedCobble4;
-	public static Item SuperPackedStone4;
-	public static Item SuperPackedDirt4;
-	public static Item SuperPackedGravel4;
-	public static Item SuperPackedSand4;
-	public static Item SuperPackedSandstone4;
+	public static Item PackedCobble4;
+	public static Item PackedStone4;
+	public static Item PackedDirt4;
+	public static Item PackedGravel4;
+	public static Item PackedSand4;
+	public static Item PackedSandstone4;
 	
-	public static Item SuperPackedCobble3;
-	public static Item SuperPackedStone3;
-	public static Item SuperPackedDirt3;
-	public static Item SuperPackedGravel3;
-	public static Item SuperPackedSand3;
-	public static Item SuperPackedSandstone3;
+	public static Item PackedCobble3;
+	public static Item PackedStone3;
+	public static Item PackedDirt3;
+	public static Item PackedGravel3;
+	public static Item PackedSand3;
+	public static Item PackedSandstone3;
 	
-	public static Item SuperPackedCobble2;
-	public static Item SuperPackedStone2;
-	public static Item SuperPackedDirt2;
-	public static Item SuperPackedGravel2;
-	public static Item SuperPackedSand2;
-	public static Item SuperPackedSandstone2;
+	public static Item PackedCobble2;
+	public static Item PackedStone2;
+	public static Item PackedDirt2;
+	public static Item PackedGravel2;
+	public static Item PackedSand2;
+	public static Item PackedSandstone2;
 	
-	public static Item SuperPackedCobble1;
-	public static Item SuperPackedStone1;
-	public static Item SuperPackedDirt1;
-	public static Item SuperPackedGravel1;
-	public static Item SuperPackedSand1;
-	public static Item SuperPackedSandstone1;
+	public static Item PackedCobble1;
+	public static Item PackedStone1;
+	public static Item PackedDirt1;
+	public static Item PackedGravel1;
+	public static Item PackedSand1;
+	public static Item PackedSandstone1;
 	
 
 	
@@ -276,9 +270,6 @@ public class StoreMore
 
 		//Multiblocks	
 
-		packedblocksI = new mods.storemore.blocks.packedblocksI(sm_config.packedblocksIID).setHardness(3.5f).setResistance(120.0F).setCreativeTab(StoreMoreTab).setUnlocalizedName("packedblocksI");
-		packedblocksII = new mods.storemore.blocks.packedblocksII(sm_config.packedblocksIIID).setHardness(2.0f).setResistance(120.0F).setCreativeTab(StoreMoreTab).setUnlocalizedName("packedblocksII");
-		packedblocksIII = new mods.storemore.blocks.packedblocksIII(sm_config.packedblocksIIIID).setHardness(2.0f).setResistance(120.0F).setCreativeTab(StoreMoreTab).setUnlocalizedName("packedblocksIII");
 		packedblocksIV = new mods.storemore.blocks.packedblocksIV(sm_config.packedblocksIVID).setHardness(2.0f).setResistance(120.0F).setCreativeTab(StoreMoreTab).setUnlocalizedName("packedblocksIV");
 		packedblocksV = new mods.storemore.blocks.packedblocksV(sm_config.packedblocksVID).setHardness(1.0f).setResistance(50.0f).setCreativeTab(StoreMoreTab).setUnlocalizedName("packedblocksV");
 		packedglass = new mods.storemore.blocks.packedglass(sm_config.packedglassID).setHardness(1.0f).setResistance(50.0f).setCreativeTab(StoreMoreTab).setUnlocalizedName("packedglass");
@@ -302,9 +293,6 @@ public class StoreMore
 
 		//Multiblock ItemBlocks	
 
-		Item.itemsList[sm_config.packedblocksIID]	= new packedblocksIItem(sm_config.packedblocksIID-256).setUnlocalizedName("packedblocksI");
-		Item.itemsList[sm_config.packedblocksIIID]	= new packedblocksIIItem(sm_config.packedblocksIIID-256).setUnlocalizedName("packedblocksII");
-		Item.itemsList[sm_config.packedblocksIIIID] = new packedblocksIIIItem(sm_config.packedblocksIIIID-256).setUnlocalizedName("packedblocksIII");
 		Item.itemsList[sm_config.packedblocksIVID] = new packedblocksIVItem(sm_config.packedblocksIVID-256).setUnlocalizedName("packedblocksIV");
 		Item.itemsList[sm_config.packedblocksVID] = new packedblocksVItem(sm_config.packedblocksVID-256).setUnlocalizedName("packedblocksV");
 		Item.itemsList[sm_config.packedblocksVIID] = new packedblocksVIItem(sm_config.packedblocksVIID-256).setUnlocalizedName("packedblocksVI");
@@ -455,61 +443,61 @@ public class StoreMore
 		
 		//SuperBlocks
 		
-		SuperPackedCobble8 = new mods.storemore.items.SuperPackedCobble8(sm_config.SuperPackedCobble8ID).setUnlocalizedName("SuperPackedCobble8");
-		SuperPackedStone8 = new mods.storemore.items.SuperPackedStone8(sm_config.SuperPackedStone8ID).setUnlocalizedName("SuperPackedStone8");		
-		SuperPackedDirt8 = new mods.storemore.items.SuperPackedDirt8(sm_config.SuperPackedDirt8ID).setUnlocalizedName("SuperPackedDirt8");
-		SuperPackedGravel8 = new mods.storemore.items.SuperPackedGravel8(sm_config.SuperPackedGravel8ID).setUnlocalizedName("SuperPackedGravel8");		
-		SuperPackedSand8 = new mods.storemore.items.SuperPackedSand8(sm_config.SuperPackedSand8ID).setUnlocalizedName("SuperPackedSand8");
-		SuperPackedSandstone8 = new mods.storemore.items.SuperPackedSandstone7(sm_config.SuperPackedSandstone8ID).setUnlocalizedName("SuperPackedSandstone8");
+		PackedCobble8 = new mods.storemore.items.PackedCobble8(sm_config.PackedCobble8ID).setUnlocalizedName("PackedCobble8");
+		PackedStone8 = new mods.storemore.items.PackedStone8(sm_config.PackedStone8ID).setUnlocalizedName("PackedStone8");		
+		PackedDirt8 = new mods.storemore.items.PackedDirt8(sm_config.PackedDirt8ID).setUnlocalizedName("PackedDirt8");
+		PackedGravel8 = new mods.storemore.items.PackedGravel8(sm_config.PackedGravel8ID).setUnlocalizedName("PackedGravel8");		
+		PackedSand8 = new mods.storemore.items.PackedSand8(sm_config.PackedSand8ID).setUnlocalizedName("PackedSand8");
+		PackedSandstone8 = new mods.storemore.items.PackedSandstone7(sm_config.PackedSandstone8ID).setUnlocalizedName("PackedSandstone8");
 		
-		SuperPackedCobble7 = new mods.storemore.items.SuperPackedCobble7(sm_config.SuperPackedCobble7ID).setUnlocalizedName("SuperPackedCobble7");
-		SuperPackedStone7 = new mods.storemore.items.SuperPackedStone7(sm_config.SuperPackedStone7ID).setUnlocalizedName("SuperPackedStone7");		
-		SuperPackedDirt7 = new mods.storemore.items.SuperPackedDirt7(sm_config.SuperPackedDirt7ID).setUnlocalizedName("SuperPackedDirt7");
-		SuperPackedGravel7 = new mods.storemore.items.SuperPackedGravel7(sm_config.SuperPackedGravel7ID).setUnlocalizedName("SuperPackedGravel7");		
-		SuperPackedSand7 = new mods.storemore.items.SuperPackedSand7(sm_config.SuperPackedSand7ID).setUnlocalizedName("SuperPackedSand7");
-		SuperPackedSandstone7 = new mods.storemore.items.SuperPackedSandstone7(sm_config.SuperPackedSandstone7ID).setUnlocalizedName("SuperPackedSandstone7");
+		PackedCobble7 = new mods.storemore.items.PackedCobble7(sm_config.PackedCobble7ID).setUnlocalizedName("PackedCobble7");
+		PackedStone7 = new mods.storemore.items.PackedStone7(sm_config.PackedStone7ID).setUnlocalizedName("PackedStone7");		
+		PackedDirt7 = new mods.storemore.items.PackedDirt7(sm_config.PackedDirt7ID).setUnlocalizedName("PackedDirt7");
+		PackedGravel7 = new mods.storemore.items.PackedGravel7(sm_config.PackedGravel7ID).setUnlocalizedName("PackedGravel7");		
+		PackedSand7 = new mods.storemore.items.PackedSand7(sm_config.PackedSand7ID).setUnlocalizedName("PackedSand7");
+		PackedSandstone7 = new mods.storemore.items.PackedSandstone7(sm_config.PackedSandstone7ID).setUnlocalizedName("PackedSandstone7");
 		
-		SuperPackedCobble6 = new mods.storemore.items.SuperPackedCobble6(sm_config.SuperPackedCobble6ID).setUnlocalizedName("SuperPackedCobble6");
-		SuperPackedStone6 = new mods.storemore.items.SuperPackedStone6(sm_config.SuperPackedStone6ID).setUnlocalizedName("SuperPackedStone6");		
-		SuperPackedDirt6 = new mods.storemore.items.SuperPackedDirt6(sm_config.SuperPackedDirt6ID).setUnlocalizedName("SuperPackedDirt6");
-		SuperPackedGravel6 = new mods.storemore.items.SuperPackedGravel6(sm_config.SuperPackedGravel6ID).setUnlocalizedName("SuperPackedGravel6");		
-		SuperPackedSand6 = new mods.storemore.items.SuperPackedSand6(sm_config.SuperPackedSand6ID).setUnlocalizedName("SuperPackedSand6");
-		SuperPackedSandstone6 = new mods.storemore.items.SuperPackedSandstone6(sm_config.SuperPackedSandstone6ID).setUnlocalizedName("SuperPackedSandstone6");
+		PackedCobble6 = new mods.storemore.items.PackedCobble6(sm_config.PackedCobble6ID).setUnlocalizedName("PackedCobble6");
+		PackedStone6 = new mods.storemore.items.PackedStone6(sm_config.PackedStone6ID).setUnlocalizedName("PackedStone6");		
+		PackedDirt6 = new mods.storemore.items.PackedDirt6(sm_config.PackedDirt6ID).setUnlocalizedName("PackedDirt6");
+		PackedGravel6 = new mods.storemore.items.PackedGravel6(sm_config.PackedGravel6ID).setUnlocalizedName("PackedGravel6");		
+		PackedSand6 = new mods.storemore.items.PackedSand6(sm_config.PackedSand6ID).setUnlocalizedName("PackedSand6");
+		PackedSandstone6 = new mods.storemore.items.PackedSandstone6(sm_config.PackedSandstone6ID).setUnlocalizedName("PackedSandstone6");
 		
-		SuperPackedCobble5 = new mods.storemore.items.SuperPackedCobble5(sm_config.SuperPackedCobble5ID).setUnlocalizedName("SuperPackedCobble5");
-		SuperPackedStone5 = new mods.storemore.items.SuperPackedStone5(sm_config.SuperPackedStone5ID).setUnlocalizedName("SuperPackedStone5");		
-		SuperPackedDirt5 = new mods.storemore.items.SuperPackedDirt5(sm_config.SuperPackedDirt5ID).setUnlocalizedName("SuperPackedDirt5");
-		SuperPackedGravel5 = new mods.storemore.items.SuperPackedGravel5(sm_config.SuperPackedGravel5ID).setUnlocalizedName("SuperPackedGravel5");		
-		SuperPackedSand5 = new mods.storemore.items.SuperPackedSand5(sm_config.SuperPackedSand5ID).setUnlocalizedName("SuperPackedSand5");
-		SuperPackedSandstone5 = new mods.storemore.items.SuperPackedSandstone5(sm_config.SuperPackedSandstone5ID).setUnlocalizedName("SuperPackedSandstone5");
+		PackedCobble5 = new mods.storemore.items.PackedCobble5(sm_config.PackedCobble5ID).setUnlocalizedName("PackedCobble5");
+		PackedStone5 = new mods.storemore.items.PackedStone5(sm_config.PackedStone5ID).setUnlocalizedName("PackedStone5");		
+		PackedDirt5 = new mods.storemore.items.PackedDirt5(sm_config.PackedDirt5ID).setUnlocalizedName("PackedDirt5");
+		PackedGravel5 = new mods.storemore.items.PackedGravel5(sm_config.PackedGravel5ID).setUnlocalizedName("PackedGravel5");		
+		PackedSand5 = new mods.storemore.items.PackedSand5(sm_config.PackedSand5ID).setUnlocalizedName("PackedSand5");
+		PackedSandstone5 = new mods.storemore.items.PackedSandstone5(sm_config.PackedSandstone5ID).setUnlocalizedName("PackedSandstone5");
 		
-		SuperPackedCobble4 = new mods.storemore.items.SuperPackedCobble4(sm_config.SuperPackedCobble4ID).setUnlocalizedName("SuperPackedCobble4");
-		SuperPackedStone4 = new mods.storemore.items.SuperPackedStone4(sm_config.SuperPackedStone4ID).setUnlocalizedName("SuperPackedStone4");		
-		SuperPackedDirt4 = new mods.storemore.items.SuperPackedDirt4(sm_config.SuperPackedDirt4ID).setUnlocalizedName("SuperPackedDirt4");
-		SuperPackedGravel4 = new mods.storemore.items.SuperPackedGravel4(sm_config.SuperPackedGravel4ID).setUnlocalizedName("SuperPackedGravel4");		
-		SuperPackedSand4 = new mods.storemore.items.SuperPackedSand4(sm_config.SuperPackedSand4ID).setUnlocalizedName("SuperPackedSand4");
-		SuperPackedSandstone4 = new mods.storemore.items.SuperPackedSandstone4(sm_config.SuperPackedSandstone4ID).setUnlocalizedName("SuperPackedSandstone4");
+		PackedCobble4 = new mods.storemore.items.PackedCobble4(sm_config.PackedCobble4ID).setUnlocalizedName("PackedCobble4");
+		PackedStone4 = new mods.storemore.items.PackedStone4(sm_config.PackedStone4ID).setUnlocalizedName("PackedStone4");		
+		PackedDirt4 = new mods.storemore.items.PackedDirt4(sm_config.PackedDirt4ID).setUnlocalizedName("PackedDirt4");
+		PackedGravel4 = new mods.storemore.items.PackedGravel4(sm_config.PackedGravel4ID).setUnlocalizedName("PackedGravel4");		
+		PackedSand4 = new mods.storemore.items.PackedSand4(sm_config.PackedSand4ID).setUnlocalizedName("PackedSand4");
+		PackedSandstone4 = new mods.storemore.items.PackedSandstone4(sm_config.PackedSandstone4ID).setUnlocalizedName("PackedSandstone4");
 		
-		SuperPackedCobble3 = new mods.storemore.items.SuperPackedCobble3(sm_config.SuperPackedCobble3ID).setUnlocalizedName("SuperPackedCobble3");
-		SuperPackedStone3 = new mods.storemore.items.SuperPackedStone3(sm_config.SuperPackedStone3ID).setUnlocalizedName("SuperPackedStone3");		
-		SuperPackedDirt3 = new mods.storemore.items.SuperPackedDirt3(sm_config.SuperPackedDirt3ID).setUnlocalizedName("SuperPackedDirt3");
-		SuperPackedGravel3 = new mods.storemore.items.SuperPackedGravel3(sm_config.SuperPackedGravel3ID).setUnlocalizedName("SuperPackedGravel3");		
-		SuperPackedSand3 = new mods.storemore.items.SuperPackedSand3(sm_config.SuperPackedSand3ID).setUnlocalizedName("SuperPackedSand3");
-		SuperPackedSandstone3 = new mods.storemore.items.SuperPackedSandstone3(sm_config.SuperPackedSandstone3ID).setUnlocalizedName("SuperPackedSandstone3");
+		PackedCobble3 = new mods.storemore.items.PackedCobble3(sm_config.PackedCobble3ID).setUnlocalizedName("PackedCobble3");
+		PackedStone3 = new mods.storemore.items.PackedStone3(sm_config.PackedStone3ID).setUnlocalizedName("PackedStone3");		
+		PackedDirt3 = new mods.storemore.items.PackedDirt3(sm_config.PackedDirt3ID).setUnlocalizedName("PackedDirt3");
+		PackedGravel3 = new mods.storemore.items.PackedGravel3(sm_config.PackedGravel3ID).setUnlocalizedName("PackedGravel3");		
+		PackedSand3 = new mods.storemore.items.PackedSand3(sm_config.PackedSand3ID).setUnlocalizedName("PackedSand3");
+		PackedSandstone3 = new mods.storemore.items.PackedSandstone3(sm_config.PackedSandstone3ID).setUnlocalizedName("PackedSandstone3");
 		
-		SuperPackedCobble2 = new mods.storemore.items.SuperPackedCobble2(sm_config.SuperPackedCobble2ID).setUnlocalizedName("SuperPackedCobble2");
-		SuperPackedStone2 = new mods.storemore.items.SuperPackedStone2(sm_config.SuperPackedStone2ID).setUnlocalizedName("SuperPackedStone2");		
-		SuperPackedDirt2 = new mods.storemore.items.SuperPackedDirt2(sm_config.SuperPackedDirt2ID).setUnlocalizedName("SuperPackedDirt2");
-		SuperPackedGravel2 = new mods.storemore.items.SuperPackedGravel2(sm_config.SuperPackedGravel2ID).setUnlocalizedName("SuperPackedGravel2");		
-		SuperPackedSand2 = new mods.storemore.items.SuperPackedSand2(sm_config.SuperPackedSand2ID).setUnlocalizedName("SuperPackedSand2");
-		SuperPackedSandstone2 = new mods.storemore.items.SuperPackedSandstone2(sm_config.SuperPackedSandstone2ID).setUnlocalizedName("SuperPackedSandstone2");
+		PackedCobble2 = new mods.storemore.items.PackedCobble2(sm_config.PackedCobble2ID).setUnlocalizedName("PackedCobble2");
+		PackedStone2 = new mods.storemore.items.PackedStone2(sm_config.PackedStone2ID).setUnlocalizedName("PackedStone2");		
+		PackedDirt2 = new mods.storemore.items.PackedDirt2(sm_config.PackedDirt2ID).setUnlocalizedName("PackedDirt2");
+		PackedGravel2 = new mods.storemore.items.PackedGravel2(sm_config.PackedGravel2ID).setUnlocalizedName("PackedGravel2");		
+		PackedSand2 = new mods.storemore.items.PackedSand2(sm_config.PackedSand2ID).setUnlocalizedName("PackedSand2");
+		PackedSandstone2 = new mods.storemore.items.PackedSandstone2(sm_config.PackedSandstone2ID).setUnlocalizedName("PackedSandstone2");
 		
-		SuperPackedCobble1 = new mods.storemore.items.SuperPackedCobble1(sm_config.SuperPackedCobble1ID).setUnlocalizedName("SuperPackedCobble1");
-		SuperPackedStone1 = new mods.storemore.items.SuperPackedStone1(sm_config.SuperPackedStone1ID).setUnlocalizedName("SuperPackedStone1");		
-		SuperPackedDirt1 = new mods.storemore.items.SuperPackedDirt1(sm_config.SuperPackedDirt1ID).setUnlocalizedName("SuperPackedDirt1");
-		SuperPackedGravel1 = new mods.storemore.items.SuperPackedGravel1(sm_config.SuperPackedGravel1ID).setUnlocalizedName("SuperPackedGravel1");		
-		SuperPackedSand1 = new mods.storemore.items.SuperPackedSand1(sm_config.SuperPackedSand1ID).setUnlocalizedName("SuperPackedSand1");
-		SuperPackedSandstone1 = new mods.storemore.items.SuperPackedSandstone1(sm_config.SuperPackedSandstone1ID).setUnlocalizedName("SuperPackedSandstone1");
+		PackedCobble1 = new mods.storemore.items.PackedCobble1(sm_config.PackedCobble1ID).setUnlocalizedName("PackedCobble1");
+		PackedStone1 = new mods.storemore.items.PackedStone1(sm_config.PackedStone1ID).setUnlocalizedName("PackedStone1");		
+		PackedDirt1 = new mods.storemore.items.PackedDirt1(sm_config.PackedDirt1ID).setUnlocalizedName("PackedDirt1");
+		PackedGravel1 = new mods.storemore.items.PackedGravel1(sm_config.PackedGravel1ID).setUnlocalizedName("PackedGravel1");		
+		PackedSand1 = new mods.storemore.items.PackedSand1(sm_config.PackedSand1ID).setUnlocalizedName("PackedSand1");
+		PackedSandstone1 = new mods.storemore.items.PackedSandstone1(sm_config.PackedSandstone1ID).setUnlocalizedName("PackedSandstone1");
 	
 	}
 
