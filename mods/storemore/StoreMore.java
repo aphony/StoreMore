@@ -1,5 +1,7 @@
 package mods.storemore;
 
+import mods.storemore.blockitems.TestButton1Item;
+import mods.storemore.blockitems.TestButton2Item;
 import mods.storemore.blockitems.packedblocksIVItem;
 import mods.storemore.blockitems.packedblocksIXItem;
 import mods.storemore.blockitems.packedblocksVIIIItem;
@@ -241,7 +243,9 @@ public class StoreMore
 	public static Item PackedSand1;
 	public static Item PackedSandstone1;
 	
-
+	//TESTING
+	public static Block TestButton1;
+	public static Block TestButton2;
 	
 	@PreInit()
 	public void preInit(FMLPreInitializationEvent event) {
@@ -498,6 +502,13 @@ public class StoreMore
 		PackedGravel1 = new mods.storemore.items.PackedGravel1(sm_config.PackedGravel1ID).setUnlocalizedName("PackedGravel1");		
 		PackedSand1 = new mods.storemore.items.PackedSand1(sm_config.PackedSand1ID).setUnlocalizedName("PackedSand1");
 		PackedSandstone1 = new mods.storemore.items.PackedSandstone1(sm_config.PackedSandstone1ID).setUnlocalizedName("PackedSandstone1");
+		
+		//TESTING
+		TestButton1 = new mods.storemore.blocks.TestButton1(sm_config.TestButton1ID).setHardness(1.0f).setResistance(50.0f).setCreativeTab(StoreMoreTab).setUnlocalizedName("TestButton1");
+		TestButton2 = new mods.storemore.blocks.TestButton2(sm_config.TestButton2ID).setHardness(1.0f).setResistance(50.0f).setCreativeTab(StoreMoreTab).setUnlocalizedName("TestButton2");
+
+		Item.itemsList[sm_config.TestButton1ID] = new TestButton1Item(sm_config.TestButton1ID-256).setUnlocalizedName("TestButton1");
+		Item.itemsList[sm_config.TestButton2ID] = new TestButton2Item(sm_config.TestButton2ID-256).setUnlocalizedName("TestButton2ID");
 	
 	}
 
