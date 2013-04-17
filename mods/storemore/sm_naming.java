@@ -117,10 +117,10 @@ public class sm_naming {
         LanguageRegistry.instance().addName(new ItemStack(StoreMore.packedblocksVII, 1, 13), "Packed Jungle Wood II");
         LanguageRegistry.instance().addName(new ItemStack(StoreMore.packedblocksVII, 1, 14), "Packed Jungle Wood III");
         LanguageRegistry.instance().addName(new ItemStack(StoreMore.packedblocksVII, 1, 15), "Packed Jungle Wood IV");
-        LanguageRegistry.instance().addName(new ItemStack(StoreMore.packedblocksVIII, 1, 0), "Packed Oak Planks I");
-        LanguageRegistry.instance().addName(new ItemStack(StoreMore.packedblocksVIII, 1, 1), "Packed Oak Planks II");
-        LanguageRegistry.instance().addName(new ItemStack(StoreMore.packedblocksVIII, 1, 2), "Packed Oak Planks III");
-        LanguageRegistry.instance().addName(new ItemStack(StoreMore.packedblocksVIII, 1, 3), "Packed Oak Planks IV");
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.packedblocksVIII, 1, 0), "Packed Planks I");
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.packedblocksVIII, 1, 1), "Packed Planks II");
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.packedblocksVIII, 1, 2), "Packed Planks III");
+        LanguageRegistry.instance().addName(new ItemStack(StoreMore.packedblocksVIII, 1, 3), "Packed Planks IV");
         LanguageRegistry.instance().addName(new ItemStack(StoreMore.packedblocksVIII, 1, 4), "Packed Spruce Planks I");
         LanguageRegistry.instance().addName(new ItemStack(StoreMore.packedblocksVIII, 1, 5), "Packed Spruce Planks II");
         LanguageRegistry.instance().addName(new ItemStack(StoreMore.packedblocksVIII, 1, 6), "Packed Spruce Planks III");
@@ -161,6 +161,8 @@ public class sm_naming {
         LanguageRegistry.instance().addName(new ItemStack(StoreMore.packedblocksIX, 1, 13), "Packed Clay II");
         LanguageRegistry.instance().addName(new ItemStack(StoreMore.packedblocksIX, 1, 14), "Packed Clay III");
         LanguageRegistry.instance().addName(new ItemStack(StoreMore.packedblocksIX, 1, 15), "Packed Clay IV");
+        
+        //Foods
         LanguageRegistry.instance().addName(new ItemStack(StoreMore.packedfoodI, 1, 0), "Packed Red Apple I");
         LanguageRegistry.instance().addName(new ItemStack(StoreMore.packedfoodI, 1, 1), "Packed Red Apple II");
         LanguageRegistry.instance().addName(new ItemStack(StoreMore.packedfoodI, 1, 2), "Packed Red Apple III");
