@@ -1,7 +1,5 @@
 package mods.storemore;
 
-import mods.storemore.blockitems.TestButton1Item;
-import mods.storemore.blockitems.TestButton2Item;
 import mods.storemore.blockitems.packedblocksIVItem;
 import mods.storemore.blockitems.packedblocksIXItem;
 import mods.storemore.blockitems.packedblocksVIIIItem;
