@@ -57,8 +57,7 @@ public class sm_recipes extends StoreMore{
 		GameRegistry.addRecipe(new ItemStack(StoreMore.PackedSand6), "XXX", "XXX", "XXX", Character.valueOf('X'), new ItemStack(PackedSand5));
 		GameRegistry.addRecipe(new ItemStack(StoreMore.PackedSand7), "XXX", "XXX", "XXX", Character.valueOf('X'), new ItemStack(PackedSand6));
 		GameRegistry.addRecipe(new ItemStack(StoreMore.PackedSand8), "XXX", "XXX", "XXX", Character.valueOf('X'), new ItemStack(PackedSand7));
-		GameRegistry.addRecipe(new ItemStack(StoreMore.PackedSand8), "XXX", "XXX", "XXX", Character.valueOf('X'), new ItemStack(Block.sandStone));
-		GameRegistry.addRecipe(new ItemStack(StoreMore.PackedSandstone1), "XXX", "XXX", "XXX", Character.valueOf('X'), new ItemStack(PackedSand8));
+		GameRegistry.addRecipe(new ItemStack(StoreMore.PackedSandstone1), "XXX", "XXX", "XXX", Character.valueOf('X'), new ItemStack(Block.sandStone));
 		GameRegistry.addRecipe(new ItemStack(StoreMore.PackedSandstone2), "XXX", "XXX", "XXX", Character.valueOf('X'), new ItemStack(PackedSandstone1));
 		GameRegistry.addRecipe(new ItemStack(StoreMore.PackedSandstone3), "XXX", "XXX", "XXX", Character.valueOf('X'), new ItemStack(PackedSandstone2));
 		GameRegistry.addRecipe(new ItemStack(StoreMore.PackedSandstone4), "XXX", "XXX", "XXX", Character.valueOf('X'), new ItemStack(PackedSandstone3));

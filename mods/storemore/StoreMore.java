@@ -27,6 +27,7 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.EnumToolMaterial;
 import net.minecraft.item.Item;
 import net.minecraftforge.common.EnumHelper;
+import cpw.mods.fml.common.FMLLog;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.Init;
 import cpw.mods.fml.common.Mod.Instance;
@@ -244,13 +245,15 @@ public class StoreMore
 	
 	@PreInit()
 	public void preInit(FMLPreInitializationEvent event) {
-
+		FMLLog.info("[StoreMore] Loading Config");
+		
 		sm_config.init();
 
 		sm_config.initialize(event.getSuggestedConfigurationFile());
 
 		sm_config.save(); 
-
+		
+		FMLLog.info("[StoreMore] Config Loaded");
 	}
 
 	@Init
