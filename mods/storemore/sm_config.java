@@ -203,11 +203,7 @@ public class sm_config
 		public static int PackedGravel1ID = 8346;
 		public static int PackedSand1ID = 8347;
 		public static int PackedSandstone1ID = 8348;
-		
-		
-		//TEST
-		public static int TestButton1ID = 3000;
-		public static int TestButton2ID = 3001;
+
 		
 		
 	    public static boolean IC2Enabled;
@@ -403,13 +399,7 @@ public class sm_config
 		    PackedGravel1ID = config.get("Placeable Packed Blocks", "Placeable Packed Gravel I", 8345).getInt();
 		    PackedSand1ID = config.get("Placeable Packed Blocks", "Placeable Packed Sand I", 8346).getInt();
 		    PackedSandstone1ID = config.get("Placeable Packed Blocks", "Placeable Packed Sandstone I", 8347).getInt();
-		    
-		    
-		    //TEST
-		    TestButton1ID = config.get("TESTING", "Test Button 1", 3000).getInt();
-		    TestButton2ID = config.get("TESTING", "Test Button 2", 3001).getInt();
-		    
-		    
+
 		    
 		    config.save();
 	    } 

@@ -331,10 +331,7 @@ public class sm_naming {
         LanguageRegistry.instance().addName(new ItemStack(StoreMore.PackedGravel1), "Packed Gravel I"); 
         LanguageRegistry.instance().addName(new ItemStack(StoreMore.PackedSand1), "Packed Sand I");
         LanguageRegistry.instance().addName(new ItemStack(StoreMore.PackedSandstone1), "Packed Sandstone I");
-        
-        
-        LanguageRegistry.instance().addName(new ItemStack(StoreMore.TestButton1), "Test Button1");
-        LanguageRegistry.instance().addName(new ItemStack(StoreMore.TestButton2), "Test Button2");
+
 
     }
 		
