@@ -118,9 +118,9 @@ public class sm_recipes extends StoreMore{
 		GameRegistry.addRecipe(new ItemStack(StoreMore.packedblocksVI,1,10), "XXX", "XXX", "XXX", Character.valueOf('X'), new ItemStack(packedblocksVI,1,9));
 		GameRegistry.addRecipe(new ItemStack(StoreMore.packedblocksVI,1,11), "XXX", "XXX", "XXX", Character.valueOf('X'), new ItemStack(packedblocksVI,1,10));
 		GameRegistry.addRecipe(new ItemStack(StoreMore.packedblocksVI,1,12), "XXX", "XXX", "XXX", Character.valueOf('X'), new ItemStack(Item.flint));
-		GameRegistry.addRecipe(new ItemStack(StoreMore.packedblocksVI,1,13), "XXX", "XXX", "XXX", Character.valueOf('X'), new ItemStack(packedblocksVII,1,12));
-		GameRegistry.addRecipe(new ItemStack(StoreMore.packedblocksVI,1,14), "XXX", "XXX", "XXX", Character.valueOf('X'), new ItemStack(packedblocksVII,1,13));
-		GameRegistry.addRecipe(new ItemStack(StoreMore.packedblocksVI,1,15), "XXX", "XXX", "XXX", Character.valueOf('X'), new ItemStack(packedblocksVII,1,14));
+		GameRegistry.addRecipe(new ItemStack(StoreMore.packedblocksVI,1,13), "XXX", "XXX", "XXX", Character.valueOf('X'), new ItemStack(packedblocksVI,1,12));
+		GameRegistry.addRecipe(new ItemStack(StoreMore.packedblocksVI,1,14), "XXX", "XXX", "XXX", Character.valueOf('X'), new ItemStack(packedblocksVI,1,13));
+		GameRegistry.addRecipe(new ItemStack(StoreMore.packedblocksVI,1,15), "XXX", "XXX", "XXX", Character.valueOf('X'), new ItemStack(packedblocksVI,1,14));
 
 		
 		//Wood First Stage Handled In OreDictionary
